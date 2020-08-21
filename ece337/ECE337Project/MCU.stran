@@ -1,0 +1,39 @@
+# 
+# 
+# 
+# 
+# //  Questa Sim-64
+# //  Version 10.3b linux_x86_64 May 29 2014
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -Lf /home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Vsim -L /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work -L /home/ecegrid/a/ece337/Class0.5u/GOLD_LIB "+no_glitch_msg" -coverage -novopt -i -t ps source_work.tb_MCU 
+# Start time: 17:33:57 on Apr 28,2018
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/source_work.tb_MCU
+# Loading sv_std.std
+# Loading source_work.tb_MCU
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/source_work.MCU
+# ** Note: (vlog-143) Recognized 1 FSM in module "MCU(verilog)".
+# Loading source_work.MCU
+# ** Error: (vsim-3389) source/tb_MCU.sv(75): Port 'ram_in_addr' not found in the connected module (4th connection).
+#         Region: /tb_MCU/DUT
+# ** Error: (vsim-3389) source/tb_MCU.sv(75): Port 'ram_out_addr' not found in the connected module (5th connection).
+#         Region: /tb_MCU/DUT
+# ** Error: (vsim-3389) source/tb_MCU.sv(75): Port 'addr_calc_start' not found in the connected module (15th connection).
+#         Region: /tb_MCU/DUT
+# ** Error: (vsim-3389) source/tb_MCU.sv(75): Port 'gauss_blur_calc' not found in the connected module (29th connection).
+#         Region: /tb_MCU/DUT
+# ** Error: (vsim-3389) source/tb_MCU.sv(75): Port 'out_row_cnt' not found in the connected module (40th connection).
+#         Region: /tb_MCU/DUT
+# ** Error: (vsim-3389) source/tb_MCU.sv(75): Port 'out_col_cnt' not found in the connected module (41st connection).
+#         Region: /tb_MCU/DUT
+# ** Fatal: (vsim-3365) source/tb_MCU.sv(75): Too many port connections. Expected 35, found 41.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_MCU/DUT File: source/MCU.sv
+# FATAL ERROR while loading design
+# Error loading design

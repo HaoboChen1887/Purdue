@@ -1,0 +1,25 @@
+login:
+	ssh chen1887@ecegrid-thin8.ecn.purdue.edu
+warmup: warmup.c
+	gcc -g -std=c99 -Wall -Wshadow --pedantic -Wvla warmup.c -o warmup && ./warmup
+gcc: index.h index.c test_index.c
+	gcc -g -std=c99 -Wall -Wshadow --pedantic -Wvla index.c test_index.c -o test_index
+tester: index.h index.c indexer.c
+	gcc -g -std=c99 -Wall -Wshadow --pedantic -Wvla index.c indexer.c -o test_index && ./test_index > expected.txt && vim expected.txt
+test: index.h index.c test_index.c
+	gcc -g -std=c99 -Wall -Wshadow --pedantic -Wvla index.c test_index.c -o test_index && ./test_index > expected.txt && vim expected.txt
+gdb: index.h index.c test_index.c
+	gcc -g -std=c99 -Wall -Wshadow --pedantic -Wvla index.c test_index.c -o test_index && gdb ./test_index
+ddd: index.h index.c test_index.c
+	gcc -g -std=c99 -Wall -Wshadow --pedantic -Wvla index.c test_index.c -o test_index && ddd ./test_index
+valgrind: index.h index.c test_index.c
+	gcc -g -std=c99 -Wall -Wshadow --pedantic -Wvla index.c test_index.c -o test_index && valgrind --track-origins=yes --leak-check=full --tool=memcheck ./test_index
+coverage: test_index.c index.c index.h
+	gcc -g -std=c99 -Wall -Wshadow --pedantic -Wvla -fprofile-arcs -ftest-coverage test_index.c index.c -o test_index 
+	./test_index
+	gcov test_index.c
+	more test_index.c.gcov
+clean: test_index.c index.c index.h
+	rm -f *gcov *gcno *gcda test_index
+submit: index.h index.c test_index.c expected.txt warmup.c
+	264submit hw11 index.h index.c test_index.c warmup.c expected.txt

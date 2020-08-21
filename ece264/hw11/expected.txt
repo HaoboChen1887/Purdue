@@ -1,0 +1,25 @@
+The length of the array is 0
+The files that contain a, b, c is the following
+The files that contain word is the following
+The length of the array is 3
+File: file99
+File: file1
+File: file2
+The files that contain min is the following
+The length of the array is 3
+File: file0
+File: file1
+File: file2
+The files that contain Min is the following
+The length of the array is 3
+File: file99
+File: file1
+File: file2
+The files that contain apple is the following
+The length of the array is 5
+File: file2
+File: file10
+File: file11
+File: file12
+File: file13
+The length of the array is 0

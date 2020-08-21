@@ -1,0 +1,4 @@
+gcc: warmup.c
+	gcc -g warmup.c -o warmup && gdb warmup
+test: warmup.c
+	gcc -g warmup.c -o warmup && valgrind warmup

@@ -1,0 +1,111 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : gaussian_blur
+Version: K-2015.06-SP1
+Date   : Sat Apr 28 18:08:05 2018
+****************************************
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+  Startpoint: pixel_o_reg[7]
+              (rising edge-triggered flip-flop)
+  Endpoint: pixel_o[7] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  pixel_o_reg[7]/CLK (DFFSR)               0.00       0.00 r
+  pixel_o_reg[7]/Q (DFFSR)                 0.49       0.49 f
+  pixel_o[7] (out)                         0.00       0.49 f
+  data arrival time                                   0.49
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
+ 
+****************************************
+Report : area
+Design : gaussian_blur
+Version: K-2015.06-SP1
+Date   : Sat Apr 28 18:08:05 2018
+****************************************
+
+Library(s) Used:
+
+    osu05_stdcells (File: /package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db)
+
+Number of ports:                          276
+Number of nets:                           770
+Number of cells:                          510
+Number of combinational cells:            450
+Number of sequential cells:                55
+Number of macros/black boxes:               0
+Number of buf/inv:                        118
+Number of references:                      19
+
+Combinational area:             163206.000000
+Buf/Inv area:                    17064.000000
+Noncombinational area:           38016.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                201222.000000
+Total area:                 undefined
+1
+Loading db file '/package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : gaussian_blur
+Version: K-2015.06-SP1
+Date   : Sat Apr 28 18:08:05 2018
+****************************************
+
+
+Library(s) Used:
+
+    osu05_stdcells (File: /package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db)
+
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 5    
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+gaussian_blur                            71.995   78.692   65.598  150.688 100.0
+  add_8_root_add_74 (gaussian_blur_DW01_add_8)
+                                          1.272    0.958    3.921    2.230   1.5
+  add_3_root_add_74 (gaussian_blur_DW01_add_3)
+                                          7.102    6.901    3.987   14.003   9.3
+  add_1_root_add_74 (gaussian_blur_DW01_add_1)
+                                         10.691   10.508    3.987   21.199  14.1
+  add_0_root_add_74 (gaussian_blur_DW01_add_0)
+                                          8.393   15.293    4.054   23.686  15.7
+  div_80 (gaussian_blur_DW_div_uns_0)     0.229    0.283   11.543    0.512   0.3
+1

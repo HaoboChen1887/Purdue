@@ -1,0 +1,38 @@
+ECE264
+- members: Charles Ma  (favorite: Haobo Chen)
+           Jessie Chu  (favorite: Haobo Chen)
+           Shixin Meng (favorite: Charles Ma)
+           Yixin Chen  (favorite: Charles Ma)
+           Haobo Chen  (favorite: Yixin Chen)
+The person Charles Ma is found at address 0x1d951b0
+The person ZZ not found, the address returned is (nil)
+After adding a person with a same name to the team
+ECE264
+- members: Charles Ma  (favorite: Haobo Chen)
+           Jessie Chu  (favorite: Haobo Chen)
+           Shixin Meng (favorite: Charles Ma)
+           Yixin Chen  (favorite: Charles Ma)
+           Haobo Chen  (favorite: Yixin Chen)
+           Jessie Chu  (favorite: Charles Ma)
+After adding a boss to the team
+ECE264
+- members: Charles Ma  (favorite: Haobo Chen)
+           Jessie Chu  (favorite: Haobo Chen)
+           Shixin Meng (favorite: Charles Ma)
+           Yixin Chen  (favorite: Charles Ma)
+           Haobo Chen  (favorite: Yixin Chen)
+           Jessie Chu  (favorite: Charles Ma)
+           BOSS        (favorite: Haobo Chen)
+After deleting the Haobo Chen from the team
+ECE264
+- members: Charles Ma  (favorite: Haobo Chen)
+           Jessie Chu  (favorite: Haobo Chen)
+           Shixin Meng (favorite: Charles Ma)
+           Yixin Chen  (favorite: Charles Ma)
+           Jessie Chu  (favorite: Charles Ma)
+           BOSS        (favorite: Haobo Chen)
+Some Empty Team
+- members: (none)
+Empty team
+Some Empty Team
+- members: (none)

@@ -1,0 +1,369 @@
+        -:    0:Source:bmp.c
+        -:    0:Graph:bmp.gcno
+        -:    0:Data:bmp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "bmp.h"
+        -:    2:
+        -:    3:#include <stdlib.h>
+        -:    4:#include <string.h>
+        -:    5:
+        -:    6:static unsigned char *** _extract_pixels(FILE * fp, BMPImage * bmp, char ** error);
+        -:    7:static void _write_pixels(unsigned char *** pixel, BMPImage * bmp, char ** error);
+        -:    8:static BMPHeader _modify_header(BMPHeader orihead, int x, int y, int w, int h);
+        -:    9:
+        9:   10:BMPImage* read_bmp(FILE* fp, char** error) {
+        9:   11:	BMPImage * bmp = malloc(sizeof(BMPImage));
+        9:   12:	bmp -> data = NULL;
+        9:   13:	if(bmp == NULL) {
+    #####:   14:		if(*error != NULL) {
+    #####:   15:			free(*error);
+        -:   16:		}
+    #####:   17:		char * message = "read_bmp(FILE* fp, char** error) failed because malloc failed";
+    #####:   18:		*error = malloc((strlen(message) + 1) * sizeof(char));
+    #####:   19:		strcpy(*error, message);
+    #####:   20:		return NULL;
+        -:   21:	}
+        9:   22:	if(fread(&(bmp -> header), sizeof(BMPHeader), 1, fp) != 1) {
+    #####:   23:		if(*error != NULL) {
+    #####:   24:			free(*error);
+        -:   25:		}
+    #####:   26:		char * message = "read_bmp(FILE* fp, char** error) failed because fread failed";
+    #####:   27:		*error = malloc((strlen(message) + 1) * sizeof(char));
+    #####:   28:		strcpy(*error, message);
+    #####:   29:		free(bmp);
+    #####:   30:		return NULL;
+        -:   31:	}
+        9:   32:	if(check_bmp_header(&(bmp -> header), fp) == false) {
+    #####:   33:		if(*error != NULL) {
+    #####:   34:			free(*error);
+        -:   35:		}
+    #####:   36:		char * message = "read_bmp(FILE* fp, char** error) failed because check_bmp_header failed";
+    #####:   37:		*error = malloc((strlen(message) + 1) * sizeof(char));
+    #####:   38:		strcpy(*error, message);
+    #####:   39:		free(bmp);
+    #####:   40:		return NULL;
+        -:   41:	}
+        -:   42:
+        -:   43:
+        9:   44:	unsigned char *** pixels = _extract_pixels(fp, bmp, error);
+        9:   45:	_write_pixels(pixels, bmp, error);
+        -:   46:
+        9:   47:	return bmp;
+        -:   48:}
+        -:   49:
+        9:   50:bool check_bmp_header(BMPHeader* bmp_header, FILE* fp) {
+        9:   51:	if(bmp_header -> type != 0x4d42) {
+    #####:   52:		return false;
+        -:   53:	}
+        9:   54:	if(bmp_header -> offset != BMP_HEADER_SIZE) {
+    #####:   55:		return false;
+        -:   56:	}
+        9:   57:	if(bmp_header -> dib_header_size != DIB_HEADER_SIZE) {
+    #####:   58:		return false;
+        -:   59:	}
+        9:   60:	if(bmp_header -> num_planes != 1) {
+    #####:   61:		return false;
+        -:   62:	}
+        9:   63:	if(bmp_header -> compression != 0) {
+    #####:   64:		return false;
+        -:   65:	}
+        9:   66:	if(bmp_header -> num_colors != 0 || bmp_header -> important_colors != 0) {
+    #####:   67:		return false;
+        -:   68:	}
+        9:   69:	if(bmp_header -> bits_per_pixel != 24 && bmp_header -> bits_per_pixel != 16) {
+    #####:   70:		return false;
+        -:   71:	}
+        9:   72:	unsigned int width = bmp_header -> width_px;
+        9:   73:	unsigned int height = bmp_header -> height_px;
+        9:   74:	const int BYTE_PER_PIX = bmp_header -> bits_per_pixel / 8;
+        9:   75:	unsigned int image_size = (width % 4 + width * BYTE_PER_PIX) * height;
+        9:   76:	if(bmp_header -> image_size_bytes != image_size) {
+    #####:   77:		return false;
+        -:   78:	}
+        9:   79:	if(bmp_header -> size != image_size + bmp_header -> offset) {
+    #####:   80:		return false;
+        -:   81:	}
+        9:   82:	return true;
+        -:   83:}
+        -:   84:
+        5:   85:bool write_bmp(FILE* fp, BMPImage* image, char** error) {
+        5:   86:	if(image == NULL) {
+    #####:   87:		if(*error != NULL) {
+    #####:   88:			free(*error);
+        -:   89:		}
+    #####:   90:		char * message = "write_bmp(FILE* fp, char** error) failed because image doesn't exist";
+    #####:   91:		*error = malloc((strlen(message) + 1) * sizeof(char));
+    #####:   92:		strcpy(*error, message);
+    #####:   93:		return false;
+        -:   94:	}
+        5:   95:	if(fwrite(&(image -> header), sizeof(BMPHeader), 1, fp) != 1) {
+    #####:   96:		if(*error != NULL) {
+    #####:   97:			free(*error);
+        -:   98:		}
+    #####:   99:		char * message = "write_bmp(FILE* fp, char** error) failed because fwrite failed";
+    #####:  100:		*error = malloc((strlen(message) + 1) * sizeof(char));
+    #####:  101:		strcpy(*error, message);
+    #####:  102:		return false;
+        -:  103:	}
+        5:  104:	unsigned int data_size = image -> header.size - image -> header.offset;
+        5:  105:	if(fwrite((image -> data), sizeof(unsigned char), data_size, fp) != data_size) {
+    #####:  106:		if(*error != NULL) {
+    #####:  107:			free(*error);
+        -:  108:		}
+    #####:  109:		char * message = "write_bmp(FILE* fp, char** error) failed because fwrite failed";
+    #####:  110:		*error = malloc((strlen(message) + 1) * sizeof(char));
+    #####:  111:		strcpy(*error, message);
+    #####:  112:		return false;
+        -:  113:	}
+        5:  114:	return true;
+        -:  115:}
+        -:  116:
+       11:  117:void free_bmp(BMPImage* image) {
+       11:  118:	if(image != NULL) {
+       11:  119:		free(image -> data);
+       11:  120:		free(image);
+        -:  121:	}
+       11:  122:	return;
+        -:  123:}
+        -:  124:
+        6:  125:BMPImage* crop_bmp(BMPImage* image, int x, int y, int w, int h, char** error) {
+        6:  126:	if(image == NULL) {
+    #####:  127:		if(*error != NULL) {
+    #####:  128:			free(*error);
+        -:  129:		}
+    #####:  130:		char * message = "crop_bmp(FILE* fp, char** error) failed because image was not read correctly";
+    #####:  131:		*error = malloc((strlen(message) + 1) * sizeof(char));
+    #####:  132:		strcpy(*error, message);
+    #####:  133:		return NULL;
+        -:  134:	}
+        6:  135:	if(x < 0 || x > image -> header.width_px) {
+        1:  136:		if(*error != NULL) {
+    #####:  137:			free(*error);
+        -:  138:		}
+        1:  139:		char * message = "crop_bmp(FILE* fp, char** error) failed because x is invalid";
+        1:  140:		*error = malloc((strlen(message) + 1) * sizeof(char));
+        1:  141:		strcpy(*error, message);
+        1:  142:		return NULL;
+        -:  143:	}
+        5:  144:	if(y < 0 || y > image -> header.height_px) {
+        1:  145:		if(*error != NULL) {
+        1:  146:			free(*error);
+        -:  147:		}
+        1:  148:		char * message = "crop_bmp(file* fp, char** error) failed because y is invalid";
+        1:  149:		*error = malloc((strlen(message) + 1) * sizeof(char));
+        1:  150:		strcpy(*error, message);
+        1:  151:		return NULL;
+        -:  152:	}
+        4:  153:	if(w <= 0 || x + w > image -> header.width_px) {
+        1:  154:		if(*error != NULL) {
+        1:  155:			free(*error);
+        -:  156:		}
+        1:  157:		char * message = "crop_bmp(file* fp, char** error) failed because w is invalid";
+        1:  158:		*error = malloc((strlen(message) + 1) * sizeof(char));
+        1:  159:		strcpy(*error, message);
+        1:  160:		return NULL;
+        -:  161:	}
+        3:  162:	if(h <= 0 || y + h > image -> header.height_px) {
+        1:  163:		if(*error != NULL) {
+        1:  164:			free(*error);
+        -:  165:		}
+        1:  166:		char * message = "crop_bmp(file* fp, char** error) failed because h is invalid";
+        1:  167:		*error = malloc((strlen(message) + 1) * sizeof(char));
+        1:  168:		strcpy(*error, message);
+        1:  169:		return NULL;
+        -:  170:	}
+        2:  171:	BMPImage * new_bmp = malloc(sizeof(BMPImage));
+        2:  172:	new_bmp -> data = NULL;
+        2:  173:	if(new_bmp == NULL) {
+    #####:  174:		if(*error != NULL) {
+    #####:  175:			free(*error);
+        -:  176:		}
+    #####:  177:		char * message = "crop_bmp(FILE* fp, char** error) failed because malloc failed";
+    #####:  178:		*error = malloc((strlen(message) + 1) * sizeof(char));
+    #####:  179:		strcpy(*error, message);
+    #####:  180:		return NULL;
+        -:  181:	}
+        2:  182:	new_bmp -> header = _modify_header(image -> header, x, y, w, h);
+        -:  183:
+        2:  184:	unsigned char *** pixels = malloc(sizeof(unsigned char **) * h);
+        2:  185:	if(pixels == NULL) {
+    #####:  186:		if(*error != NULL) {
+    #####:  187:			free(*error);
+        -:  188:		}
+    #####:  189:		char * message = "read_bmp(FILE* fp, char** error) failed because malloc failed";
+    #####:  190:		*error = malloc((strlen(message) + 1) * sizeof(char));
+    #####:  191:		strcpy(*error, message);
+    #####:  192:		return NULL;
+        -:  193:	}
+        2:  194:	int width = image -> header.width_px;
+        2:  195:	int ct = x * 3 + y * (3 * width + width % 4);
+        2:  196:	int pad = w % 4;
+        2:  197:	int byte_per_pix = image -> header.bits_per_pixel / 8;
+      200:  198:	for(int row = h - 1; row >= 0; row --) {
+      198:  199:		pixels[row] = malloc(sizeof(unsigned char *) * (w + 1));
+      198:  200:		if(pixels[row] == NULL) {
+    #####:  201:			if(*error != NULL) {
+    #####:  202:				free(*error);
+        -:  203:			}
+    #####:  204:			char * message = "read_bmp(FILE* fp, char** error) failed because malloc failed";
+    #####:  205:			*error = malloc((strlen(message) + 1) * sizeof(char));
+    #####:  206:			strcpy(*error, message);
+    #####:  207:			return NULL;
+        -:  208:		}
+    58123:  209:		for(int col = 0; col < w; col ++) {
+    57925:  210:			pixels[row][col] = malloc(sizeof(unsigned char) * byte_per_pix);
+    57925:  211:			if(pixels[row][col] == NULL) {
+    #####:  212:				if(*error != NULL) {
+    #####:  213:					free(*error);
+        -:  214:				}
+    #####:  215:				char * message = "read_bmp(FILE* fp, char** error) failed because malloc failed";
+    #####:  216:				*error = malloc((strlen(message) + 1) * sizeof(char));
+    #####:  217:				strcpy(*error, message);
+    #####:  218:				return NULL;
+        -:  219:			}
+   173800:  220:			for(int rgb = byte_per_pix - 1; rgb >= 0; rgb --) {
+   115875:  221:				pixels[row][col][rgb] = (image -> data)[ct ++];	
+        -:  222:			}
+    57925:  223:			if(col == w - 1 && pad != 0) {
+        5:  224:				col = w;
+        5:  225:				pixels[row][col] = malloc(sizeof(unsigned char) * pad);
+       10:  226:				for(int pad_c = 0; pad_c < pad; pad_c ++) {
+        5:  227:					pixels[row][col][pad_c] = 0X00;
+        -:  228:				}
+        -:  229:			}
+        -:  230:		}
+      198:  231:		ct += (3 * (width - w) + width % 4);
+        -:  232:	}
+        -:  233:	
+        2:  234:	_write_pixels(pixels, new_bmp, error);
+        -:  235:	
+        2:  236:	return new_bmp;
+        -:  237:}
+        -:  238:
+        9:  239:static unsigned char *** _extract_pixels(FILE * fp, BMPImage * bmp, char ** error) {
+        9:  240:	int width = bmp -> header.width_px;
+        9:  241:	int height = bmp -> header.height_px;
+        9:  242:	int byte_per_pix = bmp -> header.bits_per_pixel / 8;
+        9:  243:	int pad = width % 4;
+        9:  244:	unsigned char *** pixels = malloc(sizeof(unsigned char **) * height);
+        9:  245:	if(pixels == NULL) {
+    #####:  246:		if(*error != NULL) {
+    #####:  247:			free(*error);
+        -:  248:		}
+    #####:  249:		char * message = "read_bmp(FILE* fp, char** error) failed because malloc failed";
+    #####:  250:		*error = malloc((strlen(message) + 1) * sizeof(char));
+    #####:  251:		strcpy(*error, message);
+    #####:  252:		return NULL;
+        -:  253:	}
+     1147:  254:	for(int row = height - 1; row >= 0; row --) {
+     1138:  255:		pixels[row] = malloc(sizeof(unsigned char *) * (width + 1));
+     1138:  256:		if(pixels[row] == NULL) {
+    #####:  257:			if(*error != NULL) {
+    #####:  258:				free(*error);
+        -:  259:			}
+    #####:  260:			char * message = "read_bmp(FILE* fp, char** error) failed because malloc failed";
+    #####:  261:			*error = malloc((strlen(message) + 1) * sizeof(char));
+    #####:  262:			strcpy(*error, message);
+    #####:  263:			return NULL;
+        -:  264:		}
+   658354:  265:		for(int col = 0; col < width; col ++) {
+   657216:  266:			pixels[row][col] = malloc(sizeof(unsigned char) * byte_per_pix);
+   657216:  267:			if(pixels[row][col] == NULL) {
+    #####:  268:				if(*error != NULL) {
+    #####:  269:					free(*error);
+        -:  270:				}
+    #####:  271:				char * message = "read_bmp(FILE* fp, char** error) failed because malloc failed";
+    #####:  272:				*error = malloc((strlen(message) + 1) * sizeof(char));
+    #####:  273:				strcpy(*error, message);
+    #####:  274:				return NULL;
+        -:  275:			}
+  2057664:  276:			for(int rgb = byte_per_pix - 1; rgb >= 0; rgb --) {
+  1400448:  277:				if(fread(&(pixels[row][col][rgb]), sizeof(unsigned char), 1, fp) != 1) {
+    #####:  278:					if(*error != NULL) {
+    #####:  279:						free(*error);
+        -:  280:					}
+    #####:  281:					char * message = "read_bmp(FILE* fp, char** error) failed because data is not read competely";
+    #####:  282:					*error = malloc((strlen(message) + 1) * sizeof(char));
+    #####:  283:					strcpy(*error, message);
+    #####:  284:					return NULL;
+        -:  285:				}
+        -:  286:			}
+   657216:  287:			if(col == width - 1 && pad != 0) {
+       36:  288:				col = width;
+       36:  289:				pixels[row][col] = malloc(sizeof(unsigned char) * pad);
+      108:  290:				for(int pad_c = 0; pad_c < pad; pad_c ++) {
+       72:  291:					if(fread(&(pixels[row][col][pad_c]), sizeof(unsigned char), 1, fp) != 1) {
+    #####:  292:						if(*error != NULL) {
+    #####:  293:							free(*error);
+        -:  294:						}
+    #####:  295:						char * message = "read_bmp(FILE* fp, char** error) failed because data is not read competely";
+    #####:  296:						*error = malloc((strlen(message) + 1) * sizeof(char));
+    #####:  297:						strcpy(*error, message);
+    #####:  298:						return NULL;
+        -:  299:					}
+        -:  300:				}
+        -:  301:			}
+        -:  302:		}
+        -:  303:	}
+        9:  304:	return pixels;
+        -:  305:}
+        -:  306:
+       11:  307:static void _write_pixels(unsigned char *** pixels, BMPImage * bmp, char ** error) {
+       11:  308:	if(bmp == NULL) {
+    #####:  309:		if(*error != NULL) {
+    #####:  310:			free(*error);
+        -:  311:		}
+    #####:  312:		char * message = "read_bmp(FILE* fp, char** error) failed because image is not read correctly";
+    #####:  313:		*error = malloc((strlen(message) + 1) * sizeof(char));
+    #####:  314:		strcpy(*error, message);
+    #####:  315:		return;
+        -:  316:	}
+       11:  317:	int width = bmp -> header.width_px;
+       11:  318:	int height = bmp -> header.height_px;
+       11:  319:	int byte_per_pix = bmp -> header.bits_per_pixel / 8;
+       11:  320:	int pad = width % 4;
+       11:  321:	bmp -> data = malloc(sizeof(unsigned char) * (width * height * byte_per_pix + height * pad));
+       11:  322:	if(bmp -> data == NULL) {
+    #####:  323:		if(*error != NULL) {
+    #####:  324:			free(*error);
+        -:  325:		}
+    #####:  326:		char * message = "read_bmp(FILE* fp, char** error) failed because malloc failed";
+    #####:  327:		*error = malloc((strlen(message) + 1) * sizeof(char));
+    #####:  328:		strcpy(*error, message);
+    #####:  329:		return;
+        -:  330:	}
+       11:  331:	int ct = 0;
+        -:  332:
+     1347:  333:	for(int row = height - 1; row >= 0; row --) {
+   717813:  334:		for(int col = 0; col < width + 1; col ++) {
+   716477:  335:			if(col != width) {
+  2231464:  336:				for(int rgb = byte_per_pix - 1; rgb >= 0; rgb --) {
+  1516323:  337:						(bmp -> data)[ct ++] = pixels[row][col][rgb];
+        -:  338:				}
+   715141:  339:				free(pixels[row][col]);
+        -:  340:			}
+     1336:  341:			else if(pad != 0) {
+      118:  342:				for(int pad_c = 0; pad_c < pad; pad_c ++) {
+       77:  343:					(bmp -> data)[ct ++] = pixels[row][col][pad_c];
+        -:  344:				}
+       41:  345:				free(pixels[row][col]);
+        -:  346:			}
+        -:  347:		}
+     1336:  348:		free(pixels[row]);
+        -:  349:	}
+       11:  350:	free(pixels);
+       11:  351:	return;
+        -:  352:}
+        -:  353:
+        2:  354:static BMPHeader _modify_header(BMPHeader orihead, int x, int y, int w, int h) {
+        2:  355:	orihead.width_px = w;
+        2:  356:	orihead.height_px = h;
+        2:  357:	int width = w;
+        2:  358:	int height = h;
+        2:  359:	orihead.image_size_bytes = (width % 4 + width * (orihead.bits_per_pixel / 8)) * height;
+        2:  360:	orihead.size = orihead.image_size_bytes + orihead.offset;
+        -:  361:	
+        2:  362:	return orihead;
+        -:  363:}
+        -:  364:

@@ -1,0 +1,149 @@
+[04/26 00:14:52      0s] 
+[04/26 00:14:52      0s] Cadence Innovus(TM) Implementation System.
+[04/26 00:14:52      0s] Copyright 2016 Cadence Design Systems, Inc. All rights reserved worldwide.
+[04/26 00:14:52      0s] 
+[04/26 00:14:52      0s] Version:	v16.12-s051_1, built Wed Aug 17 12:18:54 PDT 2016
+[04/26 00:14:52      0s] Options:	
+[04/26 00:14:52      0s] Date:		Thu Apr 26 00:14:52 2018
+[04/26 00:14:52      0s] Host:		ecegrid-thin2.ecn.purdue.edu (x86_64 w/Linux 2.6.32-696.23.1.el6.x86_64) (6cores*24cpus*Intel(R) Xeon(R) CPU X5675 @ 3.07GHz 12288KB)
+[04/26 00:14:52      0s] OS:		Red Hat Enterprise Linux Workstation release 6.9 (Santiago)
+[04/26 00:14:52      0s] 
+[04/26 00:14:52      0s] License:
+[04/26 00:14:52      0s] 		invs	Innovus Implementation System	16.1	checkout succeeded
+[04/26 00:14:52      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[04/26 00:15:02      9s] @(#)CDS: Innovus v16.12-s051_1 (64bit) 08/17/2016 12:18 (Linux 2.6.18-194.el5)
+[04/26 00:15:02      9s] @(#)CDS: NanoRoute 16.12-s051_1 NR160816-1350/16_12-UB (database version 2.30, 347.6.1) {superthreading v1.30}
+[04/26 00:15:02      9s] @(#)CDS: AAE 16.12-s026 (64bit) 08/17/2016 (Linux 2.6.18-194.el5)
+[04/26 00:15:02      9s] @(#)CDS: CTE 16.12-s023_1 () Aug 12 2016 01:35:46 ( )
+[04/26 00:15:02      9s] @(#)CDS: SYNTECH 16.12-s009_1 () Aug 11 2016 01:33:09 ( )
+[04/26 00:15:02      9s] @(#)CDS: CPE v16.12-s054
+[04/26 00:15:02      9s] @(#)CDS: IQRC/TQRC 15.2.4-s467 (64bit) Wed Jul 20 17:12:38 PDT 2016 (Linux 2.6.18-194.el5)
+[04/26 00:15:02      9s] @(#)CDS: OA 22.50-p049 Fri Jun 10 10:56:20 2016
+[04/26 00:15:02      9s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[04/26 00:15:02      9s] @(#)CDS: RCDB 11.8
+[04/26 00:15:02      9s] --- Running on ecegrid-thin2.ecn.purdue.edu (x86_64 w/Linux 2.6.32-696.23.1.el6.x86_64) (6cores*24cpus*Intel(R) Xeon(R) CPU X5675 @ 3.07GHz 12288KB) ---
+[04/26 00:15:02      9s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_713_ecegrid-thin2.ecn.purdue.edu_mg119_zWsXX1.
+
+[04/26 00:15:03     10s] 
+[04/26 00:15:03     10s] **INFO:  MMMC transition support version v31-84 
+[04/26 00:15:03     10s] 
+[04/26 00:15:03     10s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[04/26 00:15:03     10s] <CMD> suppressMessage ENCEXT-2799
+[04/26 00:15:03     10s] <CMD> getDrawView
+[04/26 00:15:03     10s] <CMD> loadWorkspace -name Physical
+[04/26 00:15:03     10s] <CMD> win
+[04/26 00:15:20     12s] <CMD> set init_verilog final.v
+[04/26 00:15:20     12s] <CMD> init_design
+[04/26 00:15:20     12s] **WARN: (GLOBAL-100):	Global 'timing_disable_backward_compatible_mmmc_mode' has become obsolete. It will be removed in the next release.
+[04/26 00:15:20     12s] No LEF file provided, but timing lib is provided.
+[04/26 00:15:20     12s] Use timer mode.
+[04/26 00:15:20     12s] *** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.23min, fe_real=0.47min, fe_mem=528.7M) ***
+[04/26 00:15:20     12s] #- Begin Load netlist data ... (date=04/26 00:15:20, mem=528.7M)
+[04/26 00:15:20     12s] *** Begin netlist parsing (mem=528.7M) ***
+[04/26 00:15:20     12s] Created 0 new cells from 0 timing libraries.
+[04/26 00:15:20     12s] Reading netlist ...
+[04/26 00:15:20     12s] Backslashed names will retain backslash and a trailing blank character.
+[04/26 00:15:20     12s] Reading verilog netlist 'final.v'
+[04/26 00:15:20     12s] Module BUFX2 is not defined and will be treated as an empty module.
+[04/26 00:15:20     12s] Module DFFSR is not defined and will be treated as an empty module.
+[04/26 00:15:20     12s] Module NOR2X1 is not defined and will be treated as an empty module.
+[04/26 00:15:20     12s] Module MUX2X1 is not defined and will be treated as an empty module.
+[04/26 00:15:20     12s] Module INVX1 is not defined and will be treated as an empty module.
+[04/26 00:15:20     12s] Module NAND2X1 is not defined and will be treated as an empty module.
+[04/26 00:15:20     12s] Module XNOR2X1 is not defined and will be treated as an empty module.
+[04/26 00:15:20     12s] Module OAI21X1 is not defined and will be treated as an empty module.
+[04/26 00:15:20     12s] Module AOI22X1 is not defined and will be treated as an empty module.
+[04/26 00:15:20     12s] Module AOI21X1 is not defined and will be treated as an empty module.
+[04/26 00:15:20     12s] Module INVX2 is not defined and will be treated as an empty module.
+[04/26 00:15:20     12s] Module DFFPOSX1 is not defined and will be treated as an empty module.
+[04/26 00:15:20     12s] Module OR2X1 is not defined and will be treated as an empty module.
+[04/26 00:15:20     12s] Module NAND3X1 is not defined and will be treated as an empty module.
+[04/26 00:15:20     12s] Module XOR2X1 is not defined and will be treated as an empty module.
+[04/26 00:15:20     12s] Module INVX4 is not defined and will be treated as an empty module.
+[04/26 00:15:20     12s] Module OAI22X1 is not defined and will be treated as an empty module.
+[04/26 00:15:20     12s] Module AND2X2 is not defined and will be treated as an empty module.
+[04/26 00:15:20     12s] Module BUFX4 is not defined and will be treated as an empty module.
+[04/26 00:15:20     12s] Module AND2X1 is not defined and will be treated as an empty module.
+[04/26 00:15:20     12s] Module PADOUT is not defined and will be treated as an empty module.
+[04/26 00:15:20     12s] Module PADINC is not defined and will be treated as an empty module.
+[04/26 00:15:20     12s] 
+[04/26 00:15:20     12s] *** Memory Usage v#1 (Current mem = 530.258M, initial mem = 166.582M) ***
+[04/26 00:15:20     12s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=530.3M) ***
+[04/26 00:15:20     12s] #- End Load netlist data ... (date=04/26 00:15:20, total cpu=0:00:00.0, real=0:00:00.0, peak res=530.3M, current mem=530.3M)
+[04/26 00:15:20     12s] Top level cell is lab7_layout_design.
+[04/26 00:15:20     12s] Hooked 0 DB cells to tlib cells.
+[04/26 00:15:20     12s] **WARN: (IMPDB-2504):	Cell 'DFFSR' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[04/26 00:15:20     12s] **WARN: (IMPDB-2504):	Cell 'BUFX2' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[04/26 00:15:20     12s] **WARN: (IMPDB-2504):	Cell 'MUX2X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[04/26 00:15:20     12s] **WARN: (IMPDB-2504):	Cell 'NOR2X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[04/26 00:15:20     12s] **WARN: (IMPDB-2504):	Cell 'PADINC' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[04/26 00:15:20     12s] **WARN: (IMPDB-2504):	Cell 'PADOUT' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[04/26 00:15:20     12s] **WARN: (IMPDB-2504):	Cell 'AND2X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[04/26 00:15:20     12s] **WARN: (IMPDB-2504):	Cell 'BUFX4' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[04/26 00:15:20     12s] **WARN: (IMPDB-2504):	Cell 'AND2X2' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[04/26 00:15:20     12s] **WARN: (IMPDB-2504):	Cell 'OAI22X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[04/26 00:15:20     12s] **WARN: (IMPDB-2504):	Cell 'INVX4' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[04/26 00:15:20     12s] **WARN: (IMPDB-2504):	Cell 'XOR2X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[04/26 00:15:20     12s] **WARN: (IMPDB-2504):	Cell 'NAND3X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[04/26 00:15:20     12s] **WARN: (IMPDB-2504):	Cell 'OR2X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[04/26 00:15:20     12s] **WARN: (IMPDB-2504):	Cell 'DFFPOSX1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[04/26 00:15:20     12s] **WARN: (IMPDB-2504):	Cell 'INVX2' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[04/26 00:15:20     12s] **WARN: (IMPDB-2504):	Cell 'AOI21X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[04/26 00:15:20     12s] **WARN: (IMPDB-2504):	Cell 'AOI22X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[04/26 00:15:20     12s] **WARN: (IMPDB-2504):	Cell 'OAI21X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[04/26 00:15:20     12s] **WARN: (IMPDB-2504):	Cell 'XNOR2X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[04/26 00:15:20     12s] **WARN: (EMS-27):	Message (IMPDB-2504) has exceeded the current message display limit of 20.
+[04/26 00:15:20     12s] To increase the message display limit, refer to the product command reference manual.
+[04/26 00:15:20     12s] Cell 'XNOR2X1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'XNOR2X1' as output for net 'tx_value' in module 'lab7_encoder'.
+[04/26 00:15:20     12s] Cell 'MUX2X1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'MUX2X1' as output for net 'n1' in module 'lab7_encoder'.
+[04/26 00:15:20     12s] Cell 'INVX1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'INVX1' as output for net 'n25' in module 'lab7_tx_sr_1'.
+[04/26 00:15:20     12s] Cell 'BUFX2' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'BUFX2' as output for net 'FE_OCPN35_load_data_1_int' in module 'lab7_tx_sr_0'.
+[04/26 00:15:20     12s] Cell 'NOR2X1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'NOR2X1' as output for net 'n12' in module 'lab7_tx_sr_0'.
+[04/26 00:15:20     12s] Cell 'AOI21X1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'AOI21X1' as output for net 'n13' in module 'lab7_tx_sr_0'.
+[04/26 00:15:20     12s] Cell 'OR2X1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'OR2X1' as output for net 'rdata[7]' in module 'fiforam'.
+[04/26 00:15:20     12s] Cell 'DFFPOSX1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Q' of cell 'DFFPOSX1' as output for net '\fiforeg[2][7] ' in module 'fiforam'.
+[04/26 00:15:20     12s] Cell 'AOI22X1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'AOI22X1' as output for net 'n9' in module 'fiforam'.
+[04/26 00:15:20     12s] Cell 'INVX2' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'INVX2' as output for net 'n61' in module 'fiforam'.
+[04/26 00:15:20     12s] Cell 'NAND3X1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'NAND3X1' as output for net 'n183' in module 'fiforam'.
+[04/26 00:15:20     12s] Cell 'DFFSR' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Q' of cell 'DFFSR' as output for net 'wptr[3]' in module 'write_ptr'.
+[04/26 00:15:20     12s] Cell 'XOR2X1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'XOR2X1' as output for net 'wptr_nxt[2]' in module 'write_ptr'.
+[04/26 00:15:20     12s] Cell 'NAND2X1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'NAND2X1' as output for net 'n3' in module 'write_fifo_ctrl'.
+[04/26 00:15:20     12s] Cell 'INVX4' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'INVX4' as output for net 'rptr_nxt[3]' in module 'read_ptr'.
+[04/26 00:15:20     12s] Cell 'OAI21X1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'OAI21X1' as output for net 'n32' in module 'lab7_timer'.
+[04/26 00:15:20     12s] Cell 'OAI22X1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'OAI22X1' as output for net 'n15' in module 'lab7_timer'.
+[04/26 00:15:20     12s] Cell 'BUFX4' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'BUFX4' as output for net 'FE_OCPN45_curr_state_0' in module 'lab7_tcu'.
+[04/26 00:15:20     12s] Cell 'AND2X1' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'AND2X1' as output for net 'n41' in module 'lab7_tcu'.
+[04/26 00:15:20     12s] Cell 'PADOUT' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'YPAD' of cell 'PADOUT' as output for net 'd_plus' in module 'lab7_layout_design'.
+[04/26 00:15:20     12s] Cell 'PADINC' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'DI' of cell 'PADINC' as output for net 'nclk' in module 'lab7_layout_design'.
+[04/26 00:15:20     12s] Cell 'AND2X2' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'Y' of cell 'AND2X2' as output for net 'n4' in module 'lab7_timer'.
+[04/26 00:15:20     12s] 22 empty module found.
+[04/26 00:15:20     12s] Starting recursive module instantiation check.
+[04/26 00:15:20     12s] No recursion found.
+[04/26 00:15:20     12s] Term dir updated for 0 vinsts of 22 cells.
+[04/26 00:15:20     12s] Building hierarchical netlist for Cell lab7_layout_design ...
+[04/26 00:15:20     12s] *** Netlist is unique.
+[04/26 00:15:20     12s] ** info: there are 38 modules.
+[04/26 00:15:20     12s] ** info: there are 0 stdCell insts.
+[04/26 00:15:20     12s] 
+[04/26 00:15:20     12s] *** Memory Usage v#1 (Current mem = 547.012M, initial mem = 166.582M) ***
+[04/26 00:15:20     12s] Set Default Net Delay as 1000 ps.
+[04/26 00:15:20     12s] Set Default Net Load as 0.5 pF. 
+[04/26 00:15:20     12s] Set Default Input Pin Transition as 0.1 ps.
+[04/26 00:15:21     13s] **WARN: (IMPSYT-7328):	The design has been initialized in physical-only mode because the init_mmmc_file global variable was not defined. Timing analysis will not be possible within this session. You can only use commands that do not depend on timing data. If you need to use timing, you need to restart with an init_mmmc_file to define the timing setup, or you can save this design and use restoreDesign -mmmc_file <viewDef.tcl> to add the timing setup information.
+[04/26 00:15:21     13s] 
+[04/26 00:15:21     13s] *** Summary of all messages that are not suppressed in this session:
+[04/26 00:15:21     13s] Severity  ID               Count  Summary                                  
+[04/26 00:15:21     13s] WARNING   IMPSYT-7328          1  The design has been initialized in physi...
+[04/26 00:15:21     13s] WARNING   IMPDB-2504          22  Cell '%s' is instantiated in the Verilog...
+[04/26 00:15:21     13s] *** Message Summary: 23 warning(s), 0 error(s)
+[04/26 00:15:21     13s] 
+[04/26 00:15:27     13s] 
+[04/26 00:15:27     13s] *** Memory Usage v#1 (Current mem = 656.293M, initial mem = 166.582M) ***
+[04/26 00:15:27     13s] 
+[04/26 00:15:27     13s] *** Summary of all messages that are not suppressed in this session:
+[04/26 00:15:27     13s] Severity  ID               Count  Summary                                  
+[04/26 00:15:27     13s] WARNING   IMPSYT-7328          1  The design has been initialized in physi...
+[04/26 00:15:27     13s] WARNING   IMPDB-2504          22  Cell '%s' is instantiated in the Verilog...
+[04/26 00:15:27     13s] *** Message Summary: 23 warning(s), 0 error(s)
+[04/26 00:15:27     13s] 
+[04/26 00:15:27     13s] --- Ending "Innovus" (totcpu=0:00:14.7, real=0:00:35.0, mem=656.3M) ---

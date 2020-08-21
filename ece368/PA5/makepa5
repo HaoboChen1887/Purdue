@@ -1,0 +1,41 @@
+gcc: genome.h genome.c genome_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./genome.c genome_main.c -o proj5
+gdb: genome.h genome.c genome_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./genome.c genome_main.c -o proj5 && gdb proj5
+ddd: genome.h genome.c genome_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./genome.c genome_main.c -o proj5 && ddd proj5
+valgrind3: genome.h genome.c genome_main.c
+	gcc -std=c99 -Wall -Wshadow -g -O3 ./genome.c genome_main.c -o proj5 && valgrind --leak-check=full --show-reachable=yes ./proj5 genome.in0
+valgrind6: genome.h genome.c genome_main.c
+	gcc -std=c99 -Wall -Wshadow -g -O3 ./genome.c genome_main.c -o proj5 && valgrind --leak-check=full --show-reachable=yes ./proj5 genome.in6
+valgrind: genome.h genome.c genome_main.c
+	gcc -std=c99 -Wall -Wshadow -g -O3 ./genome.c genome_main.c -o proj5 && valgrind --leak-check=full --show-reachable=yes ./proj5 genome.in0
+	gcc -std=c99 -Wall -Wshadow -g -O3 ./genome.c genome_main.c -o proj5 && valgrind --leak-check=full --show-reachable=yes ./proj5 genome.in1
+	gcc -std=c99 -Wall -Wshadow -g -O3 ./genome.c genome_main.c -o proj5 && valgrind --leak-check=full --show-reachable=yes ./proj5 genome.in2
+	gcc -std=c99 -Wall -Wshadow -g -O3 ./genome.c genome_main.c -o proj5 && valgrind --leak-check=full --show-reachable=yes ./proj5 genome.in3
+	gcc -std=c99 -Wall -Wshadow -g -O3 ./genome.c genome_main.c -o proj5 && valgrind --leak-check=full --show-reachable=yes ./proj5 genome.in4
+	gcc -std=c99 -Wall -Wshadow -g -O3 ./genome.c genome_main.c -o proj5 && valgrind --leak-check=full --show-reachable=yes ./proj5 genome.in5
+	gcc -std=c99 -Wall -Wshadow -g -O3 ./genome.c genome_main.c -o proj5 && valgrind --leak-check=full --show-reachable=yes ./proj5 genome.in6
+
+test0: genome.h genome.c genome_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./genome.c genome_main.c -o proj5 && ./proj5 genome.in0
+test1: genome.h genome.c genome_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./genome.c genome_main.c -o proj5 && ./proj5 genome.in1
+test2: genome.h genome.c genome_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./genome.c genome_main.c -o proj5 && ./proj5 genome.in2
+test3: genome.h genome.c genome_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./genome.c genome_main.c -o proj5 && ./proj5 genome.in3
+test4: genome.h genome.c genome_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./genome.c genome_main.c -o proj5 && ./proj5 genome.in4
+test5: genome.h genome.c genome_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./genome.c genome_main.c -o proj5 && ./proj5 genome.in5
+test6: genome.h genome.c genome_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./genome.c genome_main.c -o proj5 && ./proj5 genome.in6
+test: genome.h genome.c genome_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./genome.c genome_main.c -o proj5 && ./proj5 genome.in0 | diff genome.log0 -
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./genome.c genome_main.c -o proj5 && ./proj5 genome.in1 | diff genome.log1 -
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./genome.c genome_main.c -o proj5 && ./proj5 genome.in2 | diff genome.log2 -
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./genome.c genome_main.c -o proj5 && ./proj5 genome.in3 | diff genome.log3 -
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./genome.c genome_main.c -o proj5 && ./proj5 genome.in4 | diff genome.log4 -
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./genome.c genome_main.c -o proj5 && ./proj5 genome.in5 | diff genome.log5 -
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./genome.c genome_main.c -o proj5 && ./proj5 genome.in6 | diff genome.log6 -

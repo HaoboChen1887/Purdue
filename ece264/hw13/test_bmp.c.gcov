@@ -1,0 +1,138 @@
+        -:    0:Source:test_bmp.c
+        -:    0:Graph:test_bmp.gcno
+        -:    0:Data:test_bmp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "bmp.h"
+        -:    2:#include <stdlib.h>
+        -:    3:
+        1:    4:int main(int argc, char * argv[]) {
+        1:    5:	char * error = NULL;
+        1:    6:	FILE * fp = fopen("6x6_24bit.bmp", "r");
+        1:    7:	BMPImage * bmp = read_bmp(fp, &error);
+        1:    8:	fclose(fp);
+        1:    9:	fp = fopen("6x6_24bit_copy.bmp", "w");
+        1:   10:	if(write_bmp(fp, bmp, &error) == false) {
+    #####:   11:		printf("%s\n", error);
+        -:   12:	}
+        1:   13:	fclose(fp);
+        1:   14:	free_bmp(bmp);
+        -:   15:
+        1:   16:	fp = fopen("green_earth.bmp", "r");
+        1:   17:	bmp = read_bmp(fp, &error);
+        1:   18:	fclose(fp);
+        1:   19:	fp = fopen("green_earth_copy.bmp", "w");
+        1:   20:	if(write_bmp(fp, bmp, &error) == false) {
+    #####:   21:		printf("%s\n", error);
+        -:   22:	}
+        1:   23:	fclose(fp);
+        1:   24:	free_bmp(bmp);
+        -:   25:
+        1:   26:	fp = fopen("airplane16.bmp", "r");
+        1:   27:	bmp = read_bmp(fp, &error);
+        1:   28:	fclose(fp);
+        1:   29:	fp = fopen("airplane16_copy.bmp", "w");
+        1:   30:	if(write_bmp(fp, bmp, &error) == false) {
+    #####:   31:		printf("%s\n", error);
+        -:   32:	}
+        1:   33:	fclose(fp);
+        1:   34:	free_bmp(bmp);
+        -:   35:	
+        1:   36:	fp = fopen("6x6_24bit.bmp", "r");
+        1:   37:	bmp = read_bmp(fp, &error);
+        1:   38:	BMPImage * crop = crop_bmp(bmp, 1, 1, 5, 5, &error);
+        1:   39:	fclose(fp);
+        1:   40:	fp = fopen("6x6_24bit_crop.bmp", "w");
+        1:   41:	if(write_bmp(fp, crop, &error) == false) {
+    #####:   42:		printf("%s\n", error);
+        -:   43:	}
+        1:   44:	fclose(fp);
+        1:   45:	if(bmp != NULL) {
+        1:   46:		free_bmp(bmp);
+        -:   47:	}
+        1:   48:	if(crop != NULL) {
+        1:   49:		free_bmp(crop);
+        -:   50:	}
+        -:   51:
+        1:   52:	fp = fopen("car16.bmp", "r");
+        1:   53:	bmp = read_bmp(fp, &error);
+        1:   54:	crop = crop_bmp(bmp, 2, 100, 300, 193, &error);
+        1:   55:	fclose(fp);
+        1:   56:	fp = fopen("car16_crop.bmp", "w");
+        1:   57:	if(crop == NULL || write_bmp(fp, crop, &error) == false) {
+        1:   58:		printf("%s\n", error);
+        -:   59:	}
+        1:   60:	fclose(fp);
+        1:   61:	if(bmp != NULL) {
+    #####:   62:		free_bmp(bmp);
+        -:   63:	}
+        1:   64:	if(crop != NULL) {
+    #####:   65:		free_bmp(crop);
+        -:   66:	}
+        -:   67:      
+        1:   68:	fp = fopen("6x6_24bit.bmp", "r");
+        1:   69:	bmp = read_bmp(fp, &error);
+        1:   70:	crop = crop_bmp(bmp, 11, 1, 3, 3, &error);
+        1:   71:	fclose(fp);
+        1:   72:	fp = fopen("6x6_24bit_crop.bmp", "w");
+        1:   73:	if(crop == NULL || write_bmp(fp, crop, &error) == false) {
+        1:   74:		printf("%s\n", error);
+        -:   75:	}
+        1:   76:	fclose(fp);
+        1:   77:	if(bmp != NULL) {
+        1:   78:		free_bmp(bmp);
+        -:   79:	}
+        1:   80:	if(crop != NULL) {
+    #####:   81:		free_bmp(crop);
+        -:   82:	}
+        -:   83:
+        1:   84:	fp = fopen("6x6_24bit.bmp", "r");
+        1:   85:	bmp = read_bmp(fp, &error);
+        1:   86:	crop = crop_bmp(bmp, 1, 11, 3, 3, &error);
+        1:   87:	fclose(fp);
+        1:   88:	fp = fopen("6x6_24bit_crop.bmp", "w");
+        1:   89:	if(crop == NULL || write_bmp(fp, crop, &error) == false) {
+        1:   90:		printf("%s\n", error);
+        -:   91:	}
+        1:   92:	fclose(fp);
+        1:   93:	if(bmp != NULL) {
+        1:   94:		free_bmp(bmp);
+        -:   95:	}
+        1:   96:	if(crop != NULL) {
+    #####:   97:		free_bmp(crop);
+        -:   98:	}
+        -:   99:
+        1:  100:	fp = fopen("6x6_24bit.bmp", "r");
+        1:  101:	bmp = read_bmp(fp, &error);
+        1:  102:	crop = crop_bmp(bmp, 1, 1, 31, 3, &error);
+        1:  103:	fclose(fp);
+        1:  104:	fp = fopen("6x6_24bit_crop.bmp", "w");
+        1:  105:	if(crop == NULL || write_bmp(fp, crop, &error) == false) {
+        1:  106:		printf("%s\n", error);
+        -:  107:	}
+        1:  108:	fclose(fp);
+        1:  109:	if(bmp != NULL) {
+        1:  110:		free_bmp(bmp);
+        -:  111:	}
+        1:  112:	if(crop != NULL) {
+    #####:  113:		free_bmp(crop);
+        -:  114:	}
+        -:  115:
+        1:  116:	fp = fopen("6x6_24bit.bmp", "r");
+        1:  117:	bmp = read_bmp(fp, &error);
+        1:  118:	crop = crop_bmp(bmp, 1, 1, 1, 31, &error);
+        1:  119:	fclose(fp);
+        1:  120:	fp = fopen("6x6_24bit_crop.bmp", "w");
+        1:  121:	if(crop == NULL || write_bmp(fp, crop, &error) == false) {
+        1:  122:		printf("%s\n", error);
+        1:  123:		free(error);
+        -:  124:	}
+        1:  125:	fclose(fp);
+        1:  126:	if(bmp != NULL) {
+        1:  127:		free_bmp(bmp);
+        -:  128:	}
+        1:  129:	if(crop != NULL) {
+    #####:  130:		free_bmp(crop);
+        -:  131:	}
+        1:  132:	return EXIT_SUCCESS;
+        -:  133:}

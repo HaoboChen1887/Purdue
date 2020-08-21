@@ -1,0 +1,11 @@
+ECE 368 Programming Assignment 4 Report
+Time complexity
+	The reroot algorithm visit every node of the tree for only one time, 
+	Thus the time complexity is O(n).
+
+Space complexity
+	The reroot algorithm was structured as recursion. The number of stack
+	 frames would generally be log(n) for a tree with n nodes. Thus the 
+	space complexity of the algorithm is O(logn). Other than that, the 
+	reroot algorithm doesn't require any other extra space except two 
+	more fields(alt_w, alt_h) is added to the Tnode struct.

@@ -1,0 +1,76 @@
+# //  Questa Sim-64
+# //  Version 10.3b linux_x86_64 May 29 2014
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -Lf /home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Vsim -L /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work -L /home/ecegrid/a/ece337/Class0.5u/GOLD_LIB "+no_glitch_msg" -coverage -novopt -i -t ps mapped_work/.tb_gaussian_blur 
+# Start time: 18:08:10 on Apr 28,2018
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.tb_gaussian_blur
+# Loading sv_std.std
+# Loading mapped_work/.tb_gaussian_blur
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.gaussian_blur
+# Loading mapped_work/.gaussian_blur
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.gaussian_blur_DW_div_uns_0
+# Loading mapped_work/.gaussian_blur_DW_div_uns_0
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.gaussian_blur_DW01_add_0
+# Loading mapped_work/.gaussian_blur_DW01_add_0
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.gaussian_blur_DW01_add_1
+# Loading mapped_work/.gaussian_blur_DW01_add_1
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.gaussian_blur_DW01_add_3
+# Loading mapped_work/.gaussian_blur_DW01_add_3
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.gaussian_blur_DW01_add_8
+# Loading mapped_work/.gaussian_blur_DW01_add_8
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.math_real(body)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.dffsr(metastabilitywrapperarch)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.prim(body)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.dffsr_core(behavioral)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.mux2x1(behavioral)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.invx2(behavioral)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.or2x1(behavioral)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.oai21x1(behavioral)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.nand2x1(behavioral)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.nor2x1(behavioral)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.xnor2x1(behavioral)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.xor2x1(behavioral)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.fax1(behavioral)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.and2x2(behavioral)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.bufx2(behavioral)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.invx1(behavioral)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.aoi22x1(behavioral)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.nand3x1(behavioral)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.aoi21x1(behavioral)
+# ** Warning: (vsim-3015) source/tb_gaussian_blur.sv(29): [PCDPC] - Port size (3) does not match connection size (4) for port 'x_in'. The port definition is at: mapped/gaussian_blur.v(305).
+#         Region: /tb_gaussian_blur/DUT
+# ** Warning: (vsim-3015) source/tb_gaussian_blur.sv(29): [PCDPC] - Port size (3) does not match connection size (4) for port 'y_in'. The port definition is at: mapped/gaussian_blur.v(305).
+#         Region: /tb_gaussian_blur/DUT
+# ** Warning: (vsim-3017) mapped/gaussian_blur.v(429): [TFMPC] - Too few port connections. Expected 5, found 3.
+#         Region: /tb_gaussian_blur/DUT/div_80
+# ** Warning: (vsim-3722) mapped/gaussian_blur.v(429): [TFMPC] - Missing connection for port 'remainder'.
+# ** Warning: (vsim-3722) mapped/gaussian_blur.v(429): [TFMPC] - Missing connection for port 'divide_by_0'.
+# ** Warning: (vsim-3017) mapped/gaussian_blur.v(433): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_gaussian_blur/DUT/add_0_root_add_74
+# ** Warning: (vsim-3722) mapped/gaussian_blur.v(433): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-3017) mapped/gaussian_blur.v(437): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_gaussian_blur/DUT/add_1_root_add_74
+# ** Warning: (vsim-3722) mapped/gaussian_blur.v(437): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-3017) mapped/gaussian_blur.v(441): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_gaussian_blur/DUT/add_3_root_add_74
+# ** Warning: (vsim-3722) mapped/gaussian_blur.v(441): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-3017) mapped/gaussian_blur.v(445): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_gaussian_blur/DUT/add_8_root_add_74
+# ** Warning: (vsim-3722) mapped/gaussian_blur.v(445): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-3839) source/tb_gaussian_blur.sv(56): Variable '/tb_gaussian_blur/tb_gauss_done', driven via a port connection, is multiply driven. See source/tb_gaussian_blur.sv(29).
+#         Region: /tb_gaussian_blur
+# End time: 18:08:26 on Apr 28,2018, Elapsed time: 0:00:16
+# Errors: 0, Warnings: 15

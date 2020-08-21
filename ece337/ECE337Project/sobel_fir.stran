@@ -1,0 +1,67 @@
+# //  Questa Sim-64
+# //  Version 10.3b linux_x86_64 May 29 2014
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -Lf /home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Vsim -L /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work -L /home/ecegrid/a/ece337/Class0.5u/GOLD_LIB "+no_glitch_msg" -coverage -novopt -i -t ps source_work.tb_sobel_fir 
+# Start time: 16:50:56 on Apr 28,2018
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/source_work.tb_sobel_fir
+# Loading sv_std.std
+# Loading source_work.tb_sobel_fir
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/source_work.sobel_fir
+# ** Note: (vlog-143) Recognized 1 FSM in module "sobel_fir(verilog)".
+# Loading source_work.sobel_fir
+# ** Warning: (vsim-3839) source/tb_sobel_fir.sv(55): Variable '/tb_sobel_fir/tb_sobel_done', driven via a port connection, is multiply driven. See source/tb_sobel_fir.sv(30).
+#         Region: /tb_sobel_fir
+add wave -position insertpoint sim:/tb_sobel_fir/DUT/*
+run 100 ns
+# ** Info: Test case 1 passed!
+#    Time: 6500 ps  Scope: tb_sobel_fir File: source/tb_sobel_fir.sv Line: 84
+# ** Info: Test case 2 passed!
+#    Time: 24700 ps  Scope: tb_sobel_fir File: source/tb_sobel_fir.sv Line: 118
+# ** Info: Test case 3 passed!
+#    Time: 40300 ps  Scope: tb_sobel_fir File: source/tb_sobel_fir.sv Line: 150
+# ** Info: Test case 4 passed!
+#    Time: 55900 ps  Scope: tb_sobel_fir File: source/tb_sobel_fir.sv Line: 182
+run 100 ns
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading sv_std.std
+# Loading source_work.tb_sobel_fir
+# Loading source_work.sobel_fir
+# ** Warning: (vsim-3839) source/tb_sobel_fir.sv(55): Variable '/tb_sobel_fir/tb_sobel_done', driven via a port connection, is multiply driven. See source/tb_sobel_fir.sv(30).
+#         Region: /tb_sobel_fir
+run 200 ns
+# ** Info: Test case 1 passed!
+#    Time: 6500 ps  Scope: tb_sobel_fir File: source/tb_sobel_fir.sv Line: 84
+# ** Info: Test case 2 passed!
+#    Time: 24700 ps  Scope: tb_sobel_fir File: source/tb_sobel_fir.sv Line: 118
+# ** Info: Test case 3 passed!
+#    Time: 40300 ps  Scope: tb_sobel_fir File: source/tb_sobel_fir.sv Line: 150
+# ** Info: Test case 4 passed!
+#    Time: 55900 ps  Scope: tb_sobel_fir File: source/tb_sobel_fir.sv Line: 182
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading sv_std.std
+# Loading source_work.tb_sobel_fir
+# Loading source_work.sobel_fir
+# ** Warning: (vsim-3839) source/tb_sobel_fir.sv(55): Variable '/tb_sobel_fir/tb_sobel_done', driven via a port connection, is multiply driven. See source/tb_sobel_fir.sv(30).
+#         Region: /tb_sobel_fir
+run 100 ns
+# ** Info: Test case 1 passed!
+#    Time: 6500 ps  Scope: tb_sobel_fir File: source/tb_sobel_fir.sv Line: 84
+# ** Info: Test case 2 passed!
+#    Time: 24700 ps  Scope: tb_sobel_fir File: source/tb_sobel_fir.sv Line: 118
+# ** Info: Test case 3 passed!
+#    Time: 40300 ps  Scope: tb_sobel_fir File: source/tb_sobel_fir.sv Line: 150
+# ** Info: Test case 4 passed!
+#    Time: 55900 ps  Scope: tb_sobel_fir File: source/tb_sobel_fir.sv Line: 182
+# Causality operation skipped due to absence of debug database file
+# End time: 16:53:22 on Apr 28,2018, Elapsed time: 0:02:26
+# Errors: 0, Warnings: 7

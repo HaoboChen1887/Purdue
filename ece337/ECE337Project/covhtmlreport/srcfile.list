@@ -1,0 +1,3 @@
+source/flex_counter.sv
+source/gauss_addr_calc.sv
+source/tb_gauss_addr_calc.sv

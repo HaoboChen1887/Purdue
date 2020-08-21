@@ -1,0 +1,2 @@
+run: warmup.c
+	gcc -g warmup.c -o warmup && ./warmup > output.txt && vim output.txt

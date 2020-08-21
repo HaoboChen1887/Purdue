@@ -1,0 +1,14 @@
+gcc: test_team.c team.c team.h
+	gcc -g -fprofile-arcs -ftest-coverage test_team.c team.c -o test_team 
+coverage: test_team.c team.c team.h
+	./test_team
+	gcov test_team.c
+	more test_team.c.gcov
+clean: test_team.c team.c team.h
+	rm -f *gcov *gcno *gcda test_team
+test: test_team.c team.c team.h
+	gcc -g test_team.c team.c -o test_team && valgrind --track-origins=yes test_team
+gdb: test_team.c team.c team.h
+	gcc -g test_team.c team.c -o test_team && gdb test_team
+submit: test_team.c team.c team.h
+	264submit hw07 test_team.c team.c team.h warmup.c

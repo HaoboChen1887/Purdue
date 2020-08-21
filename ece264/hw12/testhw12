@@ -1,0 +1,33 @@
+login:
+	ssh chen1887@ecegrid-thin8.ecn.purdue.edu
+warmup: warmup.c
+	gcc -g -std=c99 -Wall -Wshadow --pedantic -Wvla warmup.c -o warmup && ./warmup
+gcc: sorts.h sorts.c test_sorts.c
+	gcc -g -std=c99 -Wall -Wshadow --pedantic -Wvla sorts.c test_sorts.c -o test_sorts
+test: sorts.h sorts.c test_sorts.c
+	gcc -g -std=c99 -Wall -Wshadow --pedantic -Wvla sorts.c test_sorts.c -o test_sorts && ./test_sorts > expected.txt && vim expected.txt
+gdb: sorts.h sorts.c test_sorts.c
+	gcc -g -std=c99 -Wall -Wshadow --pedantic -Wvla sorts.c test_sorts.c -o test_sorts && gdb ./test_sorts
+ddd: sorts.h sorts.c test_sorts.c
+	gcc -g -std=c99 -Wall -Wshadow --pedantic -Wvla sorts.c test_sorts.c -o test_sorts && ddd ./test_sorts
+valgrind: sorts.h sorts.c test_sorts.c
+	gcc -g -std=c99 -Wall -Wshadow --pedantic -Wvla sorts.c test_sorts.c -o test_sorts && valgrind --track-origins=yes --leak-check=full --tool=memcheck ./test_sorts
+coverage: test_sorts.c sorts.c sorts.h
+	gcc -g -std=c99 -Wall -Wshadow --pedantic -Wvla -fprofile-arcs -ftest-coverage test_sorts.c sorts.c -o test_sorts 
+	./test_sorts
+	gcov test_sorts.c
+	more test_sorts.c.gcov
+clean: test_sorts.c sorts.c sorts.h
+	rm -f *gcov *gcno *gcda test_sorts
+submit: sorts.h sorts.c test_sorts.c expected.txt 
+	264submit hw12 sorts.h sorts.c test_sorts.c expected.txt
+copyfrom:
+	scp chen1887@ecegrid-thin8.ecn.purdue.edu:/home/shay/a/chen1887/264/hw12/sorts.c /home/haobo/Desktop/264local/hw12/sorts.c
+	scp chen1887@ecegrid-thin8.ecn.purdue.edu:/home/shay/a/chen1887/264/hw12/test_sorts.c /home/haobo/Desktop/264local/hw12/test_sorts.c
+	scp chen1887@ecegrid-thin8.ecn.purdue.edu:/home/shay/a/chen1887/264/hw12/sorts.h /home/haobo/Desktop/264local/hw12/sorts.h
+	scp chen1887@ecegrid-thin8.ecn.purdue.edu:/home/shay/a/chen1887/264/hw12/testhw12 /home/haobo/Desktop/264local/hw12/testhw12
+copyto:
+	scp /home/haobo/Desktop/264local/hw12/sorts.c chen1887@ecegrid-thin8.ecn.purdue.edu:/home/shay/a/chen1887/264/hw12/sorts.c 
+	scp /home/haobo/Desktop/264local/hw12/test_sorts.c chen1887@ecegrid-thin8.ecn.purdue.edu:/home/shay/a/chen1887/264/hw12/test_sorts.c
+	scp /home/haobo/Desktop/264local/hw12/sorts.h chen1887@ecegrid-thin8.ecn.purdue.edu:/home/shay/a/chen1887/264/hw12/sorts.h 
+	scp /home/haobo/Desktop/264local/hw12/testhw12 chen1887@ecegrid-thin8.ecn.purdue.edu:/home/shay/a/chen1887/264/hw12/testhw12

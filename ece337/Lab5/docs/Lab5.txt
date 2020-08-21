@@ -1,0 +1,14 @@
+What is the minimum amount of time that data_ready must remain asserted to ensure correct operation? What is the minimum amount of time, in clock cycles, that data must remain valid after data_ready is asserted in order to ensure correct operation?
+2 cycles. Because both IDLE and STORE state require the assertion of dr to proceed correcly or it will go to error state.
+
+How are the image files different? Does this make sense given the filter design built in the lab? Why or why not?
+The filtered file only shows the major edges in the original file. This makes sense because the coeffcients passed in to the filter made it a high pass filter.
+
+What is the general syntax for each of the file IO functions used in the provided test bench?
+$fopen(filename, permission_ in_ string)
+$fscanf(file_descriptor, string_format, output_variable)
+$fseek(file_descriptor, offset, pointer_location)
+$fclose(file_descriptor)
+
+What are the different format specifiers available for use in file functions like $fscanf()?
+%d %D %i %o %u %x %f %s %c %[ %p %n

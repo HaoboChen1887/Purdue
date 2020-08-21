@@ -1,0 +1,29 @@
+`include "include/cpu_types_pkg.vh"
+`include "include/register_file_if.vh"
+
+module register_file
+import cpu_types_pkg::*;
+(
+    input logic CLK, nRST,
+    register_file_if.rf myif
+);
+
+    word_t [31:0] val, nxt_val;
+    logic [31:0] EN;
+    assign val[0] = '0;
+    always_ff @ (posedge CLK, negedge nRST) begin
+        if(nRST == 1'b0)begin
+            val[31:1] <= '0;
+        end
+        else begin
+            if(myif.WEN == 1'b1)begin
+                val[EN] <= nxt_val[EN];
+            end
+        end
+    end
+
+    always_comb begin
+        myif.rdat1 = val[myif.rsel1];
+        myif.rdat2 = val[myif.rsel2];
+    end
+endmodule

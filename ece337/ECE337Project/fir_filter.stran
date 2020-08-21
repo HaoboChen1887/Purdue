@@ -1,0 +1,80 @@
+# //  Questa Sim-64
+# //  Version 10.3b linux_x86_64 May 29 2014
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -Lf /home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Vsim -L /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work -L /home/ecegrid/a/ece337/Class0.5u/GOLD_LIB "+no_glitch_msg" -coverage -novopt -i -t ps source_work.tb_fir_filter 
+# Start time: 16:32:00 on Feb 13,2018
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading sv_std.std
+# Loading source_work.tb_fir_filter
+# Loading source_work.fir_filter
+# Loading source_work.sync_low
+# Loading source_work.controller
+# Loading /home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Vsim.datapath
+# Loading /home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Vsim.datapath_decode
+# Loading /home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Vsim.alu
+# Loading /home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Vsim.register_file
+# Refreshing /home/ecegrid/a/mg123/ece337/Lab5/source_work.counter
+# Loading source_work.counter
+# Loading source_work.flex_counter
+# Loading source_work.magnitude
+# Loading /home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Vsim.flex_sreg
+run 10000 ns
+# ** Info: Test Case #1 Sample #1: Had a correct fir_out value
+#    Time: 465 ns  Scope: tb_fir_filter.test_sample File: source/tb_fir_filter.sv Line: 189
+# ** Info: Test Case #1 Sample #1: Had a correct err value
+#    Time: 465 ns  Scope: tb_fir_filter.test_sample File: source/tb_fir_filter.sv Line: 199
+# ** Info: Test Case #1 Sample #1: Had a correct one_k_samples value
+#    Time: 465 ns  Scope: tb_fir_filter.test_sample File: source/tb_fir_filter.sv Line: 209
+# ** Info: Test Case #1 Sample #2: Had a correct fir_out value
+#    Time: 665 ns  Scope: tb_fir_filter.test_sample File: source/tb_fir_filter.sv Line: 189
+# ** Info: Test Case #1 Sample #2: Had a correct err value
+#    Time: 665 ns  Scope: tb_fir_filter.test_sample File: source/tb_fir_filter.sv Line: 199
+# ** Info: Test Case #1 Sample #2: Had a correct one_k_samples value
+#    Time: 665 ns  Scope: tb_fir_filter.test_sample File: source/tb_fir_filter.sv Line: 209
+# ** Info: Test Case #1 Sample #3: Had a correct fir_out value
+#    Time: 865 ns  Scope: tb_fir_filter.test_sample File: source/tb_fir_filter.sv Line: 189
+# ** Info: Test Case #1 Sample #3: Had a correct err value
+#    Time: 865 ns  Scope: tb_fir_filter.test_sample File: source/tb_fir_filter.sv Line: 199
+# ** Info: Test Case #1 Sample #3: Had a correct one_k_samples value
+#    Time: 865 ns  Scope: tb_fir_filter.test_sample File: source/tb_fir_filter.sv Line: 209
+# ** Info: Test Case #1 Sample #4: Had a correct fir_out value
+#    Time: 1065 ns  Scope: tb_fir_filter.test_sample File: source/tb_fir_filter.sv Line: 189
+# ** Info: Test Case #1 Sample #4: Had a correct err value
+#    Time: 1065 ns  Scope: tb_fir_filter.test_sample File: source/tb_fir_filter.sv Line: 199
+# ** Info: Test Case #1 Sample #4: Had a correct one_k_samples value
+#    Time: 1065 ns  Scope: tb_fir_filter.test_sample File: source/tb_fir_filter.sv Line: 209
+# ** Info: Test Case #2 Sample #1: Had a correct fir_out value
+#    Time: 1495 ns  Scope: tb_fir_filter.test_sample File: source/tb_fir_filter.sv Line: 189
+# ** Info: Test Case #2 Sample #1: Had a correct err value
+#    Time: 1495 ns  Scope: tb_fir_filter.test_sample File: source/tb_fir_filter.sv Line: 199
+# ** Info: Test Case #2 Sample #1: Had a correct one_k_samples value
+#    Time: 1495 ns  Scope: tb_fir_filter.test_sample File: source/tb_fir_filter.sv Line: 209
+# ** Info: Test Case #2 Sample #2: Had a correct fir_out value
+#    Time: 1695 ns  Scope: tb_fir_filter.test_sample File: source/tb_fir_filter.sv Line: 189
+# ** Info: Test Case #2 Sample #2: Had a correct err value
+#    Time: 1695 ns  Scope: tb_fir_filter.test_sample File: source/tb_fir_filter.sv Line: 199
+# ** Info: Test Case #2 Sample #2: Had a correct one_k_samples value
+#    Time: 1695 ns  Scope: tb_fir_filter.test_sample File: source/tb_fir_filter.sv Line: 209
+# ** Info: Test Case #2 Sample #3: Had a correct fir_out value
+#    Time: 1895 ns  Scope: tb_fir_filter.test_sample File: source/tb_fir_filter.sv Line: 189
+# ** Info: Test Case #2 Sample #3: Had a correct err value
+#    Time: 1895 ns  Scope: tb_fir_filter.test_sample File: source/tb_fir_filter.sv Line: 199
+# ** Info: Test Case #2 Sample #3: Had a correct one_k_samples value
+#    Time: 1895 ns  Scope: tb_fir_filter.test_sample File: source/tb_fir_filter.sv Line: 209
+# ** Info: Test Case #2 Sample #4: Had a correct fir_out value
+#    Time: 2095 ns  Scope: tb_fir_filter.test_sample File: source/tb_fir_filter.sv Line: 189
+# ** Info: Test Case #2 Sample #4: Had a correct err value
+#    Time: 2095 ns  Scope: tb_fir_filter.test_sample File: source/tb_fir_filter.sv Line: 199
+# ** Info: Test Case #2 Sample #4: Had a correct one_k_samples value
+#    Time: 2095 ns  Scope: tb_fir_filter.test_sample File: source/tb_fir_filter.sv Line: 209
+coverage report -html -htmldir covhtmlreport -threshL 50 -threshH 90
+# Report created in covhtmlreport/index.html
+# End time: 16:32:32 on Feb 13,2018, Elapsed time: 0:00:32
+# Errors: 0, Warnings: 1

@@ -1,0 +1,17 @@
+/* vim: set tabstop=4 shiftwidth=4 fileencoding=utf-8 noexpandtab: */
+#include <stdio.h>
+#include <stdlib.h>
+#include "team.h"
+
+int main(int argc, char * argv[]) {
+	char * names[] = {"AA", "BB", "CC", "DD", "EE"};
+	int favorites[] = {1, 1, 2, 2};
+	struct Team team = create_team(4, names, favorites);
+	struct Person * leader = pick_leader(&team);
+	printf("There are %d people on the team. \n", team.pop);
+	printf("%s's favorite is %s. \n", team.people[0].name, team.people[0].favorite -> name);
+	printf("The leader shall be %s. \n", leader -> name);
+	free_team(&team);
+
+	return EXIT_SUCCESS;
+}

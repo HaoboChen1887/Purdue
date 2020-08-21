@@ -1,0 +1,51 @@
+ECE264
+- leader:  AA
+- members: AA (favorite: AA)
+           BB (favorite: AA)
+           CC (favorite: CC)
+           DD (favorite: CC)
+           EE (favorite: AA)
+           FF (favorite: CC)
+           GG (favorite: AA)
+           HH (favorite: CC)
+           II (favorite: AA)
+           JJ (favorite: AA)
+AA's favorite is 
+JJ
+II
+AA
+DD
+CC
+ECE264
+- leader:  AA
+- members: AA (favorite: JJ)
+           BB (favorite: AA)
+           CC (favorite: CC)
+           DD (favorite: CC)
+           EE (favorite: AA)
+           FF (favorite: CC)
+           GG (favorite: AA)
+           HH (favorite: CC)
+           II (favorite: AA)
+           JJ (favorite: AA)
+copy team
+ECE264
+- leader:  AA
+- members: AA (favorite: JJ)
+           BB (favorite: AA)
+           CC (favorite: CC)
+           DD (favorite: CC)
+           EE (favorite: AA)
+           FF (favorite: CC)
+           GG (favorite: AA)
+           HH (favorite: CC)
+           II (favorite: AA)
+           JJ (favorite: AA)
+Empty team
+ECE264
+- leaders: (none)
+- members: (none)
+ECE264
+- leader:  AA
+- members: AA (favorite: (none))
+           BB (favorite: AA)

@@ -1,0 +1,76 @@
+// $Id: $
+// File name:   mag_mcu.sv
+// Created:     4/25/2018
+// Author:      Haoming Zhang
+// Lab Section: 337-05
+// Version:     1.0  Initial Design Entry
+// Description: .
+
+module mag_mcu
+(
+	input clk,
+	input n_rst,
+	input mag_en,
+	input mag_done,
+	input grad_done,
+	output reg grad_en
+);
+	typedef enum bit [1:0] {MAG, GRAD} stateType;
+	stateType state, next_state;
+	//reg mag_done;
+	//reg grad_en;
+	//reg next_mag_done;
+	reg next_grad_en;
+	//reg next_grad_done;
+	
+	always_ff @ (posedge clk, negedge n_rst)
+	begin
+		if(n_rst == 0)begin
+			//mag_done <= 1'b0;
+			grad_en <= 1'b0;
+			//grad_done <= 1'b0;
+			state <= MAG;
+		end
+		else begin
+			//mag_done <= next_mag_done;
+			grad_en <= next_grad_en;
+			//grad_done <= next_grad_done;
+			state <= next_state;
+		end
+	end
+	
+	always_comb
+	begin
+		//next_mag_done = mag_done;
+		next_grad_en = grad_en;
+		//next_grad_done = grad_done;
+		next_state = state;
+		case(state)
+			MAG:
+			begin
+				if (mag_en == 1) begin
+					//next_grad_done = 1'b0;
+					if (mag_done == 1) begin
+						next_grad_en = 1;
+						//next_mag_en = 1'b0;
+						next_state = GRAD;
+					end
+				end
+			end
+		
+			GRAD:
+			begin
+				if (grad_en == 1) begin
+					//next_mag_done = 1'b0;
+					if (grad_done == 1) begin
+						next_grad_en = 1'b0;
+						next_state = MAG;
+					end
+				end
+			end
+
+		endcase
+	end
+endmodule
+	
+		

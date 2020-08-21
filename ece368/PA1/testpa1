@@ -1,0 +1,36 @@
+gcc: sorting.h sorting.c sorting_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O0 sorting.c sorting_main.c -o proj1
+gdb: sorting.h sorting.c sorting_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O0 sorting.c sorting_main.c -o proj1 && gdb proj1
+ddd: sorting.h sorting.c sorting_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O0 sorting.c sorting_main.c -o proj1 && ddd proj1
+valgrind: sorting.h sorting.c sorting_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O0 sorting.c sorting_main.c -o proj1 && valgrind ./proj1 i 15.b t_seq.t tests.b
+valgrinds: sorting.h sorting.c sorting_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O0 sorting.c sorting_main.c -o proj1 && valgrind ./proj1 s 15.b t_seq.t tests.b
+
+testi: sorting.h sorting.c sorting_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O0 sorting.c sorting_main.c -o proj1 && ./proj1 i 10000.b 10000_seq.t 10000si.b 
+tests: sorting.h sorting.c sorting_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O0 sorting.c sorting_main.c -o proj1 && ./proj1 s 10000.b 10000_seq.t 10000ss.b
+
+test15i: sorting.h sorting.c sorting_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O0 sorting.c sorting_main.c -o proj1 && ./proj1 i 15.b 15_seq.t 15si.b >> insertion15.txt
+test15s: sorting.h sorting.c sorting_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O0 sorting.c sorting_main.c -o proj1 && ./proj1 s 15.b 15_seq.t 15ss.b >> selection15.txt
+test1000i: sorting.h sorting.c sorting_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O0 sorting.c sorting_main.c -o proj1 && ./proj1 i 1000.b 1000_seq.t 1000si.b >> insertion1000.txt
+test1000s: sorting.h sorting.c sorting_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O0 sorting.c sorting_main.c -o proj1 && ./proj1 s 1000.b 1000_seq.t 1000ss.b >> selection1000.txt
+test10000i: sorting.h sorting.c sorting_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O0 sorting.c sorting_main.c -o proj1 && ./proj1 i 10000.b 10000_seq.t 10000si.b >> insertion10000.txt
+test10000s: sorting.h sorting.c sorting_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O0 sorting.c sorting_main.c -o proj1 && ./proj1 s 10000.b 10000_seq.t 10000ss.b >> selection10000.txt
+test100000i: sorting.h sorting.c sorting_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O0 sorting.c sorting_main.c -o proj1 && ./proj1 i 100000.b 100000_seq.t 100000si.b >> insertion100000.txt
+test100000s: sorting.h sorting.c sorting_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O0 sorting.c sorting_main.c -o proj1 && ./proj1 s 100000.b 100000_seq.t 100000ss.b >> selection100000.txt
+test1000000i: sorting.h sorting.c sorting_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O0 sorting.c sorting_main.c -o proj1 && ./proj1 i 1000000.b 1000000_seq.t 1000000si.b >> insertion1000000.txt
+test1000000s: sorting.h sorting.c sorting_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O0 sorting.c sorting_main.c -o proj1 && ./proj1 s 1000000.b 1000000_seq.t 1000000ss.b >> selection1000000.txt

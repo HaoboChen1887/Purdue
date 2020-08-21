@@ -1,0 +1,144 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/Dog.cpp
+iostream
+-
+Duck.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/Duck.h
+NoQuack.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/NoQuack.h
+Dog.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/Dog.h
+
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/Dog.h
+Duck.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/Duck.h
+
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/DogToy.cpp
+iostream
+-
+DogToy.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/DogToy.h
+
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/DogToy.h
+Duck.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/Duck.h
+Squeak.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/Squeak.h
+NoFly.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/NoFly.h
+
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/Duck.cpp
+iostream
+-
+string
+-
+Duck.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/Duck.h
+
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/Duck.h
+string
+-
+FlyBehavior.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/FlyBehavior.h
+Quack.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/Quack.h
+
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/DuckSim.cpp
+iostream
+-
+Duck.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/Duck.h
+Mallard.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/Mallard.h
+RedHead.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/RedHead.h
+DogToy.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/DogToy.h
+Rubber.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/Rubber.h
+Dog.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/Dog.h
+
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/FlyBehavior.h
+string
+-
+
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/FlyWithWings.h
+FlyBehavior.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/FlyBehavior.h
+
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/Mallard.cpp
+iostream
+-
+Mallard.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/Mallard.h
+
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/Mallard.h
+Duck.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/Duck.h
+FlyWithWings.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/FlyWithWings.h
+QuackQuack.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/QuackQuack.h
+
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/NoFly.h
+FlyBehavior.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/FlyBehavior.h
+
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/NoQuack.h
+string
+-
+Quack.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/Quack.h
+
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/Quack.h
+string
+-
+
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/QuackQuack.h
+string
+-
+Quack.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/Quack.h
+
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/RedHead.cpp
+iostream
+-
+RedHead.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/RedHead.h
+
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/RedHead.h
+Duck.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/Duck.h
+FlyWithWings.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/FlyWithWings.h
+QuackQuack.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/QuackQuack.h
+
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/Rubber.cpp
+iostream
+-
+Rubber.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/Rubber.h
+
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/Rubber.h
+Duck.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/Duck.h
+NoFly.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/NoFly.h
+QuackQuack.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/QuackQuack.h
+
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/Squeak.h
+string
+-
+Quack.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW3/HW3b/Quack.h
+

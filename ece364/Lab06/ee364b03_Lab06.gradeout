@@ -1,0 +1,18 @@
+/home/ecegridfs/a/ee364ta/grading/Lab06/ee364b03
+
+-------------------------------------------------------------------------------
+FUNCTION           | DESCRIPTION         | COMMENTS                 | POINTS  
+-------------------------------------------------------------------------------
+captureNumbers       test combination 1    Passed                     2.5/2.5 
+captureNumbers       test combination 2    Passed                     2.5/2.5 
+captureNumbers       test floats           Passed                     2.5/2.5 
+captureNumbers       test scientific       Passed                     2.5/2.5 
+isSplitUsed                                Passed                     0/0     
+regEx_getSwitches    Group 1               Passed                     2/2     
+regEx_getSwitches    Group 2               Passed                     2/2     
+regEx_getSwitches    Group 3               FAILED                     0/2     
+regEx_getSwitches    Group 4               Passed                     2/2     
+regEx_getSwitches    Group 5               Passed                     2/2     
+-------------------------------------------------------------------------------
+
+Total Score = 18.0

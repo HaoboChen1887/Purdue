@@ -1,0 +1,32 @@
+/home/ecegridfs/a/ee364ta/grading/Prelab08/ee364b03
+
+------------------------------------------------------------------------------
+FUNCTION      | DESCRIPTION             | COMMENTS                 | POINTS  
+------------------------------------------------------------------------------
+checkNetwork    ConnectionError Test      Passed                     2.5/2.5 
+checkNetwork    No Exception Test         Passed                     2.5/2.5 
+checkNetwork    OSError Exception Test    Passed                     2.5/2.5 
+checkNetwork    Other Exception Test      Passed                     2.5/2.5 
+isBounded       No data                   Passed                     2/2     
+isBounded       Range 1                   Passed                     4/4     
+isBounded       Range 2                   Passed                     3/3     
+isBounded       Range 3                   Passed                     3/3     
+isBounded       Range 4                   Passed                     3/3     
+isOK            342-ACX                   Passed                     1/1     
+isOK            ABC-1234                  FAILED                     0/1     
+isOK            ACVB5432                  Passed                     1/1     
+isOK            ASX-202                   Passed                     2/2     
+loadDataFrom    Bad Signal 1              Error running function     0/2     
+loadDataFrom    Bad Signal 2              Passed                     2/2     
+loadDataFrom    Missing Signal            Passed                     2/2     
+loadDataFrom    Signal Count 1            Passed                     2/2     
+loadDataFrom    Signal Count 2            Passed                     2/2     
+loadDataFrom    Signal Values 1           Passed                     3/3     
+loadDataFrom    Signal Values 2           Passed                     2/2     
+loadMultiple    Whole Dictionary          Passed                     20/20   
+saveData        Files Count               FAILED                     0/5     
+saveData        Signal 1                  Passed                     5/5     
+saveData        Signal 2                  Passed                     5/5     
+------------------------------------------------------------------------------
+
+Total Score = 72.0

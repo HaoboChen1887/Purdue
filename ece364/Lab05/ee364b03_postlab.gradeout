@@ -1,0 +1,85 @@
+part_a (a pts)
+------------------------
+Passed.
+------------------------
+Total for part_a: 5/5
+
+------------------------
+part_b (5 pts)
+------------------------
+Passed
+------------------------
+Total for part_b: 5/5
+
+------------------------
+part_c (5 pts)
+------------------------
+Failed
+Your output: 
+Mark C. Johnson
+Alex Gheith
+V. K. Chaithanya Manam
+Bilal Siddiqui
+Reshef Elisha
+Andrew Chen
+Andrew Chen
+Rehana Mahfuz
+Christopher Potter
+Aakash Gupts
+Apoorv Sharma
+Aakash Gupts
+Zhen Luan
+Alex Gheith
+
+Expected output: 
+Alex Gheith
+Andrew Chen
+Aakash Gupts
+
+------------------------
+Total for part_c: 0/5
+
+------------------------
+part_d (5 pts)
+------------------------
+Error
+------------------------
+Total for part_d: 0/5
+
+------------------------
+part_e (5 pts)
+------------------------
+Error
+------------------------
+Total for part_e: 0/5
+
+------------------------
+part_f (5 pts)
+------------------------
+Error
+------------------------
+Total for part_f: 0/5
+
+------------------------
+part_g (5 pts)
+------------------------
+Error
+------------------------
+Total for part_g: 0/5
+
+------------------------
+part_h (5 pts)
+------------------------
+Error
+------------------------
+Total for part_h: 0/5
+
+------------------------
+part_i (10 pts)
+------------------------
+Error
+------------------------
+Total for part_i: 0/10
+
+------------------------
+Final Score: 10/50

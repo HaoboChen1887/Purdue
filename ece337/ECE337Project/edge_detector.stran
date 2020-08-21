@@ -1,0 +1,56 @@
+# //  Questa Sim-64
+# //  Version 10.3b linux_x86_64 May 29 2014
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -Lf /home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Vsim -L /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work -L /home/ecegrid/a/ece337/Class0.5u/GOLD_LIB "+no_glitch_msg" -coverage -novopt -i -t ps source_work.tb_edge_detector 
+# Start time: 20:51:41 on May 01,2018
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/source_work.tb_edge_detector
+# ** Note: (vlog-143) Recognized 1 FSM in module "tb_edge_detector(verilog)".
+# Loading sv_std.std
+# Loading source_work.tb_edge_detector
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/source_work.edge_detector
+# Loading source_work.edge_detector
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/source_work.MCU
+# ** Note: (vlog-143) Recognized 1 FSM in module "MCU(verilog)".
+# Loading source_work.MCU
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/source_work.addr_calc
+# ** Note: (vlog-143) Recognized 1 FSM in module "addr_calc(verilog)".
+# Loading source_work.addr_calc
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/source_work.win_buf
+# ** Note: (vlog-143) Recognized 1 FSM in module "win_buf(verilog)".
+# Loading source_work.win_buf
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/source_work.gauss_addr_calc
+# Loading source_work.gauss_addr_calc
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/source_work.flex_counter
+# Loading source_work.flex_counter
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/source_work.gaussian_blur
+# ** Note: (vlog-143) Recognized 1 FSM in module "gaussian_blur(verilog)".
+# Loading source_work.gaussian_blur
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/source_work.gauss_buffer
+# ** Note: (vlog-143) Recognized 1 FSM in module "gauss_buffer(verilog)".
+# Loading source_work.gauss_buffer
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/source_work.sobel_fir
+# ** Note: (vlog-143) Recognized 1 FSM in module "sobel_fir(verilog)".
+# Loading source_work.sobel_fir
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/source_work.magnitude
+# ** Note: (vlog-143) Recognized 1 FSM in module "magnitude(verilog)".
+# Loading source_work.magnitude
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/source_work.gradient
+# ** Note: (vlog-143) Recognized 1 FSM in module "gradient(verilog)".
+# Loading source_work.gradient
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/source_work.output_addr
+# ** Note: (vlog-143) Recognized 1 FSM in module "output_addr(verilog)".
+# Loading source_work.output_addr
+run 100 ns
+add wave -position insertpoint sim:/tb_edge_detector/EDGE/*
+# Break key hit
+# Break in Module tb_edge_detector at source/tb_edge_detector.sv line 71
+# End time: 20:52:04 on May 01,2018, Elapsed time: 0:00:23
+# Errors: 0, Warnings: 1

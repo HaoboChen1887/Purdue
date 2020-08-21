@@ -1,0 +1,31 @@
+Breakpoint 1 at 0x400575: file test_calc.c, line 5.
+Starting program: /home/shay/a/chen1887/264/hw05/hw05 
+
+Breakpoint 1, main (argc=1, argv=0x7fffffffe3a8) at test_calc.c:5
+5		int result = calculate("1", '+', "1");
+#0  main (argc=1, argv=0x7fffffffe3a8) at test_calc.c:5
+5		int result = calculate("1", '+', "1");
+1	#include <stdio.h>
+2	#include "calc.h"
+3	
+4	int main(int argc, char *argv[]) {
+5		int result = calculate("1", '+', "1");
+6		printf("1 + 1 = %d\n", result);
+7	
+8		result = calculate("0xa", '+', "3");
+9		printf("0xa + 3 = %d\n", result);
+10	
+main (argc=1, argv=0x7fffffffe3a8) at test_calc.c:8
+8		result = calculate("0xa", '+', "3");
+
+Program received signal SIGSEGV, Segmentation fault.
+0x000000000040087b in _find_base (start=0x7fffffffe240, base=0x7fffffffe238) at calc.c:59
+59		if(*start[0] == '0' && *start[1] == 'x') {
+$1 = (const char **) 0x7fffffffe240
+0x7fffffffe240:	0xec	0x09	0x40	0x00	0x00	0x00	0x00	0x00
+0x7fffffffe240:	0xec
+$2 = 0x4009ec "0xa"
+$3 = 48 '0'
+Cannot access memory at address 0x300000001
+$4 = 120 'x'
+Cannot access memory at address 0x300000001

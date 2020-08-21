@@ -1,0 +1,8 @@
+#! /bin/bash
+num_in=$@
+for (( ct=$num_in; ct >= 0; ct--)) 
+do
+    echo -n "${ct}"
+    echo 
+done
+exit 0

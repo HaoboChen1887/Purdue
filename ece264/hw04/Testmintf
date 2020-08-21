@@ -1,0 +1,4 @@
+mintf: mintf.c test_mintf.c
+	gcc mintf.c test_mintf.c -o hw04 && ./hw04 > test_mintf.actual.txt && cp test_mintf.actual.txt test_mintf.txt && vim test_mintf.actual.txt
+submit: mintf.c test_mintf.c test_mintf.txt
+	264submit hw04 mintf.c test_mintf.c test_mintf.txt

@@ -1,0 +1,17 @@
+Course      Hr
+--------------
+MET136      4
+MET139      2
+MET153      2
+MET209      4
+MET225      2
+MET226      4
+MET290      4
+MET300      1
+MET318      1
+MET321      4
+MET344      3
+MET377      1
+MET388      3
+MET451      4
+MET475      4

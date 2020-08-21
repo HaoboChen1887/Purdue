@@ -1,0 +1,78 @@
+// $Id: $
+// File name:   fir_filter.sv
+// Created:     2/13/2018
+// Author:      Haoming Zhang
+// Lab Section: 337-05
+// Version:     1.0  Initial Design Entry
+// Description: .
+
+module fir_filter
+(
+	input clk,
+	input n_reset,
+	input data_ready,
+	input [15:0] sample_data,
+	input load_coeff,
+	input [15:0] fir_coefficient,
+	output modwait,
+	output [15:0] fir_out,
+	output err,
+	outpur one_k_samples,
+);
+
+	wire dr, lc, cnt_up, clear, overflow;
+	wire [16:0] outreg_data;
+	wire [2:0] op;
+	wire [3:0] src1, src2, dest;
+
+	sync_low SYNC_DR
+	(
+		.clk(clk),
+		.n_rst(n_reset),
+		.async_in(data_ready),
+		.sync_out(dr)
+	);
+
+	sync_low SYNC_LC
+	(
+		.clk(clk),
+		.n_rst(n_reset),
+		.async_in(load_coeff),
+		.sync_out(lc)
+	);	
+
+	controller CONTROL
+	(
+		.clk(clk),
+		.n_rst(n_reset),
+		.dr(dr),
+		.lc(lc),
+		.overflow(overflow),
+		.cnt_up(cnt_up),
+		.clear(clear),
+		.modwait(modwait),
+		.op(op),
+		.src1(src1),		
+		.src2(src2),
+		.dest(dest),
+		.err(err),
+	);
+
+	datapath DATAPA
+	(
+		.clk(clk),
+		.n_rst(n_reset),
+		.op(op),
+		.src1(src1),		
+		.src2(src2),
+		.dest(dest),
+
+
+
+
+
+
+
+
+
+

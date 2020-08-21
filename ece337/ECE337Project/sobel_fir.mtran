@@ -1,0 +1,266 @@
+# //  Questa Sim-64
+# //  Version 10.3b linux_x86_64 May 29 2014
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -Lf /home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Vsim -L /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work -L /home/ecegrid/a/ece337/Class0.5u/GOLD_LIB "+no_glitch_msg" -coverage -novopt -i -t ps mapped_work/.tb_sobel_fir 
+# Start time: 18:10:11 on Apr 28,2018
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.tb_sobel_fir
+# Loading sv_std.std
+# Loading mapped_work/.tb_sobel_fir
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.sobel_fir
+# Loading mapped_work/.sobel_fir
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.sobel_fir_DW01_sub_0
+# Loading mapped_work/.sobel_fir_DW01_sub_0
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.sobel_fir_DW01_sub_1
+# Loading mapped_work/.sobel_fir_DW01_sub_1
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.sobel_fir_DW01_sub_2
+# Loading mapped_work/.sobel_fir_DW01_sub_2
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.sobel_fir_DW01_sub_3
+# Loading mapped_work/.sobel_fir_DW01_sub_3
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.sobel_fir_DW01_sub_4
+# Loading mapped_work/.sobel_fir_DW01_sub_4
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.sobel_fir_DW01_sub_5
+# Loading mapped_work/.sobel_fir_DW01_sub_5
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.sobel_fir_DW01_sub_6
+# Loading mapped_work/.sobel_fir_DW01_sub_6
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.sobel_fir_DW01_sub_7
+# Loading mapped_work/.sobel_fir_DW01_sub_7
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.sobel_fir_DW01_sub_8
+# Loading mapped_work/.sobel_fir_DW01_sub_8
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.sobel_fir_DW01_sub_9
+# Loading mapped_work/.sobel_fir_DW01_sub_9
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.sobel_fir_DW01_sub_10
+# Loading mapped_work/.sobel_fir_DW01_sub_10
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.sobel_fir_DW01_sub_11
+# Loading mapped_work/.sobel_fir_DW01_sub_11
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.sobel_fir_DW01_sub_12
+# Loading mapped_work/.sobel_fir_DW01_sub_12
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.sobel_fir_DW01_sub_13
+# Loading mapped_work/.sobel_fir_DW01_sub_13
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.sobel_fir_DW01_sub_14
+# Loading mapped_work/.sobel_fir_DW01_sub_14
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.sobel_fir_DW01_sub_15
+# Loading mapped_work/.sobel_fir_DW01_sub_15
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.sobel_fir_DW01_sub_16
+# Loading mapped_work/.sobel_fir_DW01_sub_16
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.sobel_fir_DW01_sub_17
+# Loading mapped_work/.sobel_fir_DW01_sub_17
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.sobel_fir_DW01_sub_18
+# Loading mapped_work/.sobel_fir_DW01_sub_18
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.sobel_fir_DW01_sub_19
+# Loading mapped_work/.sobel_fir_DW01_sub_19
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.sobel_fir_DW01_sub_20
+# Loading mapped_work/.sobel_fir_DW01_sub_20
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.sobel_fir_DW01_sub_21
+# Loading mapped_work/.sobel_fir_DW01_sub_21
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.sobel_fir_DW01_sub_22
+# Loading mapped_work/.sobel_fir_DW01_sub_22
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.sobel_fir_DW01_sub_23
+# Loading mapped_work/.sobel_fir_DW01_sub_23
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.sobel_fir_DW01_sub_24
+# Loading mapped_work/.sobel_fir_DW01_sub_24
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.sobel_fir_DW01_sub_25
+# Loading mapped_work/.sobel_fir_DW01_sub_25
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.sobel_fir_DW01_sub_26
+# Loading mapped_work/.sobel_fir_DW01_sub_26
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.sobel_fir_DW01_sub_27
+# Loading mapped_work/.sobel_fir_DW01_sub_27
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.sobel_fir_DW01_sub_28
+# Loading mapped_work/.sobel_fir_DW01_sub_28
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.sobel_fir_DW01_sub_29
+# Loading mapped_work/.sobel_fir_DW01_sub_29
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.sobel_fir_DW01_sub_30
+# Loading mapped_work/.sobel_fir_DW01_sub_30
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.sobel_fir_DW01_sub_31
+# Loading mapped_work/.sobel_fir_DW01_sub_31
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.math_real(body)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.dffsr(metastabilitywrapperarch)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.prim(body)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.dffsr_core(behavioral)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.fax1(behavioral)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.or2x1(behavioral)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.xnor2x1(behavioral)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.invx2(behavioral)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.bufx2(behavioral)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.invx1(behavioral)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.mux2x1(behavioral)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.nand2x1(behavioral)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.oai21x1(behavioral)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.and2x1(behavioral)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.nor2x1(behavioral)
+# ** Warning: (vsim-3017) mapped/sobel_fir.v(2079): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_sobel_fir/DUT/sub_91
+# ** Warning: (vsim-3722) mapped/sobel_fir.v(2079): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/sobel_fir.v(17): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_sobel_fir/DUT/sub_91/U2_8
+# ** Warning: (vsim-3017) mapped/sobel_fir.v(2087): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_sobel_fir/DUT/sub_90
+# ** Warning: (vsim-3722) mapped/sobel_fir.v(2087): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/sobel_fir.v(48): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_sobel_fir/DUT/sub_90/U2_8
+# ** Warning: (vsim-3017) mapped/sobel_fir.v(2095): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_sobel_fir/DUT/sub_89
+# ** Warning: (vsim-3722) mapped/sobel_fir.v(2095): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/sobel_fir.v(79): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_sobel_fir/DUT/sub_89/U2_8
+# ** Warning: (vsim-3017) mapped/sobel_fir.v(2103): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_sobel_fir/DUT/sub_88
+# ** Warning: (vsim-3722) mapped/sobel_fir.v(2103): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/sobel_fir.v(110): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_sobel_fir/DUT/sub_88/U2_8
+# ** Warning: (vsim-3017) mapped/sobel_fir.v(2111): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_sobel_fir/DUT/sub_87
+# ** Warning: (vsim-3722) mapped/sobel_fir.v(2111): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/sobel_fir.v(141): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_sobel_fir/DUT/sub_87/U2_8
+# ** Warning: (vsim-3017) mapped/sobel_fir.v(2119): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_sobel_fir/DUT/sub_86
+# ** Warning: (vsim-3722) mapped/sobel_fir.v(2119): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/sobel_fir.v(172): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_sobel_fir/DUT/sub_86/U2_8
+# ** Warning: (vsim-3017) mapped/sobel_fir.v(2127): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_sobel_fir/DUT/sub_85
+# ** Warning: (vsim-3722) mapped/sobel_fir.v(2127): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/sobel_fir.v(203): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_sobel_fir/DUT/sub_85/U2_8
+# ** Warning: (vsim-3017) mapped/sobel_fir.v(2135): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_sobel_fir/DUT/sub_84
+# ** Warning: (vsim-3722) mapped/sobel_fir.v(2135): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/sobel_fir.v(234): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_sobel_fir/DUT/sub_84/U2_8
+# ** Warning: (vsim-3017) mapped/sobel_fir.v(2143): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_sobel_fir/DUT/sub_83
+# ** Warning: (vsim-3722) mapped/sobel_fir.v(2143): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/sobel_fir.v(265): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_sobel_fir/DUT/sub_83/U2_8
+# ** Warning: (vsim-3017) mapped/sobel_fir.v(2151): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_sobel_fir/DUT/sub_82
+# ** Warning: (vsim-3722) mapped/sobel_fir.v(2151): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/sobel_fir.v(296): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_sobel_fir/DUT/sub_82/U2_8
+# ** Warning: (vsim-3017) mapped/sobel_fir.v(2159): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_sobel_fir/DUT/sub_81
+# ** Warning: (vsim-3722) mapped/sobel_fir.v(2159): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/sobel_fir.v(327): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_sobel_fir/DUT/sub_81/U2_8
+# ** Warning: (vsim-3017) mapped/sobel_fir.v(2167): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_sobel_fir/DUT/sub_80
+# ** Warning: (vsim-3722) mapped/sobel_fir.v(2167): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/sobel_fir.v(358): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_sobel_fir/DUT/sub_80/U2_8
+# ** Warning: (vsim-3017) mapped/sobel_fir.v(2175): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_sobel_fir/DUT/sub_79
+# ** Warning: (vsim-3722) mapped/sobel_fir.v(2175): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/sobel_fir.v(389): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_sobel_fir/DUT/sub_79/U2_8
+# ** Warning: (vsim-3017) mapped/sobel_fir.v(2183): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_sobel_fir/DUT/sub_78
+# ** Warning: (vsim-3722) mapped/sobel_fir.v(2183): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/sobel_fir.v(420): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_sobel_fir/DUT/sub_78/U2_8
+# ** Warning: (vsim-3017) mapped/sobel_fir.v(2191): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_sobel_fir/DUT/sub_77
+# ** Warning: (vsim-3722) mapped/sobel_fir.v(2191): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/sobel_fir.v(451): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_sobel_fir/DUT/sub_77/U2_8
+# ** Warning: (vsim-3017) mapped/sobel_fir.v(2199): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_sobel_fir/DUT/sub_76
+# ** Warning: (vsim-3722) mapped/sobel_fir.v(2199): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/sobel_fir.v(482): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_sobel_fir/DUT/sub_76/U2_8
+# ** Warning: (vsim-3017) mapped/sobel_fir.v(2207): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_sobel_fir/DUT/sub_74
+# ** Warning: (vsim-3722) mapped/sobel_fir.v(2207): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/sobel_fir.v(513): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_sobel_fir/DUT/sub_74/U2_8
+# ** Warning: (vsim-3017) mapped/sobel_fir.v(2215): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_sobel_fir/DUT/sub_73
+# ** Warning: (vsim-3722) mapped/sobel_fir.v(2215): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/sobel_fir.v(544): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_sobel_fir/DUT/sub_73/U2_8
+# ** Warning: (vsim-3017) mapped/sobel_fir.v(2223): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_sobel_fir/DUT/sub_72
+# ** Warning: (vsim-3722) mapped/sobel_fir.v(2223): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/sobel_fir.v(575): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_sobel_fir/DUT/sub_72/U2_8
+# ** Warning: (vsim-3017) mapped/sobel_fir.v(2231): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_sobel_fir/DUT/sub_71
+# ** Warning: (vsim-3722) mapped/sobel_fir.v(2231): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/sobel_fir.v(606): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_sobel_fir/DUT/sub_71/U2_8
+# ** Warning: (vsim-3017) mapped/sobel_fir.v(2239): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_sobel_fir/DUT/sub_70
+# ** Warning: (vsim-3722) mapped/sobel_fir.v(2239): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/sobel_fir.v(637): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_sobel_fir/DUT/sub_70/U2_8
+# ** Warning: (vsim-3017) mapped/sobel_fir.v(2247): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_sobel_fir/DUT/sub_69
+# ** Warning: (vsim-3722) mapped/sobel_fir.v(2247): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/sobel_fir.v(668): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_sobel_fir/DUT/sub_69/U2_8
+# ** Warning: (vsim-3017) mapped/sobel_fir.v(2255): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_sobel_fir/DUT/sub_68
+# ** Warning: (vsim-3722) mapped/sobel_fir.v(2255): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/sobel_fir.v(699): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_sobel_fir/DUT/sub_68/U2_8
+# ** Warning: (vsim-3017) mapped/sobel_fir.v(2263): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_sobel_fir/DUT/sub_67
+# ** Warning: (vsim-3722) mapped/sobel_fir.v(2263): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/sobel_fir.v(730): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_sobel_fir/DUT/sub_67/U2_8
+# ** Warning: (vsim-3017) mapped/sobel_fir.v(2271): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_sobel_fir/DUT/sub_66
+# ** Warning: (vsim-3722) mapped/sobel_fir.v(2271): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/sobel_fir.v(761): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_sobel_fir/DUT/sub_66/U2_8
+# ** Warning: (vsim-3017) mapped/sobel_fir.v(2279): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_sobel_fir/DUT/sub_65
+# ** Warning: (vsim-3722) mapped/sobel_fir.v(2279): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/sobel_fir.v(792): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_sobel_fir/DUT/sub_65/U2_8
+# ** Warning: (vsim-3017) mapped/sobel_fir.v(2287): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_sobel_fir/DUT/sub_64
+# ** Warning: (vsim-3722) mapped/sobel_fir.v(2287): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/sobel_fir.v(823): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_sobel_fir/DUT/sub_64/U2_8
+# ** Warning: (vsim-3017) mapped/sobel_fir.v(2295): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_sobel_fir/DUT/sub_63
+# ** Warning: (vsim-3722) mapped/sobel_fir.v(2295): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/sobel_fir.v(854): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_sobel_fir/DUT/sub_63/U2_8
+# ** Warning: (vsim-3017) mapped/sobel_fir.v(2303): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_sobel_fir/DUT/sub_62
+# ** Warning: (vsim-3722) mapped/sobel_fir.v(2303): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/sobel_fir.v(885): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_sobel_fir/DUT/sub_62/U2_8
+# ** Warning: (vsim-3017) mapped/sobel_fir.v(2311): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_sobel_fir/DUT/sub_61
+# ** Warning: (vsim-3722) mapped/sobel_fir.v(2311): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/sobel_fir.v(916): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_sobel_fir/DUT/sub_61/U2_8
+# ** Warning: (vsim-3017) mapped/sobel_fir.v(2319): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_sobel_fir/DUT/sub_60
+# ** Warning: (vsim-3722) mapped/sobel_fir.v(2319): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/sobel_fir.v(947): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_sobel_fir/DUT/sub_60/U2_8
+# ** Warning: (vsim-3017) mapped/sobel_fir.v(2327): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_sobel_fir/DUT/sub_59
+# ** Warning: (vsim-3722) mapped/sobel_fir.v(2327): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/sobel_fir.v(978): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_sobel_fir/DUT/sub_59/U2_8
+# ** Warning: (vsim-3839) source/tb_sobel_fir.sv(55): Variable '/tb_sobel_fir/tb_sobel_done', driven via a port connection, is multiply driven. See source/tb_sobel_fir.sv(30).
+#         Region: /tb_sobel_fir
+# End time: 18:10:17 on Apr 28,2018, Elapsed time: 0:00:06
+# Errors: 0, Warnings: 98

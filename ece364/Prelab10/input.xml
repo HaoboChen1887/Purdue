@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Content>
+    <StudentName graduate="true">Nicole Jackson</StudentName>
+    <StudentID>14712-45699</StudentID>
+    <College>Industrial Engineering</College>
+    <Components>
+        <Component name="Intel i7-5850EQ" count="5" />
+        <Component name="Intel i7-4700EQ" count="12" />
+        <Component name="Intel i7-5700HQ" count="11" />
+        <Component name="Intel i7-6820EQ" count="3" />
+        <Component name="Intel i7-6820HQ" count="5" />
+        <Component name="Intel i7-4960HQ" count="6" />
+        <Component name="Intel i7-6560U" count="7" />
+        <Component name="Intel i7-5850HQ" count="8" />
+        <Component name="Intel i7-4710HQ" count="10" />
+        <Component name="Intel i7-4860HQ" count="1" />
+        <Component name="Intel i7-6567U" count="2" />
+        <Component name="Intel i7-5500U" count="65" />
+        <Component name="Intel i7-6770HQ" count="22" />
+        <Component name="Intel i7-6700HQ" count="10" />
+        <Component name="Intel i7-4700HQ" count="13" />
+        <Component name="Intel i7-5550U" count="31" />
+        <Component name="Intel i7-4910MQ" count="22" />
+    </Components>
+</Content>

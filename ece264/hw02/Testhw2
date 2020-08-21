@@ -1,0 +1,2 @@
+hw02: hw02.c hw02test.c
+	gcc hw02.c hw02test.c -o hw02

@@ -1,0 +1,358 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/ecegrid/a/mg123/ECE337Project
+vaddr_calc
+Z1 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+r1
+!s85 0
+31
+!i10b 1
+!s100 ck2f^6nz[DJaSmkFAKoon3
+IFd=mVoRcFbzo9m587Se=N1
+!s105 addr_calc_sv_unit
+S1
+R0
+w1524936932
+8source/addr_calc.sv
+Fsource/addr_calc.sv
+L0 9
+Z3 OL;L;10.3b;59
+!s108 1525222297.331991
+!s107 source/addr_calc.sv|
+!s90 -sv|-work|source_work|source/addr_calc.sv|
+!i113 0
+Z4 o-sv -work source_work
+Z5 tCoverage 63 CoverExcludeDefault 1 CoverOpt 1 CoverShortCircuit 0
+vedge_detector
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 Xelc>TJ:YI@[iPYgV]KcK2
+I4T]BTGG@DQId2eLTk[@e93
+!s105 edge_detector_sv_unit
+S1
+R0
+Z6 w1524936934
+8source/edge_detector.sv
+Fsource/edge_detector.sv
+L0 9
+R3
+!s108 1525222297.168098
+!s107 source/edge_detector.sv|
+!s90 -sv|-work|source_work|source/edge_detector.sv|
+!i113 0
+R4
+R5
+vflex_counter
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 @g]Y=j4I3DcWdR=2`Rz@o3
+I@4b_`oHI1S<boDR`D>UXh2
+!s105 flex_counter_sv_unit
+S1
+R0
+R6
+8source/flex_counter.sv
+Fsource/flex_counter.sv
+L0 9
+R3
+!s108 1525222297.756732
+!s107 source/flex_counter.sv|
+!s90 -sv|-work|source_work|source/flex_counter.sv|
+!i113 0
+R4
+R5
+vgauss_addr_calc
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 [;]B751B>?zkzh5B=f^lZ1
+I60izY4aAJOYeH__9G4h6k3
+!s105 gauss_addr_calc_sv_unit
+S1
+R0
+Z7 w1524936936
+8source/gauss_addr_calc.sv
+Fsource/gauss_addr_calc.sv
+L0 9
+R3
+!s108 1525222297.474875
+!s107 source/gauss_addr_calc.sv|
+!s90 -sv|-work|source_work|source/gauss_addr_calc.sv|
+!i113 0
+R4
+R5
+vgauss_buffer
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 zSBcAQ4c>LG4iBJ`?@TJ;0
+I[RV3Mb8eX[>f@NAd`QH1>1
+!s105 gauss_buffer_sv_unit
+S1
+R0
+R7
+8source/gauss_buffer.sv
+Fsource/gauss_buffer.sv
+L0 9
+R3
+!s108 1525222297.614809
+!s107 source/gauss_buffer.sv|
+!s90 -sv|-work|source_work|source/gauss_buffer.sv|
+!i113 0
+R4
+R5
+vgauss_mcu
+R1
+Z8 !s110 1525222297
+!i10b 1
+!s100 =bb56D8Fl59zcm`m4Ki_02
+IGQWMJ6ThNSWPnl4^@mmUI1
+R2
+!s105 gauss_mcu_sv_unit
+S1
+R0
+w1524693822
+8source/gauss_mcu.sv
+Fsource/gauss_mcu.sv
+L0 9
+R3
+r1
+!s85 0
+31
+!s108 1525222297.686279
+!s107 source/gauss_mcu.sv|
+!s90 -sv|-work|source_work|source/gauss_mcu.sv|
+!i113 0
+R4
+R5
+vgaussian_blur
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 WH=4><L@99aP3GmZ_@B0F3
+IzDV;YlT4PT4fiFojSJ<KB3
+!s105 gaussian_blur_sv_unit
+S1
+R0
+Z9 w1524936938
+8source/gaussian_blur.sv
+Fsource/gaussian_blur.sv
+L0 10
+R3
+!s108 1525222297.543549
+!s107 source/gaussian_blur.sv|
+!s90 -sv|-work|source_work|source/gaussian_blur.sv|
+!i113 0
+R4
+R5
+vgradient
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 G?>ko[N9[Uj][RoSIQl^e1
+In8JF]KFLQSMlh92g`@4oO2
+!s105 gradient_sv_unit
+S1
+R0
+R9
+8source/gradient.sv
+Fsource/gradient.sv
+L0 9
+R3
+!s108 1525222297.828807
+!s107 source/gradient.sv|
+!s90 -sv|-work|source_work|source/gradient.sv|
+!i113 0
+R4
+R5
+vmag_mcu
+R1
+R8
+!i10b 1
+!s100 5Y^5=h^Xl=Ln01?DK^4n32
+I@8gfn]Ag6:2Ubi>g_:R>12
+R2
+!s105 mag_mcu_sv_unit
+S1
+R0
+w1524936940
+8source/mag_mcu.sv
+Fsource/mag_mcu.sv
+L0 9
+R3
+r1
+!s85 0
+31
+!s108 1525222297.970760
+!s107 source/mag_mcu.sv|
+!s90 -sv|-work|source_work|source/mag_mcu.sv|
+!i113 0
+R4
+R5
+vmagnitude
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 =T6f7:@H5CgU`EP1?nD[D1
+IjX1lTY?:4V?lj0@l5MRWQ2
+!s105 magnitude_sv_unit
+S1
+R0
+w1524936942
+8source/magnitude.sv
+Fsource/magnitude.sv
+L0 9
+R3
+!s108 1525222297.898495
+!s107 source/magnitude.sv|
+!s90 -sv|-work|source_work|source/magnitude.sv|
+!i113 0
+R4
+R5
+vMCU
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 G<moM?lo4E>e]aeF:T`VI3
+IDG3<e^abmoPN=l4[nk5Kb1
+!s105 MCU_sv_unit
+S1
+R0
+Z10 w1524936944
+8source/MCU.sv
+Fsource/MCU.sv
+L0 9
+R3
+!s108 1525222298.039703
+!s107 source/MCU.sv|
+!s90 -sv|-work|source_work|source/MCU.sv|
+!i113 0
+R4
+R5
+n@m@c@u
+voutput_addr
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 j6bB@]R[aQOnKNV19CBh63
+Id;G1^MPLe`0hU^4IbX8fa1
+!s105 output_addr_sv_unit
+S1
+R0
+R10
+8source/output_addr.sv
+Fsource/output_addr.sv
+L0 9
+R3
+!s108 1525222298.186256
+!s107 source/output_addr.sv|
+!s90 -sv|-work|source_work|source/output_addr.sv|
+!i113 0
+R4
+R5
+vsobel_fir
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 >c`Yg;WXPa_jQDT`EmI3H2
+InR`HORf?T7j?e`:eVo7^Q1
+!s105 sobel_fir_sv_unit
+S1
+R0
+w1524936946
+8source/sobel_fir.sv
+Fsource/sobel_fir.sv
+L0 9
+R3
+!s108 1525222298.113913
+!s107 source/sobel_fir.sv|
+!s90 -sv|-work|source_work|source/sobel_fir.sv|
+!i113 0
+R4
+R5
+vtb_edge_detector
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 @EnbN9ncDH30nT[YG2eP_0
+I7gdX@13YK9GEMlAf_N7Oh0
+!s105 tb_edge_detector_sv_unit
+S1
+R0
+w1524936948
+8source/tb_edge_detector.sv
+Fsource/tb_edge_detector.sv
+L0 9
+R3
+!s108 1525222297.256432
+!s107 source/tb_edge_detector.sv|
+!s90 -sv|-work|source_work|source/tb_edge_detector.sv|
+!i113 0
+R4
+R5
+vwin_buf
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 ]9D78:UZQaKi`3YSJHXU[1
+Ioaj`Wad^>>7HO@b25R__40
+!s105 win_buf_sv_unit
+S1
+R0
+w1524936960
+8source/win_buf.sv
+Fsource/win_buf.sv
+L0 9
+R3
+!s108 1525222297.401144
+!s107 source/win_buf.sv|
+!s90 -sv|-work|source_work|source/win_buf.sv|
+!i113 0
+R4
+R5

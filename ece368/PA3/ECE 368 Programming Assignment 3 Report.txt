@@ -1,0 +1,18 @@
+﻿ECE 368 Programming Assignment 3 Report
+Time complexity:
+	Tree Constructing:
+	Function involved: load_tree
+		This function construct the tree with stacks and build the tree 
+		immediately after getting the informations. The tree is built 
+		after one pass of all data. The time complexity is T(n) = n = O(n).
+	
+	Coordinate Calculation:
+	Function involved: calc_y, save_tree_and_calc_x
+		calc_y calculate the y coordinate only with one inorder traversal 
+		starting from the right branch. The time complexity for calc_y is T(n) = n = O(n).
+
+		save_tree_and_calc_x calculate the x coordinates only with one 
+		inorder traversal starting from the left branch, and write the 
+		data into the file immediately after that. The function also 
+		require only one pass. The time complexity for save_tree_and_calc_x 
+		is also T(n) = n = O(n).

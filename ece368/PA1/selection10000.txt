@@ -1,0 +1,7 @@
+Number of long integers read: 10000
+Number of long integers stored: 10000
+Length of sequence: 67
+Number of comparisons: 7.499121e+07
+Number of moves: 1.842730e+05
+I/O time: 2.238140e-01
+Sorting time: 2.233240e-01

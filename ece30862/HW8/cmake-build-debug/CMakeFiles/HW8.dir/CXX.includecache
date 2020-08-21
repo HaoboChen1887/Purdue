@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW8/Set.cpp
+Set.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW8/Set.h
+
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW8/Set.h
+iostream
+-
+

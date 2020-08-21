@@ -1,0 +1,23 @@
+C B: 0 // Base* bP = new Base();
+
+C B: 1 // Derived* dP = new Derived();
+C D: 0
+
+C B: 2 // Base b
+
+C B: 3 // Derived d
+C D: 1
+
+~Base: 2 // foo(b)
+
+D D: 1 // foo(d)
+~Base: 3
+
+~Base: 3 // foo((Base) d)
+
+D D: 1 // Exit
+~Base: 3
+~Base: 3
+D D: 1
+~Base: 3
+~Base: 2

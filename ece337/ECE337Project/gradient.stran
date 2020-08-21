@@ -1,0 +1,30 @@
+# //  Questa Sim-64
+# //  Version 10.3b linux_x86_64 May 29 2014
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -Lf /home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Vsim -L /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work -L /home/ecegrid/a/ece337/Class0.5u/GOLD_LIB "+no_glitch_msg" -coverage -novopt -i -t ps source_work/.tb_gradient 
+# Start time: 14:32:48 on Apr 26,2018
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/source_work.tb_gradient
+# Loading sv_std.std
+# Loading source_work/.tb_gradient
+# Loading source_work/.gradient
+# ** Warning: (vsim-3839) source/tb_gradient.sv(51): Variable '/tb_gradient/tb_grad_done', driven via a port connection, is multiply driven. See source/tb_gradient.sv(27).
+#         Region: /tb_gradient
+run 100 ns
+# ** Info: Test case 1 passed!
+#    Time: 11700 ps  Scope: tb_gradient File: source/tb_gradient.sv Line: 67
+# ** Info: Test case 2 passed!
+#    Time: 35100 ps  Scope: tb_gradient File: source/tb_gradient.sv Line: 100
+# ** Info: Test case 3 passed!
+#    Time: 58500 ps  Scope: tb_gradient File: source/tb_gradient.sv Line: 133
+# ** Info: Test case 4 passed!
+#    Time: 79300 ps  Scope: tb_gradient File: source/tb_gradient.sv Line: 165
+# End time: 14:32:57 on Apr 26,2018, Elapsed time: 0:00:09
+# Errors: 0, Warnings: 2

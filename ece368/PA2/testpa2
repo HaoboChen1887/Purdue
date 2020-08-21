@@ -1,0 +1,22 @@
+gcc: sorting.h sorting.c sorting_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O0 ./sorting.c sorting_main.c -o proj2
+gdb: sorting.h sorting.c sorting_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O0 ./sorting.c sorting_main.c -o proj2 && gdb proj2
+ddd: sorting.h sorting.c sorting_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O0 ./sorting.c sorting_main.c -o proj2 && ddd proj2
+valgrind: sorting.h sorting.c sorting_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O0 ./sorting.c sorting_main.c -o proj2 && valgrind --leak-check=full --show-reachable=yes ./proj2 15.b test_result.b
+
+testi: sorting.h sorting.c sorting_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O0 ./sorting.c sorting_main.c -o proj2 && ./proj2 10000.b 10000si.b 
+
+test15i: sorting.h sorting.c sorting_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O0 ./sorting.c sorting_main.c -o proj2 && ./proj2 15.b 15si.b 
+test1000i: sorting.h sorting.c sorting_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O0 ./sorting.c sorting_main.c -o proj2 && ./proj2 1000.b 1000si.b 
+test10000i: sorting.h sorting.c sorting_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O0 ./sorting.c sorting_main.c -o proj2 && ./proj2 10000.b 10000si.b 
+test100000i: sorting.h sorting.c sorting_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O0 ./sorting.c sorting_main.c -o proj2 && ./proj2 100000.b 100000si.b 
+test1000000i: sorting.h sorting.c sorting_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O0 ./sorting.c sorting_main.c -o proj2 && ./proj2 1000000.b 1000000si.b 

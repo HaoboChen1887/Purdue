@@ -1,0 +1,41 @@
+Teamwork report:
+Each person is to place answers to these questions in a file called teamwork.txt inside their
+docs directory, and submit this along with any postlab questions which were asked for the
+current lab.
+The contents of your report are to be confidential between you, the course instructor, and the TA
+staff. (Counts for 2 points on the lab - while there are no "right" answers, a zero will be assigned
+if it looks like you gave little or no thought to any of these questions.)
+1. Rate yourself and your partner or partners on the following criteria. Apply each criterion to
+each of your partners individually. Answer on a scale of 1 to 5 where 1 = strongly disagree, 3 =
+indifferent, 5 = strongly agree.
+This team member made a sincere effort (to the best that you can tell) to figure out the design and testing so as to be able to contribute to the team effort.
+Ni Kang 5
+Haoming Zhang 5
+Haobo Chen 5
+This team member was respectful and considerate of other team members.
+Ni Kang 5
+Haoming Zhang 5
+Haobo Chen 5
+This team member fulfilled all promised or commitments to team members including those listed in ground rules 1-5.
+Ni Kang 5
+Haoming Zhang 5
+Haobo Chen 5
+You were able to achieve or learn more with this partner than you would have without.
+Ni Kang 5
+Haoming Zhang 5
+
+Describe briefly your contribution to the team effort
+I understood and explained how data flows within the modules and figured out the state diagram
+3. Describe briefly the contribution of each of the other team members.
+Ni Kang figured out how to build the 
+Haoming Zhang helped us to understand how the timer module works
+4. How many times did you and your team-mate(s) meet? How frequently did you e-mail or
+instant message your team-mate(s)?
+We met twice for lab 5.
+We are always together, there is no need to use other communication tools
+5. Did you learning anything useful from any of your team-mates? If so, who was it and what
+did you learn?
+From Ni Kang, I learned how to observe the behavior of the waves and debug accordingly.
+
+6. Whose testbench code (viewed on Piazza) significantly helped you? How?
+I looked at the testbench on Piazza, it helped me to add a few more cases in which different flags switch.

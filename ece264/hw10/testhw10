@@ -1,0 +1,27 @@
+login:
+	ssh chen1887@ecegrid-thin8.ecn.purdue.edu
+copyfrom: test_team.c team.c team.h
+	scp chen1887@ecegrid-thin8.ecn.purdue.edu:/home/shay/a/chen1887/264/team.h /home/haobo/Desktop/264/team.h
+	scp chen1887@ecegrid-thin8.ecn.purdue.edu:/home/shay/a/chen1887/264/team.c /home/haobo/Desktop/264/team.c
+	scp chen1887@ecegrid-thin8.ecn.purdue.edu:/home/shay/a/chen1887/264/test_team.c /home/haobo/Desktop/264/test_team.c
+gcc: team.h team.c test_team.c
+	gcc -g -std=c99 -Wall -Wshadow --pedantic -Wvla team.c test_team.c -o test_team
+test: team.h team.c test_team.c
+	gcc -g -std=c99 -Wall -Wshadow --pedantic -Wvla team.c test_team.c -o test_team && ./test_team > expected.txt && vim expected.txt
+gdb: team.h team.c test_team.c
+	gcc -g -std=c99 -Wall -Wshadow --pedantic -Wvla team.c test_team.c -o test_team && gdb ./test_team
+ddd: team.h team.c test_team.c
+	gcc -g -std=c99 -Wall -Wshadow --pedantic -Wvla team.c test_team.c -o test_team && ddd ./test_team
+valgrind: team.h team.c test_team.c
+	gcc -g -std=c99 -Wall -Wshadow --pedantic -Wvla team.c test_team.c -o test_team && valgrind --track-origins=yes --leak-check=full --tool=memcheck ./test_team
+coverage: test_team.c team.c team.h
+	gcc -g -std=c99 -Wall -Wshadow --pedantic -Wvla -fprofile-arcs -ftest-coverage test_team.c team.c -o test_team 
+	./test_team
+	gcov test_team.c
+	more test_team.c.gcov
+clean: test_team.c team.c team.h
+	rm -f *gcov *gcno *gcda test_team
+submit: team.h team.c test_team.c expected.txt
+	264submit hw10 team.h team.c test_team.c expected.txt
+
+

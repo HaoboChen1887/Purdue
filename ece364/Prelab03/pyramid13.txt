@@ -1,0 +1,7 @@
+      X             X             X             X             X             X      
+     XXX           XXX           XXX           XXX           XXX           XXX     
+    XXXXX         XXXXX         XXXXX         XXXXX         XXXXX         XXXXX    
+   XXXXXXX       XXXXXXX       XXXXXXX       XXXXXXX       XXXXXXX       XXXXXXX   
+  XXXXXXXXX     XXXXXXXXX     XXXXXXXXX     XXXXXXXXX     XXXXXXXXX     XXXXXXXXX  
+ XXXXXXXXXXX   XXXXXXXXXXX   XXXXXXXXXXX   XXXXXXXXXXX   XXXXXXXXXXX   XXXXXXXXXXX 
+XXXXXXXXXXXXX XXXXXXXXXXXXX XXXXXXXXXXXXX XXXXXXXXXXXXX XXXXXXXXXXXXX XXXXXXXXXXXXX

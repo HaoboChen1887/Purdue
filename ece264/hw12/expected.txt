@@ -1,0 +1,39 @@
+merge sort result
+0
+0
+1
+2
+2
+3
+3
+4
+4
+5
+quick sort result
+0
+0
+1
+2
+2
+3
+3
+4
+4
+5
+tree sort result
+0
+0
+1
+2
+2
+3
+3
+4
+4
+5
+merge sort result
+1
+tree sort result
+1
+quick sort result
+1

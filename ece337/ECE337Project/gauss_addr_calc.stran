@@ -1,0 +1,28 @@
+# //  Questa Sim-64
+# //  Version 10.3b linux_x86_64 May 29 2014
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -Lf /home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Vsim -L /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work -L /home/ecegrid/a/ece337/Class0.5u/GOLD_LIB "+no_glitch_msg" -coverage -novopt -i -t ps source_work/.tb_gauss_addr_calc 
+# Start time: 23:32:31 on Apr 29,2018
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading sv_std.std
+# Loading source_work/.tb_gauss_addr_calc
+# Loading source_work/.gauss_addr_calc
+# Loading source_work/.flex_counter
+add wave -position insertpoint sim:/tb_gauss_addr_calc/DUT/*
+run 200 ns
+# ** Info: Test case 1 passed!
+#    Time: 9100 ps  Scope: tb_gauss_addr_calc File: source/tb_gauss_addr_calc.sv Line: 59
+# ** Info: Test case 2 passed!
+#    Time: 14300 ps  Scope: tb_gauss_addr_calc File: source/tb_gauss_addr_calc.sv Line: 72
+# ** Info: Test case 3 passed!
+#    Time: 16900 ps  Scope: tb_gauss_addr_calc File: source/tb_gauss_addr_calc.sv Line: 84
+# Causality operation skipped due to absence of debug database file
+# End time: 23:42:31 on Apr 29,2018, Elapsed time: 0:10:00
+# Errors: 0, Warnings: 2

@@ -1,0 +1,22 @@
+Q1 OK
+Q2 OK
+Q3 Err
+Q4 OK
+Q5 bR1.i: 3
+Q6 Err
+Q7 bR1.i: 3
+Q8 Err
+Q9 OK
+Q10 bR1.i: 4
+Q11 Err
+Q12 dR.i: 4
+Q13 dR.j: 4
+Q14 i: 4
+Q15 i: 4
+Q16 Err
+Q17 Err
+Q18 i: 4, j: 4
+Q19 Err
+Q20 Err
+Q21 Err
+

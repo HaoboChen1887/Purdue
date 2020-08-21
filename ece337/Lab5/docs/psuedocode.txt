@@ -1,0 +1,43 @@
+idle  :   if(data_ready == 0) goto idle;
+loadext1: LOAD2 into reg[7];
+wait1 :   modwait = 0;
+loadext2: LOAD2 into reg[8];
+wait2 :   modwait = 0;
+loadext3: LOAD2 into reg[9];
+wait3 :   modwait = 0;
+loadext4: LOAD2 into reg[10];
+store :   if(data_ready == 0) goto eidle;
+	  	reg[5] = data_in;
+zero  :   reg[0] = 0;
+sort1 :   reg[1] = reg[2];
+sort2 :   reg[2] = reg[3];
+sort3 :   reg[3] = reg[4];
+sort4 :   reg[4] = reg[5];
+mul1  :   reg[6] = reg[1] * reg[7];
+add1  :   if(V == 1) goto eidle;
+		reg[0] = reg[0] - reg[6];
+mul2  :   reg[6] = reg[2] * reg[8];
+sub1  :   if(V == 1) goto eidle;
+		reg[0] = reg[0] - reg[6];
+mul3  :   reg[6] = reg[3] * reg[9];
+add2  :   if(V == 1) goto eidle; 
+		reg[0] = reg[0] + reg[6];
+mul4  :   reg[6] = reg[4] * reg[10];
+sub2  :   if(V == 1) goto eidle;
+		reg[0] = reg[0] - reg[6];
+
+eidle :  err = 1;
+	 if(dr == 1) goto store;
+  	 if(dr == 0) goto eidle;
+
+reg[0] = accumulator;
+reg[1] = data4
+reg[2] = data3
+reg[3] = data2
+reg[4] = data1
+reg[5] = data_in
+reg[6] = result
+reg[7] = f0
+reg[8] = f1
+reg[9] = f2
+reg[10] = f3 

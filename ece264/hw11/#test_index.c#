@@ -1,0 +1,49 @@
+#include "index.h"
+
+int main(int argc, char * argv[]) {
+	Index index = create_index();
+	put(&index, "word", "file99");
+	put(&index, "word", "file1");
+	put(&index, "word", "file2");
+
+	put(&index, "a", "file2");
+	put(&index, "a", "file2");
+	put(&index, "a", "file2");
+	put(&index, "a", "file2");
+
+	put(&index, "b", "file1");
+	put(&index, "b", "file4");
+	put(&index, "b", "file5");
+
+	put(&index, "d", "file6");
+	put(&index, "d", "file7");
+
+	put(&index, "e", "file8");
+	put(&index, "e", "file9");
+	put(&index, "a", "file10");
+	put(&index, "a", "file11");
+	put(&index, "a", "file12");
+	put(&index, "a", "file13");
+
+	put(&index, "c", "file99");
+
+	int count = 0;
+	char ** printarr = get(&index, &count, "a", "b", "c", NULL);
+	printf("The length of the array is %d\n", count);
+	printf("The files that contain a, b, c is the following\n");
+	for(int ct = 0; ct < count; ct ++) {
+		printf("File: %s\n", printarr[ct]);
+	}
+
+	free(printarr);
+	count = 0;
+	char ** emptyarr = get(&index, &count, NULL);
+	printf("The length of the array is %d\n", count);
+	for(int ct = 0; ct < count; ct ++) {
+		printf("File: %s\n", emptyarr[ct]);
+	}
+	free(emptyarr);
+
+	free_index(&index);
+	return EXIT_SUCCESS;
+}

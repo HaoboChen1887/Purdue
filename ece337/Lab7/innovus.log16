@@ -1,0 +1,110 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2016 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v16.12-s051_1, built Wed Aug 17 12:18:54 PDT 2016
+Options:	
+Date:		Thu Apr 26 00:14:52 2018
+Host:		ecegrid-thin2.ecn.purdue.edu (x86_64 w/Linux 2.6.32-696.23.1.el6.x86_64) (6cores*24cpus*Intel(R) Xeon(R) CPU X5675 @ 3.07GHz 12288KB)
+OS:		Red Hat Enterprise Linux Workstation release 6.9 (Santiago)
+
+License:
+		invs	Innovus Implementation System	16.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getDrawView
+<CMD> loadWorkspace -name Physical
+<CMD> win
+<CMD> set init_verilog final.v
+<CMD> init_design
+**WARN: (GLOBAL-100):	Global 'timing_disable_backward_compatible_mmmc_mode' has become obsolete. It will be removed in the next release.
+No LEF file provided, but timing lib is provided.
+Use timer mode.
+*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.23min, fe_real=0.47min, fe_mem=528.7M) ***
+#- Begin Load netlist data ... (date=04/26 00:15:20, mem=528.7M)
+*** Begin netlist parsing (mem=528.7M) ***
+Created 0 new cells from 0 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist 'final.v'
+Module BUFX2 is not defined and will be treated as an empty module.
+Module DFFSR is not defined and will be treated as an empty module.
+Module NOR2X1 is not defined and will be treated as an empty module.
+Module MUX2X1 is not defined and will be treated as an empty module.
+Module INVX1 is not defined and will be treated as an empty module.
+Module NAND2X1 is not defined and will be treated as an empty module.
+Module XNOR2X1 is not defined and will be treated as an empty module.
+Module OAI21X1 is not defined and will be treated as an empty module.
+Module AOI22X1 is not defined and will be treated as an empty module.
+Module AOI21X1 is not defined and will be treated as an empty module.
+Module INVX2 is not defined and will be treated as an empty module.
+Module DFFPOSX1 is not defined and will be treated as an empty module.
+Module OR2X1 is not defined and will be treated as an empty module.
+Module NAND3X1 is not defined and will be treated as an empty module.
+Module XOR2X1 is not defined and will be treated as an empty module.
+Module INVX4 is not defined and will be treated as an empty module.
+Module OAI22X1 is not defined and will be treated as an empty module.
+Module AND2X2 is not defined and will be treated as an empty module.
+Module BUFX4 is not defined and will be treated as an empty module.
+Module AND2X1 is not defined and will be treated as an empty module.
+Module PADOUT is not defined and will be treated as an empty module.
+Module PADINC is not defined and will be treated as an empty module.
+
+*** Memory Usage v#1 (Current mem = 530.258M, initial mem = 166.582M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=530.3M) ***
+#- End Load netlist data ... (date=04/26 00:15:20, total cpu=0:00:00.0, real=0:00:00.0, peak res=530.3M, current mem=530.3M)
+Top level cell is lab7_layout_design.
+Hooked 0 DB cells to tlib cells.
+**WARN: (IMPDB-2504):	Cell 'DFFSR' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+**WARN: (IMPDB-2504):	Cell 'BUFX2' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+**WARN: (IMPDB-2504):	Cell 'MUX2X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+**WARN: (IMPDB-2504):	Cell 'NOR2X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+**WARN: (IMPDB-2504):	Cell 'PADINC' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+**WARN: (IMPDB-2504):	Cell 'PADOUT' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+**WARN: (IMPDB-2504):	Cell 'AND2X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+**WARN: (IMPDB-2504):	Cell 'BUFX4' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+**WARN: (IMPDB-2504):	Cell 'AND2X2' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+**WARN: (IMPDB-2504):	Cell 'OAI22X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+**WARN: (IMPDB-2504):	Cell 'INVX4' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+**WARN: (IMPDB-2504):	Cell 'XOR2X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+**WARN: (IMPDB-2504):	Cell 'NAND3X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+**WARN: (IMPDB-2504):	Cell 'OR2X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+**WARN: (IMPDB-2504):	Cell 'DFFPOSX1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+**WARN: (IMPDB-2504):	Cell 'INVX2' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+**WARN: (IMPDB-2504):	Cell 'AOI21X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+**WARN: (IMPDB-2504):	Cell 'AOI22X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+**WARN: (IMPDB-2504):	Cell 'OAI21X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+**WARN: (IMPDB-2504):	Cell 'XNOR2X1' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+**WARN: (EMS-27):	Message (IMPDB-2504) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+22 empty module found.
+Starting recursive module instantiation check.
+No recursion found.
+Term dir updated for 0 vinsts of 22 cells.
+Building hierarchical netlist for Cell lab7_layout_design ...
+*** Netlist is unique.
+** info: there are 38 modules.
+** info: there are 0 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 547.012M, initial mem = 166.582M) ***
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+
+**WARN: (IMPSYT-7328):	The design has been initialized in physical-only mode because the init_mmmc_file global variable was not defined. Timing analysis will not be possible within this session. You can only use commands that do not depend on timing data. If you need to use timing, you need to restart with an init_mmmc_file to define the timing setup, or you can save this design and use restoreDesign -mmmc_file <viewDef.tcl> to add the timing setup information.
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPSYT-7328          1  The design has been initialized in physi...
+WARNING   IMPDB-2504          22  Cell '%s' is instantiated in the Verilog...
+*** Message Summary: 23 warning(s), 0 error(s)
+
+
+*** Memory Usage v#1 (Current mem = 656.293M, initial mem = 166.582M) ***
+*** Message Summary: 23 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:14.7, real=0:00:35.0, mem=656.3M) ---

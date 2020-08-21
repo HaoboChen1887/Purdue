@@ -1,0 +1,21 @@
+#!/bin/bash
+
+infile=$1
+fpga=$2
+
+if (( $fpga == 0 ))
+then
+  make clean_asm 1> /dev/null;
+  asm $infile 1> /dev/null
+  sim 1> /dev/null
+  make system.sim 1> /dev/null
+  diff memsim.hex memcpu.hex;
+else
+  make clean_asm 1> /dev/null;
+  asm $infile 1> /dev/null
+  sim 1> /dev/null
+  synthesize -d -m system_fpga 1> /dev/null
+  diff memsim.hex memfpga.hex;
+fi
+
+

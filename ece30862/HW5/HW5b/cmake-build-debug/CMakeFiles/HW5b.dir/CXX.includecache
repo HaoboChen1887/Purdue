@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW5/HW5b/Faculty.h
+string
+-
+Person.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW5/HW5b/Person.h
+string
+-
+
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW5/HW5b/Person.h
+string
+-
+string
+-
+
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW5/HW5b/Student.h
+string
+-
+Person.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW5/HW5b/Person.h
+string
+-
+
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW5/HW5b/mainDynamicCast.cpp
+Person.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW5/HW5b/Person.h
+Student.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW5/HW5b/Student.h
+Faculty.h
+C:/Users/Haobo Chen/OneDrive/Documents/Purdue University/Courses/Fall 2018/ECE 30862/HW5/HW5b/Faculty.h
+iostream
+-
+

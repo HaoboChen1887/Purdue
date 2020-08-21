@@ -1,0 +1,11 @@
+{
+    "projectName" : "ECE437 Master Project ver. 2.5" ,
+        "isRequired"    :   true    ,
+   "isIndividual"   :   false ,
+    "participantCount"          : 12,
+                "totalCost":1240.39,
+"maxGrade":320,
+    "projectPasscode" : "Everyday is a new beginning",
+    "users" :  {"user1" : "Lisa Smith", "user2" : "Tao Tie", "user3" : "Xhiui Zhu"},
+    "dueDate" : "April 29, 2018"
+}

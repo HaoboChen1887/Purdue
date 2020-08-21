@@ -1,0 +1,64 @@
+gcc: packing.h packing.c reroot_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./packing.c reroot_main.c -o proj4
+gdb: packing.h packing.c reroot_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./packing.c reroot_main.c -o proj4 && gdb proj4
+ddd: packing.h packing.c reroot_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./packing.c reroot_main.c -o proj4 && ddd proj4
+valgrind3: packing.h packing.c reroot_main.c
+	gcc -std=c99 -Wall -Wshadow -g -O3 ./packing.c reroot_main.c -o proj4 && valgrind --leak-check=full --show-reachable=yes ./proj4 r0_po.txt myr0.flr 
+valgrind6: packing.h packing.c reroot_main.c
+	gcc -std=c99 -Wall -Wshadow -g -O3 ./packing.c reroot_main.c -o proj4 && valgrind --leak-check=full --show-reachable=yes ./proj4 r6_po.txt myr6.flr 
+valgrind: packing.h packing.c reroot_main.c
+	gcc -std=c99 -Wall -Wshadow -g -O3 ./packing.c reroot_main.c -o proj4 && valgrind --leak-check=full --show-reachable=yes ./proj4 r0_po.txt myr0.flr 
+	gcc -std=c99 -Wall -Wshadow -g -O3 ./packing.c reroot_main.c -o proj4 && valgrind --leak-check=full --show-reachable=yes ./proj4 r1_po.txt myr1.flr 
+	gcc -std=c99 -Wall -Wshadow -g -O3 ./packing.c reroot_main.c -o proj4 && valgrind --leak-check=full --show-reachable=yes ./proj4 r2_po.txt myr2.flr 
+	gcc -std=c99 -Wall -Wshadow -g -O3 ./packing.c reroot_main.c -o proj4 && valgrind --leak-check=full --show-reachable=yes ./proj4 r3_po.txt myr3.flr 
+	gcc -std=c99 -Wall -Wshadow -g -O3 ./packing.c reroot_main.c -o proj4 && valgrind --leak-check=full --show-reachable=yes ./proj4 r4_po.txt myr4.flr 
+	gcc -std=c99 -Wall -Wshadow -g -O3 ./packing.c reroot_main.c -o proj4 && valgrind --leak-check=full --show-reachable=yes ./proj4 r5_po.txt myr5.flr 
+	gcc -std=c99 -Wall -Wshadow -g -O3 ./packing.c reroot_main.c -o proj4 && valgrind --leak-check=full --show-reachable=yes ./proj4 r6_po.txt myr6.flr 
+	gcc -std=c99 -Wall -Wshadow -g -O3 ./packing.c reroot_main.c -o proj4 && valgrind --leak-check=full --show-reachable=yes ./proj4 r7_po.txt myr7.flr 
+	gcc -std=c99 -Wall -Wshadow -g -O3 ./packing.c reroot_main.c -o proj4 && valgrind --leak-check=full --show-reachable=yes ./proj4 r8_po.txt myr8.flr 
+	gcc -std=c99 -Wall -Wshadow -g -O3 ./packing.c reroot_main.c -o proj4 && valgrind --leak-check=full --show-reachable=yes ./proj4 r9_po.txt myr9.flr 
+
+test0: packing.h packing.c reroot_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./packing.c reroot_main.c -o proj4 && ./proj4 r0_po.txt myr0.flr 
+test1: packing.h packing.c reroot_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./packing.c reroot_main.c -o proj4 && ./proj4 r1_po.txt myr1.flr
+test2: packing.h packing.c reroot_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./packing.c reroot_main.c -o proj4 && ./proj4 r2_po.txt myr2.flr
+test3: packing.h packing.c reroot_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./packing.c reroot_main.c -o proj4 && ./proj4 r3_po.txt myr3.flr
+test4: packing.h packing.c reroot_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./packing.c reroot_main.c -o proj4 && ./proj4 r4_po.txt myr4.flr
+test5: packing.h packing.c reroot_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./packing.c reroot_main.c -o proj4 && ./proj4 r5_po.txt myr5.flr
+test6: packing.h packing.c reroot_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./packing.c reroot_main.c -o proj4 && ./proj4 r6_po.txt myr6.flr
+test7: packing.h packing.c reroot_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./packing.c reroot_main.c -o proj4 && ./proj4 r7_po.txt myr7.flr
+test8: packing.h packing.c reroot_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./packing.c reroot_main.c -o proj4 && ./proj4 r8_po.txt myr8.flr
+test9: packing.h packing.c reroot_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./packing.c reroot_main.c -o proj4 && ./proj4 r9_po.txt myr9.flr
+test: packing.h packing.c reroot_main.c
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./packing.c reroot_main.c -o proj4 && ./proj4 r0_po.txt myr0.flr | diff r0.log_key -
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./packing.c reroot_main.c -o proj4 && ./proj4 r1_po.txt myr1.flr | diff r1.log_key -
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./packing.c reroot_main.c -o proj4 && ./proj4 r2_po.txt myr2.flr | diff r2.log_key -
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./packing.c reroot_main.c -o proj4 && ./proj4 r3_po.txt myr3.flr | diff r3.log_key -
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./packing.c reroot_main.c -o proj4 && ./proj4 r4_po.txt myr4.flr | diff r4.log_key -
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./packing.c reroot_main.c -o proj4 && ./proj4 r5_po.txt myr5.flr | diff r5.log_key -
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./packing.c reroot_main.c -o proj4 && ./proj4 r6_po.txt myr6.flr | diff r6.log_key -
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./packing.c reroot_main.c -o proj4 && ./proj4 r7_po.txt myr7.flr | diff r7.log_key -
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./packing.c reroot_main.c -o proj4 && ./proj4 r8_po.txt myr8.flr | diff r8.log_key -
+	gcc -std=c99 -Werror -Wall -Wshadow -g -O3 ./packing.c reroot_main.c -o proj4 && ./proj4 r9_po.txt myr9.flr | diff r9.log_key -
+check: myr0.flr myr1.flr myr2.flr myr3.flr myr4.flr myr5.flr myr6.flr myr7.flr myr8.flr myr9.flr
+	diff myr0.flr r0.pck_key
+	diff myr1.flr r1.pck_key
+	diff myr2.flr r2.pck_key
+	diff myr3.flr r3.pck_key
+	diff myr4.flr r4.pck_key
+	diff myr5.flr r5.pck_key
+	diff myr6.flr r6.pck_key
+	diff myr7.flr r7.pck_key
+	diff myr8.flr r8.pck_key
+	diff myr9.flr r9.pck_key

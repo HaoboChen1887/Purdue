@@ -1,0 +1,35 @@
+login:
+	ssh chen1887@ecegrid-thin8.ecn.purdue.edu
+warmup: warmup.c
+	gcc -g -std=c99 -Wall -Wshadow --pedantic -Wvla warmup.c -o warmup && ./warmup
+gcc: bmp.h bmp.c test_bmp.c
+	gcc -g -std=c99 -Wall -Wshadow --pedantic -Wvla bmp.c test_bmp.c -o test_bmp
+test: bmp.h bmp.c test_bmp.c
+	gcc -g -std=c99 -Wall -Wshadow --pedantic -Wvla bmp.c test_bmp.c -o test_bmp && ./test_bmp > expected.txt && vim expected.txt
+gdb: bmp.h bmp.c test_bmp.c
+	gcc -g -std=c99 -Wall -Wshadow --pedantic -Wvla bmp.c test_bmp.c -o test_bmp && gdb ./test_bmp
+ddd: bmp.h bmp.c test_bmp.c
+	gcc -g -std=c99 -Wall -Wshadow --pedantic -Wvla bmp.c test_bmp.c -o test_bmp && ddd ./test_bmp
+valgrind: bmp.h bmp.c test_bmp.c
+	gcc -g -std=c99 -Wall -Wshadow --pedantic -Wvla bmp.c test_bmp.c -o test_bmp && valgrind --track-origins=yes --leak-check=full --tool=memcheck ./test_bmp
+coverage: test_bmp.c bmp.c bmp.h
+	gcc -g -std=c99 -Wall -Wshadow --pedantic -Wvla -fprofile-arcs -ftest-coverage test_bmp.c bmp.c -o test_bmp 
+	./test_bmp
+	gcov bmp.c
+	more bmp.c.gcov
+clean: test_bmp.c bmp.c bmp.h
+	rm -f *gcov *gcno *gcda test_bmp
+submit: bmp.h bmp.c test_bmp.c warmup.c
+	264submit hw13 bmp.h bmp.c test_bmp.c warmup.c
+copyfrom:
+	scp chen1887@ecegrid-thin8.ecn.purdue.edu:/home/shay/a/chen1887/264/hw13/warmup.c /home/haobo/Desktop/264local/hw13/warmup.c
+	scp chen1887@ecegrid-thin8.ecn.purdue.edu:/home/shay/a/chen1887/264/hw13/bmp.c /home/haobo/Desktop/264local/hw13/bmp.c
+	scp chen1887@ecegrid-thin8.ecn.purdue.edu:/home/shay/a/chen1887/264/hw13/test_bmp.c /home/haobo/Desktop/264local/hw13/test_bmp.c
+	scp chen1887@ecegrid-thin8.ecn.purdue.edu:/home/shay/a/chen1887/264/hw13/bmp.h /home/haobo/Desktop/264local/hw13/bmp.h
+	scp chen1887@ecegrid-thin8.ecn.purdue.edu:/home/shay/a/chen1887/264/hw13/testhw13 /home/haobo/Desktop/264local/hw13/testhw13
+copyto:
+	scp /home/haobo/Desktop/264local/hw13/warmup.c chen1887@ecegrid-thin8.ecn.purdue.edu:/home/shay/a/chen1887/264/hw13/warmup.c 
+	scp /home/haobo/Desktop/264local/hw13/bmp.c chen1887@ecegrid-thin8.ecn.purdue.edu:/home/shay/a/chen1887/264/hw13/bmp.c 
+	scp /home/haobo/Desktop/264local/hw13/test_bmp.c chen1887@ecegrid-thin8.ecn.purdue.edu:/home/shay/a/chen1887/264/hw13/test_bmp.c
+	scp /home/haobo/Desktop/264local/hw13/bmp.h chen1887@ecegrid-thin8.ecn.purdue.edu:/home/shay/a/chen1887/264/hw13/bmp.h 
+	scp /home/haobo/Desktop/264local/hw13/testhw13 chen1887@ecegrid-thin8.ecn.purdue.edu:/home/shay/a/chen1887/264/hw13/testhw13

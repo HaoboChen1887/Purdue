@@ -1,0 +1,29 @@
+# 
+# 
+# 
+# 
+# //  Questa Sim-64
+# //  Version 10.3b linux_x86_64 May 29 2014
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -Lf /home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Vsim -L /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work -L /home/ecegrid/a/ece337/Class0.5u/GOLD_LIB "+no_glitch_msg" -coverage -novopt -i -t ps source_work.tb_gaussian_blur 
+# Start time: 17:46:46 on Apr 28,2018
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/source_work.tb_gaussian_blur
+# Loading sv_std.std
+# Loading source_work.tb_gaussian_blur
+# Loading source_work.gaussian_blur
+# ** Warning: (vsim-3015) source/tb_gaussian_blur.sv(29): [PCDPC] - Port size (3) does not match connection size (4) for port 'x_in'. The port definition is at: source/gaussian_blur.sv(14).
+#         Region: /tb_gaussian_blur/DUT
+# ** Warning: (vsim-3015) source/tb_gaussian_blur.sv(29): [PCDPC] - Port size (3) does not match connection size (4) for port 'y_in'. The port definition is at: source/gaussian_blur.sv(15).
+#         Region: /tb_gaussian_blur/DUT
+# ** Warning: (vsim-3839) source/tb_gaussian_blur.sv(56): Variable '/tb_gaussian_blur/tb_gauss_done', driven via a port connection, is multiply driven. See source/tb_gaussian_blur.sv(29).
+#         Region: /tb_gaussian_blur
+# End time: 17:58:38 on Apr 28,2018, Elapsed time: 0:11:52
+# Errors: 0, Warnings: 4

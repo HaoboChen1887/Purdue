@@ -1,0 +1,16 @@
+/home/ecegridfs/a/ee364ta/grading/Lab10/ee364b03
+
+---------------------------------------------------------------------------
+FUNCTION           | DESCRIPTION     | COMMENTS                 | POINTS  
+---------------------------------------------------------------------------
+invalidOperations    Addition          Passed                     1/1     
+invalidOperations    Division          Passed                     1/1     
+invalidOperations    Multiplication    Passed                     1/1     
+invalidOperations    Subtraction       Passed                     1/1     
+normalOperations     Addition          Passed                     4/4     
+normalOperations     Division          Passed                     4/4     
+normalOperations     Multiplication    Passed                     4/4     
+normalOperations     Subtraction       Passed                     4/4     
+---------------------------------------------------------------------------
+
+Total Score = 20.0

@@ -1,0 +1,19 @@
+gcc: team.h team.c test_team.c
+	gcc -g team.h team.c test_team.c -o test_team
+test: team.h team.c test_team.c
+	gcc -g team.h team.c test_team.c -o test_team && ./test_team > expected.txt && vim expected.txt
+gdb: team.h team.c test_team.c
+	gcc -g team.h team.c test_team.c -o test_team && gdb test_team
+ddd: team.h team.c test_team.c
+	gcc -g team.h team.c test_team.c -o test_team && ddd test_team
+valgrind: team.h team.c test_team.c
+	gcc -g team.h team.c test_team.c -o test_team && valgrind test_team
+coverage: test_team.c team.c team.h
+	gcc -g -fprofile-arcs -ftest-coverage test_team.c team.c -o test_team 
+	./test_team
+	gcov test_team.c
+	more test_team.c.gcov
+clean: test_team.c team.c team.h
+	rm -f *gcov *gcno *gcda test_team
+submit: team.h team.c test_team.c warmup.c expected.txt
+	264submit hw09 team.h team.c test_team.c expected.txt warmup.c

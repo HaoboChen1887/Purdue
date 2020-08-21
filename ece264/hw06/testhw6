@@ -1,0 +1,4 @@
+comp: smintf.c test_smintf.c
+	gcc -g -o test_smintf test_smintf.c smintf.c && test_smintf > expected.txt && vim expected.txt
+submit: smintf.c test_smintf.c warmup.c expected.txt
+	264submit hw06 smintf.c test_smintf.c expected.txt warmup.c

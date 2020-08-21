@@ -1,0 +1,135 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : sobel_fir
+Version: K-2015.06-SP1
+Date   : Sat Apr 28 18:10:02 2018
+****************************************
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+  Startpoint: data_x_reg[3][3][8]
+              (rising edge-triggered flip-flop)
+  Endpoint: data_x[3][3][8]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  data_x_reg[3][3][8]/CLK (DFFSR)          0.00       0.00 r
+  data_x_reg[3][3][8]/Q (DFFSR)            0.49       0.49 f
+  data_x[3][3][8] (out)                    0.00       0.49 f
+  data arrival time                                   0.49
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
+ 
+****************************************
+Report : area
+Design : sobel_fir
+Version: K-2015.06-SP1
+Date   : Sat Apr 28 18:10:02 2018
+****************************************
+
+Library(s) Used:
+
+    osu05_stdcells (File: /package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db)
+
+Number of ports:                         1544
+Number of nets:                          3222
+Number of cells:                         1875
+Number of combinational cells:           1229
+Number of sequential cells:               614
+Number of macros/black boxes:               0
+Number of buf/inv:                        611
+Number of references:                      40
+
+Combinational area:             518868.000000
+Buf/Inv area:                    90216.000000
+Noncombinational area:          460944.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                979812.000000
+Total area:                 undefined
+1
+Loading db file '/package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : sobel_fir
+Version: K-2015.06-SP1
+Date   : Sat Apr 28 18:10:03 2018
+****************************************
+
+
+Library(s) Used:
+
+    osu05_stdcells (File: /package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db)
+
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 5    
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+sobel_fir                               121.100  208.775  316.013  329.876 100.0
+  sub_59 (sobel_fir_DW01_sub_31)          3.563    4.936    3.476    8.499   2.6
+  sub_60 (sobel_fir_DW01_sub_30)          3.567    4.943    3.476    8.509   2.6
+  sub_61 (sobel_fir_DW01_sub_29)          3.586    4.977    3.476    8.563   2.6
+  sub_62 (sobel_fir_DW01_sub_28)          3.571    4.944    3.476    8.515   2.6
+  sub_63 (sobel_fir_DW01_sub_27)          3.564    4.944    3.476    8.508   2.6
+  sub_64 (sobel_fir_DW01_sub_26)          3.580    4.973    3.476    8.553   2.6
+  sub_65 (sobel_fir_DW01_sub_25)          3.598    4.993    3.476    8.591   2.6
+  sub_66 (sobel_fir_DW01_sub_24)          3.561    4.935    3.476    8.496   2.6
+  sub_67 (sobel_fir_DW01_sub_23)          3.596    4.994    3.476    8.590   2.6
+  sub_68 (sobel_fir_DW01_sub_22)          3.587    4.974    3.476    8.561   2.6
+  sub_69 (sobel_fir_DW01_sub_21)          3.554    4.927    3.476    8.481   2.6
+  sub_70 (sobel_fir_DW01_sub_20)          3.583    4.970    3.476    8.553   2.6
+  sub_71 (sobel_fir_DW01_sub_19)          3.576    4.953    3.476    8.530   2.6
+  sub_72 (sobel_fir_DW01_sub_18)          3.574    4.959    3.476    8.533   2.6
+  sub_73 (sobel_fir_DW01_sub_17)          3.534    4.892    3.476    8.426   2.6
+  sub_74 (sobel_fir_DW01_sub_16)          3.587    4.982    3.476    8.569   2.6
+  sub_76 (sobel_fir_DW01_sub_15)          3.558    4.934    3.476    8.492   2.6
+  sub_77 (sobel_fir_DW01_sub_14)          3.562    4.934    3.476    8.496   2.6
+  sub_78 (sobel_fir_DW01_sub_13)          3.572    4.951    3.476    8.522   2.6
+  sub_79 (sobel_fir_DW01_sub_12)          3.597    4.993    3.476    8.590   2.6
+  sub_80 (sobel_fir_DW01_sub_11)          3.558    4.927    3.476    8.484   2.6
+  sub_81 (sobel_fir_DW01_sub_10)          3.591    4.983    3.476    8.574   2.6
+  sub_82 (sobel_fir_DW01_sub_9)           3.569    4.960    3.476    8.529   2.6
+  sub_83 (sobel_fir_DW01_sub_8)           3.569    4.950    3.476    8.520   2.6
+  sub_84 (sobel_fir_DW01_sub_7)           3.559    4.928    3.476    8.487   2.6
+  sub_85 (sobel_fir_DW01_sub_6)           3.583    4.976    3.476    8.559   2.6
+  sub_86 (sobel_fir_DW01_sub_5)           3.565    4.948    3.476    8.512   2.6
+  sub_87 (sobel_fir_DW01_sub_4)           3.581    4.963    3.476    8.544   2.6
+  sub_88 (sobel_fir_DW01_sub_3)           3.602    4.999    3.476    8.602   2.6
+  sub_89 (sobel_fir_DW01_sub_2)           3.566    4.943    3.476    8.509   2.6
+  sub_90 (sobel_fir_DW01_sub_1)           3.587    4.980    3.476    8.567   2.6
+  sub_91 (sobel_fir_DW01_sub_0)           3.586    4.971    3.476    8.556   2.6
+1

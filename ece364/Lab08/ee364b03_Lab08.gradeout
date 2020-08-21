@@ -1,0 +1,12 @@
+/home/ecegridfs/a/ee364ta/grading/Lab08/ee364b03
+
+-----------------------------------------------------------------------------
+FUNCTION      | DESCRIPTION            | COMMENTS                 | POINTS  
+-----------------------------------------------------------------------------
+simpleVector    Float Values Test        Passed                     4/4     
+simpleVector    No Type Check Test       Passed                     2/2     
+simpleVector    Non-Float Values Test    Passed                     4/4     
+vectorReader                             Passed                     10/10   
+-----------------------------------------------------------------------------
+
+Total Score = 20.0

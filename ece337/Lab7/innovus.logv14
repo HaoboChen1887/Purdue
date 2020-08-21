@@ -1,0 +1,39 @@
+[03/06 18:54:55      0s] 
+[03/06 18:54:55      0s] Cadence Innovus(TM) Implementation System.
+[03/06 18:54:55      0s] Copyright 2016 Cadence Design Systems, Inc. All rights reserved worldwide.
+[03/06 18:54:55      0s] 
+[03/06 18:54:55      0s] Version:	v16.12-s051_1, built Wed Aug 17 12:18:54 PDT 2016
+[03/06 18:54:55      0s] Options:	
+[03/06 18:54:55      0s] Date:		Tue Mar  6 18:54:55 2018
+[03/06 18:54:55      0s] Host:		ee215lnx04.ecn.purdue.edu (x86_64 w/Linux 2.6.32-696.20.1.el6.x86_64) (4cores*8cpus*Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz 8192KB)
+[03/06 18:54:55      0s] OS:		Red Hat Enterprise Linux Workstation release 6.9 (Santiago)
+[03/06 18:54:55      0s] 
+[03/06 18:54:55      0s] License:
+[03/06 18:54:55      0s] 		invs	Innovus Implementation System	16.1	checkout succeeded
+[03/06 18:54:55      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[03/06 18:55:06      7s] @(#)CDS: Innovus v16.12-s051_1 (64bit) 08/17/2016 12:18 (Linux 2.6.18-194.el5)
+[03/06 18:55:06      7s] @(#)CDS: NanoRoute 16.12-s051_1 NR160816-1350/16_12-UB (database version 2.30, 347.6.1) {superthreading v1.30}
+[03/06 18:55:06      7s] @(#)CDS: AAE 16.12-s026 (64bit) 08/17/2016 (Linux 2.6.18-194.el5)
+[03/06 18:55:06      7s] @(#)CDS: CTE 16.12-s023_1 () Aug 12 2016 01:35:46 ( )
+[03/06 18:55:06      7s] @(#)CDS: SYNTECH 16.12-s009_1 () Aug 11 2016 01:33:09 ( )
+[03/06 18:55:06      7s] @(#)CDS: CPE v16.12-s054
+[03/06 18:55:06      7s] @(#)CDS: IQRC/TQRC 15.2.4-s467 (64bit) Wed Jul 20 17:12:38 PDT 2016 (Linux 2.6.18-194.el5)
+[03/06 18:55:06      7s] @(#)CDS: OA 22.50-p049 Fri Jun 10 10:56:20 2016
+[03/06 18:55:06      7s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[03/06 18:55:06      7s] @(#)CDS: RCDB 11.8
+[03/06 18:55:06      7s] --- Running on ee215lnx04.ecn.purdue.edu (x86_64 w/Linux 2.6.32-696.20.1.el6.x86_64) (4cores*8cpus*Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz 8192KB) ---
+[03/06 18:55:06      7s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_22864_ee215lnx04.ecn.purdue.edu_mg119_6Hiars.
+
+[03/06 18:55:06      8s] 
+[03/06 18:55:06      8s] **INFO:  MMMC transition support version v31-84 
+[03/06 18:55:06      8s] 
+[03/06 18:55:06      8s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[03/06 18:55:06      8s] <CMD> suppressMessage ENCEXT-2799
+[03/06 18:55:07      8s] <CMD> getDrawView
+[03/06 18:55:07      8s] <CMD> loadWorkspace -name Physical
+[03/06 18:55:07      8s] <CMD> win
+[03/06 18:55:36     10s] 
+[03/06 18:55:36     10s] *** Memory Usage v#1 (Current mem = 506.055M, initial mem = 166.582M) ***
+[03/06 18:55:36     10s] *** Message Summary: 0 warning(s), 0 error(s)
+[03/06 18:55:36     10s] 
+[03/06 18:55:36     10s] --- Ending "Innovus" (totcpu=0:00:10.9, real=0:00:41.0, mem=506.1M) ---

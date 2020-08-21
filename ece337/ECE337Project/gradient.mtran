@@ -1,0 +1,183 @@
+# 
+# 
+# 
+# 
+# //  Questa Sim-64
+# //  Version 10.3b linux_x86_64 May 29 2014
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -Lf /home/ecegrid/a/ece337/Course_Prod/IP_Libs/Lab_IP_Lib/Vsim -L /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work -L /home/ecegrid/a/ece337/Class0.5u/GOLD_LIB "+no_glitch_msg" -coverage -novopt -i -t ps mapped_work.tb_gradient 
+# Start time: 18:41:20 on Apr 24,2018
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /home/ecegrid/a/mg123/ECE337Project/mapped_work.tb_gradient
+# Loading sv_std.std
+# Loading mapped_work.tb_gradient
+# Loading mapped_work.gradient
+# Loading mapped_work.gradient_DW_mult_uns_31
+# Loading mapped_work.gradient_DW_mult_uns_30
+# Loading mapped_work.gradient_DW01_add_15
+# Loading mapped_work.gradient_DW_mult_uns_29
+# Loading mapped_work.gradient_DW_mult_uns_28
+# Loading mapped_work.gradient_DW01_add_14
+# Loading mapped_work.gradient_DW_mult_uns_27
+# Loading mapped_work.gradient_DW_mult_uns_26
+# Loading mapped_work.gradient_DW01_add_13
+# Loading mapped_work.gradient_DW_mult_uns_25
+# Loading mapped_work.gradient_DW_mult_uns_24
+# Loading mapped_work.gradient_DW01_add_12
+# Loading mapped_work.gradient_DW_mult_uns_23
+# Loading mapped_work.gradient_DW_mult_uns_22
+# Loading mapped_work.gradient_DW01_add_11
+# Loading mapped_work.gradient_DW_mult_uns_21
+# Loading mapped_work.gradient_DW_mult_uns_20
+# Loading mapped_work.gradient_DW01_add_10
+# Loading mapped_work.gradient_DW_mult_uns_19
+# Loading mapped_work.gradient_DW_mult_uns_18
+# Loading mapped_work.gradient_DW01_add_9
+# Loading mapped_work.gradient_DW_mult_uns_17
+# Loading mapped_work.gradient_DW_mult_uns_16
+# Loading mapped_work.gradient_DW01_add_8
+# Loading mapped_work.gradient_DW_mult_uns_15
+# Loading mapped_work.gradient_DW_mult_uns_14
+# Loading mapped_work.gradient_DW01_add_7
+# Loading mapped_work.gradient_DW_mult_uns_13
+# Loading mapped_work.gradient_DW_mult_uns_12
+# Loading mapped_work.gradient_DW01_add_6
+# Loading mapped_work.gradient_DW_mult_uns_11
+# Loading mapped_work.gradient_DW_mult_uns_10
+# Loading mapped_work.gradient_DW01_add_5
+# Loading mapped_work.gradient_DW_mult_uns_9
+# Loading mapped_work.gradient_DW_mult_uns_8
+# Loading mapped_work.gradient_DW01_add_4
+# Loading mapped_work.gradient_DW_mult_uns_7
+# Loading mapped_work.gradient_DW_mult_uns_6
+# Loading mapped_work.gradient_DW01_add_3
+# Loading mapped_work.gradient_DW_mult_uns_5
+# Loading mapped_work.gradient_DW_mult_uns_4
+# Loading mapped_work.gradient_DW01_add_2
+# Loading mapped_work.gradient_DW_mult_uns_3
+# Loading mapped_work.gradient_DW_mult_uns_2
+# Loading mapped_work.gradient_DW01_add_1
+# Loading mapped_work.gradient_DW_mult_uns_1
+# Loading mapped_work.gradient_DW_mult_uns_0
+# Loading mapped_work.gradient_DW01_add_0
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.math_real(body)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.dffsr(metastabilitywrapperarch)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.prim(body)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.dffsr_core(behavioral)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.aoi22x1(behavioral)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.oai21x1(behavioral)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.nand2x1(behavioral)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.nand3x1(behavioral)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.nor2x1(behavioral)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.fax1(behavioral)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.hax1(behavioral)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.invx2(behavioral)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.and2x2(behavioral)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.xor2x1(behavioral)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.or2x2(behavioral)
+# Loading /home/ecegrid/a/ece337/Course_Prod/Cell_Libs/AMI_05/vhdl_work.bufx2(behavioral)
+# ** Warning: (vsim-3017) mapped/gradient.v(5497): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_gradient/DUT/add_78
+# ** Warning: (vsim-3722) mapped/gradient.v(5497): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/gradient.v(215): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_gradient/DUT/add_78/U1_17
+# ** Warning: (vsim-3017) mapped/gradient.v(5521): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_gradient/DUT/add_77
+# ** Warning: (vsim-3722) mapped/gradient.v(5521): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/gradient.v(451): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_gradient/DUT/add_77/U1_17
+# ** Warning: (vsim-3017) mapped/gradient.v(5545): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_gradient/DUT/add_76
+# ** Warning: (vsim-3722) mapped/gradient.v(5545): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/gradient.v(687): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_gradient/DUT/add_76/U1_17
+# ** Warning: (vsim-3017) mapped/gradient.v(5569): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_gradient/DUT/add_75
+# ** Warning: (vsim-3722) mapped/gradient.v(5569): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/gradient.v(923): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_gradient/DUT/add_75/U1_17
+# ** Warning: (vsim-3017) mapped/gradient.v(5593): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_gradient/DUT/add_73
+# ** Warning: (vsim-3722) mapped/gradient.v(5593): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/gradient.v(1159): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_gradient/DUT/add_73/U1_17
+# ** Warning: (vsim-3017) mapped/gradient.v(5617): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_gradient/DUT/add_72
+# ** Warning: (vsim-3722) mapped/gradient.v(5617): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/gradient.v(1395): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_gradient/DUT/add_72/U1_17
+# ** Warning: (vsim-3017) mapped/gradient.v(5641): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_gradient/DUT/add_71
+# ** Warning: (vsim-3722) mapped/gradient.v(5641): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/gradient.v(1631): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_gradient/DUT/add_71/U1_17
+# ** Warning: (vsim-3017) mapped/gradient.v(5665): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_gradient/DUT/add_70
+# ** Warning: (vsim-3722) mapped/gradient.v(5665): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/gradient.v(1867): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_gradient/DUT/add_70/U1_17
+# ** Warning: (vsim-3017) mapped/gradient.v(5689): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_gradient/DUT/add_63
+# ** Warning: (vsim-3722) mapped/gradient.v(5689): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/gradient.v(2103): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_gradient/DUT/add_63/U1_17
+# ** Warning: (vsim-3017) mapped/gradient.v(5713): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_gradient/DUT/add_62
+# ** Warning: (vsim-3722) mapped/gradient.v(5713): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/gradient.v(2339): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_gradient/DUT/add_62/U1_17
+# ** Warning: (vsim-3017) mapped/gradient.v(5737): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_gradient/DUT/add_61
+# ** Warning: (vsim-3722) mapped/gradient.v(5737): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/gradient.v(2575): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_gradient/DUT/add_61/U1_17
+# ** Warning: (vsim-3017) mapped/gradient.v(5761): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_gradient/DUT/add_60
+# ** Warning: (vsim-3722) mapped/gradient.v(5761): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/gradient.v(2811): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_gradient/DUT/add_60/U1_17
+# ** Warning: (vsim-3017) mapped/gradient.v(5785): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_gradient/DUT/add_58
+# ** Warning: (vsim-3722) mapped/gradient.v(5785): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/gradient.v(3047): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_gradient/DUT/add_58/U1_17
+# ** Warning: (vsim-3017) mapped/gradient.v(5809): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_gradient/DUT/add_57
+# ** Warning: (vsim-3722) mapped/gradient.v(5809): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/gradient.v(3283): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_gradient/DUT/add_57/U1_17
+# ** Warning: (vsim-3017) mapped/gradient.v(5832): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_gradient/DUT/add_56
+# ** Warning: (vsim-3722) mapped/gradient.v(5832): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/gradient.v(3519): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_gradient/DUT/add_56/U1_17
+# ** Warning: (vsim-3017) mapped/gradient.v(5854): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /tb_gradient/DUT/add_55
+# ** Warning: (vsim-3722) mapped/gradient.v(5854): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-8822) mapped/gradient.v(3755): [TFMPC] - Missing Verilog connection for formal VHDL port 'YC'.
+#         Region: /tb_gradient/DUT/add_55/U1_17
+# ** Warning: (vsim-3839) source/tb_gradient.sv(51): Variable '/tb_gradient/tb_grad_done', driven via a port connection, is multiply driven. See source/tb_gradient.sv(27).
+#         Region: /tb_gradient
+run 100 ns
+# ** Info: Test case 1 passed!
+#    Time: 11700 ps  Scope: tb_gradient File: source/tb_gradient.sv Line: 67
+# ** Info: Test case 2 passed!
+#    Time: 35100 ps  Scope: tb_gradient File: source/tb_gradient.sv Line: 100
+# ** Info: Test case 3 passed!
+#    Time: 58500 ps  Scope: tb_gradient File: source/tb_gradient.sv Line: 133
+# ** Info: Test case 4 passed!
+#    Time: 79300 ps  Scope: tb_gradient File: source/tb_gradient.sv Line: 165
+# End time: 18:41:32 on Apr 24,2018, Elapsed time: 0:00:12
+# Errors: 0, Warnings: 50

@@ -1,0 +1,78 @@
+/home/ecegridfs/a/ee364ta/grading/Prelab07/ee364b03
+
+--------------------------------------------------------------------------------------
+FUNCTION              | DESCRIPTION             | COMMENTS                 | POINTS  
+--------------------------------------------------------------------------------------
+Capstone_Addition       Bad Type                  Error running function     0/1     
+Capstone_Addition       Circuit Addition 1        Error running function     0/1     
+Capstone_Addition       Circuit Addition 2        Error running function     0/1     
+Capstone_Addition       Non-Senior Addition       Passed                     1/1     
+Capstone_Addition       Student Addition 1        Passed                     1/1     
+Capstone_Addition       Student Addition 2        Passed                     1/1     
+Capstone_Details        Detail String             FAILED                     0/2     
+Capstone_Initializer    Bad Input                 Passed                     1/1     
+Capstone_Initializer    Normal Instance           Passed                     1/1     
+Capstone_Membership     Bad Type                  Passed                     1/1     
+Capstone_Membership     Bad Value                 Passed                     1/1     
+Capstone_Membership     Circuit Membership 1      Passed                     1/1     
+Capstone_Membership     Circuit Membership 2      Passed                     1/1     
+Capstone_Membership     Circuit Membership 2      Passed                     1/1     
+Capstone_Membership     Component Membership 1    FAILED                     0/1     
+Capstone_Membership     Component Membership 2    Passed                     1/1     
+Capstone_Membership     Student Membership 1      Passed                     1/1     
+Capstone_String         String Representation     Passed                     3/3     
+Capstone_Subtraction    Bad Type                  Passed                     1/1     
+Capstone_Subtraction    Circuit Subtraction 1     Passed                     1/1     
+Capstone_Subtraction    Circuit Subtraction 2     Passed                     1/1     
+Capstone_Subtraction    Student Subtraction 1     Passed                     1/1     
+Capstone_Subtraction    Student Subtraction 2     Passed                     1/1     
+Circuit_Addition        Bad Type                  Passed                     1/1     
+Circuit_Addition        Bad Value                 Passed                     1/1     
+Circuit_Addition        Normal Operation 1        Passed                     1/1     
+Circuit_Addition        Normal Operation 2        Passed                     1/1     
+Circuit_Combination     C Check                   Passed                     1/1     
+Circuit_Combination     ID Check                  Passed                     1/1     
+Circuit_Combination     L Check                   Passed                     1/1     
+Circuit_Combination     R Check                   Passed                     1/1     
+Circuit_Combination     T Check                   Passed                     1/1     
+Circuit_GetDetails      Details String            FAILED                     0/2     
+Circuit_Initializer     Bad Input                 Passed                     1/1     
+Circuit_Initializer     Normal Instance           Passed                     1/1     
+Circuit_Membership      Bad Type                  Passed                     1/1     
+Circuit_Membership      Bad Value                 Passed                     1/1     
+Circuit_Membership      Normal Check 1            Passed                     1/1     
+Circuit_Membership      Normal Check 2            Passed                     1/1     
+Circuit_String          String Representation     FAILED                     0/3     
+Circuit_Subtraction     Bad Type                  Passed                     1/1     
+Circuit_Subtraction     Bad Value                 Passed                     1/1     
+Circuit_Subtraction     Normal Operation 1        Passed                     1/1     
+Circuit_Subtraction     Normal Operation 2        Passed                     1/1     
+Project_Addition        Bad Type                  Passed                     1/1     
+Project_Addition        Circuit Addition 1        Passed                     1/1     
+Project_Addition        Circuit Addition 2        Passed                     1/1     
+Project_Addition        Student Addition 1        Passed                     1/1     
+Project_Addition        Student Addition 2        Passed                     1/1     
+Project_Details         Detail String             FAILED                     0/2     
+Project_Initializer     Bad Input 1               Passed                     1/1     
+Project_Initializer     Bad Input 2               Passed                     1/1     
+Project_Initializer     Normal Instance           Passed                     1/1     
+Project_Membership      Bad Type                  Passed                     1/1     
+Project_Membership      Bad Value                 Passed                     1/1     
+Project_Membership      Circuit Membership 1      Passed                     1/1     
+Project_Membership      Circuit Membership 2      Passed                     1/1     
+Project_Membership      Circuit Membership 2      Passed                     1/1     
+Project_Membership      Component Membership 1    FAILED                     0/1     
+Project_Membership      Component Membership 2    Passed                     1/1     
+Project_Membership      Student Membership 1      Passed                     1/1     
+Project_String          String Representation     Passed                     3/3     
+Project_Subtraction     Bad Type                  Passed                     1/1     
+Project_Subtraction     Circuit Subtraction 1     Passed                     1/1     
+Project_Subtraction     Circuit Subtraction 2     Passed                     1/1     
+Project_Subtraction     Student Subtraction 1     Passed                     1/1     
+Project_Subtraction     Student Subtraction 2     Passed                     1/1     
+Student_Initializer     Bad Level                 Passed                     1/1     
+Student_Initializer     Normal Instance           Passed                     1/1     
+Student_String          String Representation     Passed                     2/2     
+--------------------------------------------------------------------------------------
+
+Total Score = 66.0

@@ -1,0 +1,162 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : mag_wrapper
+Version: K-2015.06-SP1
+Date   : Sat Apr 28 18:11:08 2018
+****************************************
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+  Startpoint: GRAD/grad_done_reg
+              (rising edge-triggered flip-flop)
+  Endpoint: grad_done (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  GRAD/grad_done_reg/CLK (DFFSR)           0.00       0.00 r
+  GRAD/grad_done_reg/Q (DFFSR)             0.54       0.54 f
+  GRAD/grad_done (gradient)                0.00       0.54 f
+  grad_done (out)                          0.00       0.54 f
+  data arrival time                                   0.54
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
+ 
+****************************************
+Report : area
+Design : mag_wrapper
+Version: K-2015.06-SP1
+Date   : Sat Apr 28 18:11:08 2018
+****************************************
+
+Library(s) Used:
+
+    osu05_stdcells (File: /package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db)
+
+Number of ports:                         3346
+Number of nets:                          9161
+Number of cells:                         5450
+Number of combinational cells:           4205
+Number of sequential cells:              1186
+Number of macros/black boxes:               0
+Number of buf/inv:                       1467
+Number of references:                       3
+
+Combinational area:            1633995.000000
+Buf/Inv area:                   218880.000000
+Noncombinational area:          925056.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:               2559051.000000
+Total area:                 undefined
+1
+Loading db file '/package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : mag_wrapper
+Version: K-2015.06-SP1
+Date   : Sat Apr 28 18:11:09 2018
+****************************************
+
+
+Library(s) Used:
+
+    osu05_stdcells (File: /package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db)
+
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 5    
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+mag_wrapper                              51.470  130.053  813.512  181.525 100.0
+  MCU (mag_mcu)                        3.52e-03    0.215    1.647    0.219   0.1
+  GRAD (gradient)                      3.01e-02   29.796  521.269   29.827  16.4
+    r640 (gradient_DW_mult_uns_31)        0.000    0.000   14.440 1.44e-05   0.0
+    r639 (gradient_DW_mult_uns_30)        0.000    0.000   14.440 1.44e-05   0.0
+    r638 (gradient_DW_mult_uns_29)        0.000    0.000   14.440 1.44e-05   0.0
+    r637 (gradient_DW_mult_uns_28)        0.000    0.000   14.440 1.44e-05   0.0
+    r636 (gradient_DW_mult_uns_27)        0.000    0.000   14.440 1.44e-05   0.0
+    r635 (gradient_DW_mult_uns_26)        0.000    0.000   14.440 1.44e-05   0.0
+    r634 (gradient_DW_mult_uns_25)        0.000    0.000   14.440 1.44e-05   0.0
+    r633 (gradient_DW_mult_uns_24)        0.000    0.000   14.440 1.44e-05   0.0
+    r632 (gradient_DW_mult_uns_23)        0.000    0.000   14.440 1.44e-05   0.0
+    r630 (gradient_DW_mult_uns_22)        0.000    0.000   14.440 1.44e-05   0.0
+    r629 (gradient_DW_mult_uns_21)        0.000    0.000   14.440 1.44e-05   0.0
+    r626 (gradient_DW_mult_uns_20)        0.000    0.000   14.440 1.44e-05   0.0
+    r628 (gradient_DW_mult_uns_19)        0.000    0.000   14.440 1.44e-05   0.0
+    r631 (gradient_DW_mult_uns_18)        0.000    0.000   14.440 1.44e-05   0.0
+    r627 (gradient_DW_mult_uns_17)        0.000    0.000   14.440 1.44e-05   0.0
+    r152 (gradient_DW_mult_uns_16)        0.000    0.000   14.440 1.44e-05   0.0
+    r535 (gradient_DW01_add_7)            0.000    0.000    6.060 6.06e-06   0.0
+    r642 (gradient_DW01_add_6)            0.000    0.000    6.060 6.06e-06   0.0
+    r643 (gradient_DW01_add_5)            0.000    0.000    6.060 6.06e-06   0.0
+    r644 (gradient_DW01_add_4)            0.000    0.000    6.060 6.06e-06   0.0
+    r645 (gradient_DW01_add_3)            0.000    0.000    6.060 6.06e-06   0.0
+    r646 (gradient_DW01_add_2)            0.000    0.000    6.060 6.06e-06   0.0
+    r647 (gradient_DW01_add_1)            0.000    0.000    6.060 6.06e-06   0.0
+    r648 (gradient_DW01_add_0)            0.000    0.000    6.060 6.06e-06   0.0
+  MAG (magnitude)                        51.437  100.042  290.598  151.479  83.4
+    add_61 (magnitude_DW01_inc_31)        0.616    1.205    2.073    1.821   1.0
+    add_62 (magnitude_DW01_inc_30)        0.641    1.250    2.073    1.891   1.0
+    add_63 (magnitude_DW01_inc_29)        0.644    1.255    2.073    1.899   1.0
+    add_64 (magnitude_DW01_inc_28)        0.638    1.246    2.073    1.884   1.0
+    add_66 (magnitude_DW01_inc_27)        0.631    1.233    2.073    1.864   1.0
+    add_67 (magnitude_DW01_inc_26)        0.629    1.228    2.073    1.857   1.0
+    add_68 (magnitude_DW01_inc_25)        0.625    1.221    2.073    1.846   1.0
+    add_69 (magnitude_DW01_inc_24)        0.625    1.221    2.073    1.847   1.0
+    add_71 (magnitude_DW01_inc_23)        0.639    1.248    2.073    1.887   1.0
+    add_72 (magnitude_DW01_inc_22)        0.635    1.239    2.073    1.873   1.0
+    add_73 (magnitude_DW01_inc_21)        0.645    1.256    2.073    1.900   1.0
+    add_74 (magnitude_DW01_inc_20)        0.634    1.238    2.073    1.872   1.0
+    add_76 (magnitude_DW01_inc_19)        0.647    1.262    2.073    1.909   1.1
+    add_77 (magnitude_DW01_inc_18)        0.646    1.259    2.073    1.905   1.0
+    add_78 (magnitude_DW01_inc_17)        0.628    1.229    2.073    1.857   1.0
+    add_79 (magnitude_DW01_inc_16)        0.625    1.223    2.073    1.848   1.0
+    add_82 (magnitude_DW01_inc_15)        0.643    1.255    2.073    1.898   1.0
+    add_83 (magnitude_DW01_inc_14)        0.635    1.238    2.073    1.873   1.0
+    add_84 (magnitude_DW01_inc_13)        0.629    1.230    2.073    1.859   1.0
+    add_85 (magnitude_DW01_inc_12)        0.637    1.245    2.073    1.882   1.0
+    add_87 (magnitude_DW01_inc_11)        0.632    1.235    2.073    1.867   1.0
+    add_88 (magnitude_DW01_inc_10)        0.632    1.236    2.073    1.868   1.0
+    add_89 (magnitude_DW01_inc_9)         0.627    1.227    2.073    1.855   1.0
+    add_90 (magnitude_DW01_inc_8)         0.641    1.250    2.073    1.891   1.0
+    add_92 (magnitude_DW01_inc_7)         0.632    1.236    2.073    1.868   1.0
+    add_93 (magnitude_DW01_inc_6)         0.630    1.231    2.073    1.862   1.0
+    add_94 (magnitude_DW01_inc_5)         0.651    1.268    2.073    1.919   1.1
+    add_95 (magnitude_DW01_inc_4)         0.632    1.234    2.073    1.866   1.0
+    add_97 (magnitude_DW01_inc_3)         0.635    1.239    2.073    1.874   1.0
+    add_98 (magnitude_DW01_inc_2)         0.632    1.234    2.073    1.867   1.0
+    add_99 (magnitude_DW01_inc_1)         0.637    1.243    2.073    1.880   1.0
+    add_100 (magnitude_DW01_inc_0)        0.627    1.225    2.073    1.852   1.0
+1

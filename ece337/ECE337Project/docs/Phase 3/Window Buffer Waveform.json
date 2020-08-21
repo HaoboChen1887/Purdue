@@ -1,0 +1,10 @@
+{ signal: [
+  ['Window Buffer Module',
+  {name: 'clock',               wave: 'P|.................'},
+  {name: 'image_data_serial',           wave: 'x|...22222222222222', data:['pix0','pix1','pix2','pix3','pix4','pix5','pix6','pix7','pix8','pix9','pix10','pix11','pix12','pix13']},
+  {name: 'dir_sel',               wave: 'x|2................', data:['00','00']},
+  {name: 'r_enable',              wave: '0|...1.............'},
+  {name: 'buffer_data',         wave: 'x|...22222222222222', data:['pix0','pix1','pix2','pix3','pix4','pix5','pix6','pix7','pix8','pix9','pix10','pix11','pix12','pix13']},
+  {name: 'done',        wave: '0|.................'}],
+  {},
+]}

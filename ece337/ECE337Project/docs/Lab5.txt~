@@ -1,0 +1,9 @@
+1. The minimum amount of time that data_ready must remain asserted to ensure correct operation is 2 clock cycles.
+
+2. the minimum anount of time that data must remain valid after data_ready is asserted in order to ensure correct operation is also 2 clock cycles.
+
+3. The output image make sense. Because it works like a high pass filter that filted out all the high frequency values.
+
+4. $fopen(filename, mode);     $fscanf(file, file_format_specifier, data_source)
+
+5. The characters.

@@ -1,0 +1,108 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : output_addr
+Version: K-2015.06-SP1
+Date   : Tue Apr 24 18:35:40 2018
+****************************************
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+  Startpoint: calc_addr_reg[31]
+              (rising edge-triggered flip-flop)
+  Endpoint: calc_addr[31]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  calc_addr_reg[31]/CLK (DFFSR)            0.00       0.00 r
+  calc_addr_reg[31]/Q (DFFSR)              0.49       0.49 f
+  calc_addr[31] (out)                      0.00       0.49 f
+  data arrival time                                   0.49
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
+ 
+****************************************
+Report : area
+Design : output_addr
+Version: K-2015.06-SP1
+Date   : Tue Apr 24 18:35:40 2018
+****************************************
+
+Library(s) Used:
+
+    osu05_stdcells (File: /package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db)
+
+Number of ports:                          784
+Number of nets:                          1843
+Number of cells:                         1235
+Number of combinational cells:            883
+Number of sequential cells:               349
+Number of macros/black boxes:               0
+Number of buf/inv:                        220
+Number of references:                      20
+
+Combinational area:             263106.000000
+Buf/Inv area:                    32112.000000
+Noncombinational area:          264528.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                527634.000000
+Total area:                 undefined
+1
+Loading db file '/package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : output_addr
+Version: K-2015.06-SP1
+Date   : Tue Apr 24 18:35:41 2018
+****************************************
+
+
+Library(s) Used:
+
+    osu05_stdcells (File: /package/eda/cells/OSU/v2.7/synopsys/lib/ami05/osu05_stdcells.db)
+
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 5    
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+output_addr                              45.238   68.204  169.406  113.442 100.0
+  mult_351 (output_addr_DW_mult_uns_1)   12.280   12.048    8.223   24.328  21.4
+  add_2_root_add_351_4 (output_addr_DW01_add_1)
+                                         12.744   12.939    9.769   25.683  22.6
+  add_0_root_add_351_4 (output_addr_DW01_add_0)
+                                          6.926   16.187   10.072   23.114  20.4
+1

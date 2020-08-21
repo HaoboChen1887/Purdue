@@ -1,0 +1,300 @@
+heffield Beckerle,Swimming,1
+Jo Bonner,Fencing,1
+Charles Dean James,Diving,2
+Terry Everett,Swimming,3
+Greg A. Pierce,Archery,0
+Mike Rogers,Badminton,0
+Mark Edwin Layfield,Fencing,2
+Barbara Bobo,Archery,4
+Robert B. Aderholt,Archery,3
+Robert E. Cramer,Diving,0
+Spencer Bachus,Badminton,6
+Artur Davis,Diving,3
+Diane E. Benson,Gymnastics,4
+Don Young,Swimming,2
+Alexander Crawford,Fencing,4
+Eva L. Ince,Archery,3
+William W. Ratigan,Swimming,2
+Jim Pederson,Badminton,3
+Jon Kyl,Gymnastics,2
+Richard Mack,Swimming,1
+Ellen Simon,Fencing,4
+Rick Renzi,Archery,0
+David Schlosser,Fencing,2
+John Thrasher,Badminton,4
+Trent Franks,Swimming,2
+Powell Gammill,Diving,9
+Herb Paine,Diving,2
+John B. Shadegg,Gymnastics,8
+Mark Yannone,Gymnastics,1
+Ed Pastor,Gymnastics,2
+Don Karg,Swimming,1
+Ronald Harders,Fencing,4
+Harry Mitchell,Archery,7
+J. D. Hayworth,Swimming,2
+Warren Severin,Fencing,4
+Jeff Flake,Gymnastics,3
+Jason M. Blair,Badminton,2
+Raul M. Grijalva,Fencing,4
+Ron Drake,Swimming,0
+Joe Cobb,Badminton,4
+Gabrielle Giffords,Swimming,0
+Randy Graf,Fencing,2
+Jay Quick,Fencing,3
+David F. Nolan,Fencing,0
+Marion Berry,Diving,0
+Mickey Stubby Stumbaugh,Badminton,1
+Vic Snyder,Gymnastics,4
+Andy Mayberry,Badminton,4
+Woodrow Anderson,Gymnastics,3
+John Boozman,Badminton,2
+Mike Ross,Gymnastics,0
+Joe Ross,Badminton,2
+Dianne Feinstein,Archery,3
+Richard Mountjoy,Badminton,4
+Michael S. Metti,Badminton,4
+Todd Chretien,Fencing,4
+Marsha Feinland,Badminton,2
+Don J. Grundmann,Diving,2
+Mike Thompson,Badminton,1
+John W. Jones,Diving,2
+Pamela Elizondo,Diving,1
+Timothy J. Stock,Gymnastics,2
+A. J. Sekhon,Swimming,1
+Wally Herger,Archery,2
+E. Kent Hinesley,Gymnastics,4
+Bill Durston,Archery,1
+Daniel E. Lungren,Swimming,3
+Douglas Arthur Tuma,Badminton,3
+Michael Roskey,Swimming,2
+Charlie Brown,Diving,1
+John T. Doolittle,Swimming,2
+Dan Warren,Swimming,4
+Doris O. Matsui,Badminton,3
+Claire Yan,Fencing,3
+Jeff Kravitz,Fencing,8
+John C. Reiger,Fencing,1
+Lynn C. Woolsey,Diving,2
+Todd Hooper,Diving,3
+Richard W. Friesen,Archery,2
+George Miller,Swimming,1
+Camden McConnell,Badminton,4
+Nancy Pelosi,Fencing,3
+Mike Denunzio,Diving,4
+Philip Zimt Berg,Badminton,4
+Krissy Keefer,Swimming,0
+Barbara Lee,Gymnastics,0
+J.D. Dendulk,Archery,2
+James Eyer,Gymnastics,3
+Ellen O. Tauscher,Fencing,2
+Darcy Linn,Badminton,3
+Jerry McNerney,Archery,4
+Richard W. Pombo,Archery,3
+Tom Lantos,Archery,3
+Mike Moloney,Gymnastics,4
+Fortney Pete Stark,Diving,4
+George I. Bruno,Archery,3
+Anna G. Eshoo,Fencing,0
+Rob Smith,Diving,3
+Brian Holtz,Swimming,10
+Carol Brouillet,Gymnastics,1
+Michael M. Honda,Fencing,1
+Raymond L. Chukwu,Diving,3
+Zoe Lofgren,Fencing,4
+Charel Winston,Badminton,1
+Sam Farr,Badminton,2
+Anthony R. De Maio,Diving,3
+Dennis A. Cardoza,Badminton,0
+John A. Kanno,Badminton,3
+TJ Cox,Gymnastics,1
+George Radanovich,Gymnastics,4
+Jim Costa,Badminton,2
+Steven Haze,Fencing,4
+Devin Nunes,Swimming,1
+John Roger Miller,Archery,2
+Sharon M. Beery,Badminton,4
+Kevin McCarthy,Diving,1
+Lois Capps,Archery,4
+Victor D. Tognazzini,Archery,3
+Jill M. Martinez,Badminton,3
+Elton Gallegly,Swimming,0
+Robert Rodriguez,Gymnastics,0
+Howard P. ‘‘Buck’’ McKeon,Gymnastics,2
+David W. Erickson,Swimming,3
+Cynthia Rodriguez Matthews,Badminton,3
+David Dreier,Diving,0
+Ted Brown,Gymnastics,1
+Elliott Graham,Fencing,0
+Brad Sherman,Swimming,0
+Peter Hankwitz,Gymnastics,4
+Howard L. Berman,Fencing,1
+Stanley Kimmel Kesselman,Archery,2
+Kelley L. Ross,Archery,1
+Byron De Lear,Gymnastics,4
+Adam B. Schiff,Swimming,2
+William J. Bodell,Badminton,0
+Jim Keller,Badminton,2
+William M. Paparian,Badminton,3
+Lynda L. Llamas,Fencing,0
+Henry A. Waxman,Gymnastics,3
+David Nelson Jones,Badminton,0
+Adele M. Cannon,Fencing,2
+Xavier Becerra,Diving,4
+Hilda L. Solis,Gymnastics,2
+Leland Faegre,Gymnastics,2
+Diane E. Watson,Badminton,3
+Lucille Roybal-Allard,Diving,2
+Wayne Miller,Gymnastics,0
+Maxine Waters,Swimming,3
+Paul T. Ireland,Archery,0
+Gordon Michael Mego,Archery,4
+Jane Harman,Archery,2
+Brian Gibson,Fencing,1
+Mike Binkley,Badminton,0
+James R. Smith,Swimming,0
+Juanita Millender-McDonald,Gymnastics,2
+Herb Peters,Archery,1
+Grace F. Napolitano,Swimming,3
+Sidney W. Street,Diving,1
+Linda T. Sanchez,Swimming,3
+James L. Andion,Diving,4
+Florice Orea Hoffman,Archery,1
+Edward R. Royce,Diving,2
+Philip H. Inman,Badminton,0
+Louie A. Contreras,Swimming,4
+Jerry Lewis,Fencing,3
+Gary G. Miller,Archery,3
+Joe Baca,Archery,2
+Scott Folkens,Swimming,2
+Louis Vandenberg,Swimming,3
+Ken Calvert,Diving,4
+Kevin Akin,Fencing,0
+David Roth,Fencing,4
+Mary Bono,Gymnastics,1
+Jim Brandt,Gymnastics,3
+Dana Rohrabacher,Swimming,1
+Dennis Chang,Swimming,3
+Loretta Sanchez,Gymnastics,2
+Tan Nguyen,Gymnastics,3
+Steve Young,Fencing,1
+John Campbell,Swimming,3
+Bruce Cohen,Diving,2
+Jeeni Criscenzo,Swimming,1
+Darrell E. Issa,Fencing,3
+Lars R. Grossmith,Badminton,0
+Francine Busby,Fencing,0
+Brian P. Bilbray,Swimming,3
+Paul King,Gymnastics,2
+Miriam E. Clark,Swimming,4
+Bob Filner,Fencing,3
+Blake L. Miles,Swimming,4
+Dan Litwin,Archery,0
+John Rinaldi,Swimming,2
+Duncan Hunter,Swimming,0
+Michael Benoit,Fencing,4
+Susan A. Davis,Fencing,4
+John Woody Woodrum,Fencing,4
+Ernie Lippe,Archery,0
+Diana DeGette,Gymnastics,2
+Thomas D. Kelly,Swimming,3
+Mark Udall,Archery,0
+Rich Mancuso,Diving,1
+J. A. Calhoun,Swimming,1
+Norm Olsen,Archery,3
+John T. Salazar,Swimming,2
+Scott Tipton,Diving,3
+Bert L. Sargent,Archery,1
+Bruce E. Lohmiller,Diving,0
+Angie Paccione,Badminton,2
+Marilyn N. Musgrave,Swimming,2
+Eric Eidsness,Archery,4
+Jay Fawcett,Gymnastics,0
+Doug Lamborn,Gymnastics,4
+Richard D. Hand,Swimming,0
+Gregory S. Hollister,Fencing,1
+Brian X. Scott,Gymnastics,4
+Bill Winter,Gymnastics,2
+Thomas G. Tancredo,Gymnastics,2
+Jack J. Woehr,Badminton,0
+Juan B. Botero,Diving,0
+Ed Perlmutter,Fencing,2
+Rick O’Donnell,Gymnastics,2
+Dave Chandler,Archery,0
+Roger McCarville,Diving,1
+Steve Moore,Swimming,4
+John Heckman,Fencing,0
+John David Sexton,Diving,4
+Ned Lamont,Archery,1
+Alan Schlesinger,Badminton,3
+Joseph I. Lieberman,Badminton,2
+Ralph A. Ferrucci,Archery,1
+Timothy A. Knibbs,Diving,0
+Carl E. Vassar,Gymnastics,0
+John B. Larson,Diving,2
+Scott MacLean,Fencing,3
+Stephen Fournier,Archery,3
+Joe Courtney,Gymnastics,2
+Rob Simmons,Fencing,1
+Rosa L. DeLauro,Badminton,3
+Joseph Vollano,Diving,2
+Daniel A. Sumrall,Archery,0
+Diane Farrell,Badminton,3
+Christopher Shays,Fencing,0
+Philip Z. Maymin,Gymnastics,0
+Nancy L. Johnson,Fencing,3
+Chris Murphy,Gymnastics,4
+Thomas R. Carper,Badminton,1
+Jan Ting,Gymnastics,3
+William E. Morris,Badminton,3
+Dennis Spivack,Fencing,4
+Michael N. Castle,Gymnastics,2
+Karen M. Hartley-Nagle,Diving,3
+Michael Berg,Badminton,2
+Bill Nelson,Swimming,0
+Katherine Harris,Archery,0
+Belinda Noah,Badminton,4
+Brian Moore,Gymnastics,1
+Floyd Ray Frazier,Archery,0
+Roy Tanner,Badminton,2
+Lawrence Scott,Swimming,4
+Bernard Senter,Gymnastics,1
+Joe Roberts,Archery,4
+Jeff Miller,Gymnastics,1
+Allen Boyd,Archery,3
+Corrine Brown,Fencing,0
+Robert J. Harms,Gymnastics,4
+Ander Crenshaw,Badminton,2
+John Blade,Gymnastics,3
+John Russell,Swimming,3
+Ginny Brown-Waite,Gymnastics,0
+David E. Bruderly,Archery,3
+Cliff Stearns,Diving,4
+John F. Chagnon,Gymnastics,2
+John L. Mica,Diving,4
+Charlie Stuart,Badminton,0
+Ric Keller,Diving,0
+Wes Hoaglund,Archery,2
+D. J. Mauro,Badminton,0
+Larry Sapp,Fencing,2
+Phyllis Busansky,Fencing,2
+Gus Michael Bilirakis,Diving,0
+Andrew Pasayan,Gymnastics,2
+Samm Simpson,Gymnastics,0
+C. W. Bill Young,Fencing,2
+Salvatore A. Fiorella,Gymnastics,0
+Kathy Castor,Fencing,1
+Eddie Adams,Swimming,1
+Jim Greenwald,Archery,2
+R. J. Spencer,Gymnastics,0
+Adam H. Putnam,Badminton,2
+Joe Viscusi,Fencing,1
+Ed Bowlin,Badminton,4
+Christine Jennings,Gymnastics,1
+Vern Buchanan,Fencing,0
+Robert M. Neeld,Archery,1
+Connie Mack,Gymnastics,1
+Richard Grayson,Archery,3
+Dan,Swimming,3
+Bob Bowman,Badminton,1
+Dave Weldon,Gymnastics,3
+Tim Mahoney,Archery,1

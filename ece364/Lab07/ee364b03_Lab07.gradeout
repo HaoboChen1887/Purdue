@@ -1,0 +1,21 @@
+/home/ecegridfs/a/ee364ta/grading/Lab07/ee364b03
+
+---------------------------------------------------------------------------------------
+FUNCTION                       | DESCRIPTION     | COMMENTS                 | POINTS  
+---------------------------------------------------------------------------------------
+timeSpan_TotalHours              Check 1           Passed                     2/2     
+timeSpan_TotalHours              Check 2           Passed                     2/2     
+timeSpan_addition                Normal            Passed                     2/2     
+timeSpan_addition                WrongType         Passed                     2/2     
+timeSpan_initializer             AttributeCheck    Passed                     1/1     
+timeSpan_initializer             Large 1           Passed                     1/1     
+timeSpan_initializer             Large 2           Passed                     1/1     
+timeSpan_initializer             Wrong Value       Passed                     1/1     
+timeSpan_multiplication          Scale 1           Passed                     1.5/1.5 
+timeSpan_multiplication          Scaled 2          Passed                     1.5/1.5 
+timeSpan_multiplication          Wrong 1           Passed                     1/1     
+timeSpan_stringRepresentation    String1           Passed                     2/2     
+timeSpan_stringRepresentation    String2           Passed                     2/2     
+---------------------------------------------------------------------------------------
+
+Total Score = 20.0

@@ -1,0 +1,123 @@
+def reverseMatrix(matrix):
+    dim = len(matrix)
+    r_matrix = []
+    line = []
+    for row in range(0, dim):
+        for col in range (0, dim):
+            line.append(0)
+        r_matrix.append(line)
+        line = []
+
+    for row in range(0, dim):
+        for col in range(0,dim):
+            r_matrix[row][col] = matrix[col][row]
+    return r_matrix
+
+# Make the information in a string in to a dictionary
+def makeDic(fname, dict, delim, startline, pair1, pair2):
+    new_info = fread(fname)
+    new_info = new_info[startline:]
+    new_list = []
+    for info in new_info:
+        info = info.split(delim)
+        info[0] = info[0].strip()
+        info[1] = info[1].strip()
+        if info[0] in dict:
+            dict[info[0]].append(info[1])
+            list(set(dict[info[0]]))
+        else:
+            dict[info[0]] = [info[1]]
+        if info[1] in dict:
+            dict[info[1]].append(info[0])
+            list(set(dict[info[1]]))
+        else:
+            dict[info[1]] = [info[0]]
+    return dict
+
+# Read all file information into a list of lines
+def fread(fname):
+    lines = []
+    with open(fname, 'r') as myFile:
+        lines = myFile.readlines()
+    return lines
+
+
+def isValidOutput(fileName):
+    solution = ""
+    valid = True;
+    with open(fileName, 'r') as myFile:
+        solution = myFile.readlines()
+    solution = [line.strip() for line in solution]
+
+    for line in solution:
+        for num in range(1, 10):
+            if str(num) not in line:
+                return False
+
+    solution = reverseMatrix(solution)
+    for line in solution:
+        for num in range(1, 10):
+            if str(num) not in line:
+                return False
+    return valid
+
+def isColumnPuzzle(fileName):
+    with open(fileName, 'r') as myFile:
+        puzzle = myFile.readlines()
+    puzzle = [line.strip() for line in puzzle]
+
+    if '.........' in puzzle:
+        return False
+    else:
+        return True
+
+def solvePuzzle(sourceFileName, targetFileName):
+    with open(sourceFileName, 'r') as myFile:
+        puzzle = myFile.readlines()
+    puzzle = [line.strip() for line in puzzle]
+
+    if not isColumnPuzzle(sourceFileName):
+        temp = reverseMatrix(puzzle)
+    else:
+        temp = reverseMatrix(reverseMatrix(puzzle))
+
+    solution = temp
+    for line in temp:
+        for num in range(1, 10):
+            if str(num) not in line:
+                '''print(line)
+                print(solution.index(line))
+                print(line.index('.'))
+                print(line[line.index('.')])'''
+                solution[solution.index(line)][line.index('.')] = str(num)
+
+    if not isColumnPuzzle(sourceFileName):
+        solution = reverseMatrix(solution)
+    with open(targetFileName, 'w') as myFile:
+        for line in solution:
+            for char in line:
+               myFile.write(char)
+            myFile.write('\n')
+    return solution
+
+
+def getCallersOf(phoneNumber):
+    dict = makeDic('ActivityList.txt', {}, )
+
+
+def getCallActivity():
+
+    # TODO: Remove the "pass" before you add any code to this block.
+    pass
+
+
+if __name__ == "__main__":
+    print(isValidOutput('valid.sud'))
+    print(isValidOutput('invalid1.sud'))
+    print(isValidOutput('invalid2.sud'))
+    print(isColumnPuzzle('open1.sud'))
+    print(isColumnPuzzle('open2.sud'))
+    solvePuzzle('open1.sud', 'mysol1.sud')
+    solvePuzzle('open2.sud', 'mysol2.sud')
+    print(isValidOutput('mysol1.sud'))
+    print(isValidOutput('mysol2.sud'))

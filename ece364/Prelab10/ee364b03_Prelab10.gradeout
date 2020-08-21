@@ -1,0 +1,18 @@
+/home/ecegridfs/a/ee364ta/grading/Prelab10/ee364b03
+
+---------------------------------------------------------------------------------------
+FUNCTION   | DESCRIPTION                         | COMMENTS                 | POINTS  
+---------------------------------------------------------------------------------------
+ClearForm    Edit and Clear                        Passed                     8/8     
+ClearForm    Random Edit and Clear                 Passed                     8/8     
+LoadData     Buttons after Data Loaded             Passed                     8/8     
+LoadData     Buttons after Data Loaded & Edited    Passed                     8/8     
+LoadData     Data Loaded                           Passed                     8/8     
+LoadData     Data Loaded & Edited                  Passed                     8/8     
+SaveData     Buttons after Direct Save             Passed                     8/8     
+SaveData     Direct Save                           Passed                     8/8     
+SaveData     Save from Random Edit                 Passed                     8/8     
+SaveData     Save from Sequential Edit             Passed                     8/8     
+---------------------------------------------------------------------------------------
+
+Total Score = 80.0

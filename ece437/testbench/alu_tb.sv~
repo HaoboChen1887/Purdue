@@ -1,0 +1,129 @@
+`include "alu_if.vh"
+`include "cpu_types_pkg.vh"
+`timescale 1 ns / 1 ns
+
+import cpu_types_pkg::*;
+module alu_tb;
+  alu_if aluif();
+  test PROG(
+    .aluif(aluif)
+  );
+
+`ifndef MAPPED
+  alu DUT(aluif);
+`else
+  alu DUT(
+    ./aluif.port_a(aluif.port_a),
+    ./aluif.port_b(aluif.port_b),
+    ./aluif.aluop(aluif.aluop),
+    ./aluif.port_o(aluif.port_o),
+    ./aluif.zero(aluif.zero),
+    ./aluif.ov(aluif.ov),
+    ./aluif.neg(aluif.neg)
+  );
+`endif
+endmodule
+
+program test(
+  alu_if.tb tlu_tb
+);
+
+  initial begin
+    for(aluif.aluop = 0; aluif.aluop < 10; aluif.aluop++)begin
+      #(5);
+      casez(aluif.aluop)
+        ALU_SLL:begin
+          aluif.port_a = 32'hAAAA;
+          aluif.port_b = 32'd4;
+          #(5);
+          if(aluif.port_o == 32'hAAA0)
+            $display("Success! actual: %h, expected: AAA0", aluif.port_o);
+          else
+            $display("Fail! actual: %h, expected: AAA0", aluif.port_o);
+        end
+        ALU_SRL:begin
+          aluif.port_a = 32'hAAAA;
+          aluif.port_b = 32'd4;
+          #(5);
+          if(aluif.port_o == 32'h0AAA)
+            $display("Success! actual: %h, expected: 0AAA", aluif.port_o);
+          else
+            $display("Fail! actual: %h, expected: 0AAA", aluif.port_o);
+        end
+        ALU_ADD:begin
+          aluif.port_a = 32'd33;
+          aluif.port_b = 32'd22;
+          #(5);
+          if(aluif.port_o == 32'd55)
+            $display("Success! actual: %d, expected: 55", aluif.port_o);
+          else
+            $display("Fail! actual: %d, expected: 55", aluif.port_o);
+        end
+        ALU_SUB:begin
+          aluif.port_a = 32'd33;
+          aluif.port_b = 32'd22;
+          #(5);
+          if(aluif.port_o == 32'd11)
+            $display("Success! actual: %d, expected: 11", aluif.port_o);
+          else
+            $display("Fail! actual: %d, expected: 11", aluif.port_o);
+        end
+        ALU_AND:begin
+          aluif.port_a = 32'hAAAA;
+          aluif.port_b = 32'h5555;
+          #(5);
+          if(aluif.port_o == 32'h0000)
+            $display("Success! actual: %d, expected: 0000", aluif.port_o);
+          else
+            $display("Fail! actual: %d, expected: 0000", aluif.port_o);
+        end
+        ALU_OR:begin
+          aluif.port_a = 32'hAAAA;
+          aluif.port_b = 32'h5555;
+          #(5);
+          if(aluif.port_o == 32'hFFFF)
+            $display("Success! actual: %d, expected: FFFF", aluif.port_o);
+          else
+            $display("Fail! actual: %d, expected: FFFF", aluif.port_o);
+        end
+        ALU_XOR:begin
+          aluif.port_a = 32'hAAAA;
+          aluif.port_b = 32'h5555;
+          #(5);
+          if(aluif.port_o == 32'hFFFF)
+            $display("Success! actual: %d, expected: FFFF", aluif.port_o);
+          else
+            $display("Fail! actual: %d, expected: FFFF", aluif.port_o);
+        end
+        ALU_NOR:begin
+          aluif.port_a = 32'hAAAA;
+          aluif.port_b = 32'h5555;
+          #(5);
+          if(aluif.port_o == 32'h0000)
+            $display("Success! actual: %d, expected: 0000", aluif.port_o);
+          else
+            $display("Fail! actual: %d, expected: 0000", aluif.port_o);
+        end
+        ALU_SLT:begin
+          aluif.port_a = 32'hAAAA;
+          aluif.port_b = 32'h5555;
+          #(5);
+          if(aluif.port_o == 1)
+            $display("Success! actual: %d, expected: 1", aluif.port_o);
+          else
+            $display("Fail! actual: %d, expected: 1", aluif.port_o);
+        end
+        ALU_SLTU:begin
+          aluif.port_a = 32'hAAAA;
+          aluif.port_b = 32'h5555;
+          #(5);
+          if(aluif.port_o == 1)
+            $display("Success! actual: %d, expected: 0", aluif.port_o);
+          else
+            $display("Fail! actual: %d, expected: 0", aluif.port_o);
+        end
+      endcase
+      #(5);
+    end
+  end
+endprogram

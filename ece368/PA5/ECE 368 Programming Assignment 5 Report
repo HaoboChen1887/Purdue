@@ -1,0 +1,20 @@
+ECE 368 Programming Assignment 5 Report
+Method: 
+	This algorithm represent the problem as a graph with adjacency matrix. 
+	After the contruction of the matrix, all nodes that are common and 
+	connected are denoted 1 while everything else remains 0. If an entire row is 0,
+	then the first element is denoted -1;
+	Based on the matrix builded, the program run recursively and store the current
+	sequence in a temporary array. If it is longer than an existing sequence, the 
+	sequence is updated.
+
+Time complexity:
+	Let the number of sequences be m.
+	Let the number of numbers in the input sequence be n.
+	load_from_file:
+		It takes n x m to set the connection in the matrix which is O(n^2);
+		It takes an extra n^2 time to find the row with most connections.
+	find_seq:
+		Starting from the row with most connections, run recursivly to find the
+		longest common sequence of the input file.
+		The time complexity is O(n^2)

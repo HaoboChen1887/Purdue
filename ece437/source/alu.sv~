@@ -1,0 +1,64 @@
+`include "cpu_types_pkg.vh"
+`include "alu_if.vh"
+
+module alu
+import cpu_types_pkg::*;
+(
+  alu_if.aluif aluf
+);
+
+  always_comb begin
+    aluf.zero = '0;
+    aluf.ov = '0;
+    aluf.neg = '0;
+    casez(aluif.aluop)
+      ALU_SLL:begin
+        for(int i = 0; i < aluf.port_b; i++)begin
+          aluf.port_a = {aluf.port_a, 1'b0};
+        end
+        aluf.port_o = aluf.port_a;
+      end
+      ALU_SRL:begin
+        for(int i = 0; i < aluf.port_b; i++)begin
+          aluf.port_a = {1'b0, aluf.port_a};
+        end
+        aluf.port_o = aluf.port_a;
+      end
+      ALU_ADD:begin
+        aluf.port_o = aluf.port_a + aluf.port_b;
+      end
+      ALU_SUB:begin
+        aluf.port_o = aluf.port_a - aluf.port_b;
+      end
+      ALU_AND:begin
+        aluf.port_o = aluf.port_a & aluf.port_b;
+      end
+      ALU_OR:begin
+        aluf.port_o = aluf.port_a | aluf.port_b;
+      end
+      ALU_XOR:begin
+        aluf.port_o = aluf.port_a ^ aluf.port_b;
+      end
+      ALU_NOR:begin
+        aluf.port_o = ~(aluf.port_a | aluf.port_b);
+      end
+      ALU_SLT:begin
+        aluf.port_o = $signed(aluf.port_a) < $signed(aluf.port_b);
+      end
+      ALU_SLTU:begin
+        aluf.port_o = aluf.port_a < aluf.port_b;
+      end
+      default:
+        aluf.port_o = '0;
+    endcase
+    if(aluf.port_o == 0)begin
+      aluf.zero = 1'b1;
+    end
+    if(aluf.port_o[31] == 1'b1)begin
+      aluf.neg = 1'b1;
+    end
+    if((aluf.port_o[31] ^ aluf.port_a[31]) && (aluf.a_port ~^ aluf.b_port))begin
+      aluf.ov = 1'b1;
+    end
+  end
+endmodule
